@@ -43,16 +43,16 @@ Looking for a branded entry point? Enable a **<Anchor label="Landing Page" targe
 
 AI is built into ReadMe to help you and your users move faster. Slide the panel open by hitting **:sparkles:AI** in your top navigation bar.
 
-* **AI Agent**\
+* **AI Agent**
   Our built-in AI agent is your sidekick for drafting documentation, translating pages, and applying style guides.
 
-* **MCP Server**\
+* **MCP Server**
   Generate an **MCP** server to convert your API documentation into a structured resource that AI assistants can understand and interact with programmatically.
 
-* **AI-Powered Search**\
+* **AI-Powered Search**
   Enable AI Search to help developers ask questions about your product and instantly receive an answer.
 
-* **Open in Other AI Services**\
+* **Open in Other AI Services**
   Let your developers open your docs in tools like ChatGPT, Claude, or other LLMs, using context from your API and `llms.txt` configuration.
 
 ***
@@ -76,10 +76,10 @@ Once you're ready, merge the branch back into a live version. Enterprise plans c
 
 Whether you write docs in ReadMe's editor or your local dev environment, ReadMe fits into your workflow:
 
-* **[Bi-Directional Sync with GitHub](https://docs.readme.com/main/docs/bi-directional-sync)**\
+* **[Bi-Directional Sync with GitHub](https://docs.readme.com/main/docs/bi-directional-sync)**
   Connect a GitHub repo to your project and work in branches. Changes in Git or ReadMe will stay in sync—perfect for staging and code review workflows.
 
-* **Sync Your OpenAPI Files**\
+* **Sync Your OpenAPI Files**
   Use [`rdme`](https://docs.readme.com/docs/rdme#upload) or the ReadMe API to push your OpenAPI spec and keep your API Reference up to date automatically.
 
 ***
@@ -104,7 +104,7 @@ Want to know how developers are actually using your API and docs?
 ***
 
 <Callout icon="💼" theme="default">
-  Need support for multiple products, advanced permissions, or deeper customization?\
+  Need support for multiple products, advanced permissions, or deeper customization?
   Our enterprise features are built for teams managing business-critical APIs at scale. [Let's talk.](mailto:growth@readme.io)
 </Callout>
 
