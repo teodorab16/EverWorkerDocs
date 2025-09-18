@@ -41,7 +41,7 @@ Users can actively manage session context via UI toggles, and Builders can confi
 
 ***
 
-## Memory Items
+## 🔢Memory Items
 
 Memory Items are **modular, reusable knowledge blocks**. Key properties:
 
