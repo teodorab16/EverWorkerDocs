@@ -12,7 +12,7 @@ metadata:
 
 ***
 
-## Platform Settings
+# ⚙️ Platform Settings
 
 The **Settings** menu tab has two main sections:
 
@@ -23,7 +23,7 @@ These are presented as sub-tabs at the top of the content area.
 
 ***
 
-1. ### Overview Section
+1. ## Overview Section
    #### Key features:
    * **Master Server Connection**
      * Displays connection status to the main server (e.g., jarvis.everworker.ai • Remote).
@@ -34,7 +34,7 @@ These are presented as sub-tabs at the top of the content area.
    * **Recent Users**
      * Lists recently active or pending users, along with email and status.
      * “Manage users” button provides access to deeper user administration.
-2. ### User Management Section
+2. ## User Management Section
    #### Key features:
    * **Tabs for External and Microsoft Users**
      * Allows switching between user types (likely reflecting different login methods).
