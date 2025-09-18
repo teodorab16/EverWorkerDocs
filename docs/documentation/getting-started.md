@@ -1,5 +1,5 @@
 ---
-title: Getting Started with EverWorker Documentation
+title: ReadME Documentation
 excerpt: >-
   This page will help you get started with EverWorker Documentation. You'll be
   up and running in a jiffy!
