@@ -1,12 +1,11 @@
 ---
 title: 1. Workers Architecture
+excerpt: This section covers the foundational architecture of the worker system
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-This section covers the foundational architecture of the worker system, including different worker types and their lifecycle management.
-
 # Topics Covered:
 
 * Universal Workers: General-purpose, reusable AI agents that can be customized and shared
