@@ -1,5 +1,5 @@
 ---
-title: Terminology
+title: 🗎 Terminology
 deprecated: false
 hidden: false
 metadata:
