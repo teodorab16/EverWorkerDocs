@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# Topics Covered:
+### Topics Covered:
 
 * Universal Workers: General-purpose, reusable AI agents that can be customized and shared
 * Specialized Workers: Deeply customized agents built for specific use cases using Canvas/Studio
@@ -15,7 +15,7 @@ metadata:
 
 ***
 
-## 🤖 Worker Types
+# 🤖 Worker Types
 
 ### &#x20;Universal Workers
 
@@ -49,7 +49,7 @@ Assistant Workers are lightweight, contextual agents tailored to assist humans i
 
 ***
 
-## 🧬 Worker Lifecycle Management
+# 🧬 Worker Lifecycle Management
 
 1. #### Creation
    * Universal Workers: Built through a structured builder UI with 5 configuration tabs
