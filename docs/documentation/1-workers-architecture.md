@@ -50,24 +50,24 @@ Assistant Workers are lightweight, contextual agents tailored to assist humans i
 
 ### Worker Lifecycle Management
 
-1. Creation
+1. #### Creation
    * Universal Workers: Built through a structured builder UI with 5 configuration tabs
    * Specialized Workers: Built using the Canvas, via manual configuration or AI-assisted Builder Chat
    * Assistant Workers: Created by cloning a Universal Worker and adding personal account integrations
-2. Deployment
+2. #### Deployment
    * Workers are deployed into the Worker List (Launchpad) for Users to interact with
    * Builders can set visibility (private/shared/public)
    * Specialized Workers can be embedded as Skills in other Workers
-3. Versioning
+3. #### Versioning
    * Workers are versioned implicitly through configuration history and deployment
    * Future enhancements will include templating, rollback, and explicit version labels
-4. Sharing
-   -Universal Workers can be marked as public and shared across the organization
-   -Specialized Workers are reusable as modules within other agents
-   -Templates can be saved and reused for consistent setups across teams
+4. #### Sharing
+   * Universal Workers can be marked as public and shared across the organization
+   * Specialized Workers are reusable as modules within other agents
+   * Templates can be saved and reused for consistent setups across teams
 
 ***
 
 ### Summary
 
-The EverWorker architecture is designed for **modularity**, **scalability**, and **flexibility**. Universal Workers offer broad utility, Specialized Workers deliver precise automation, and Assistant Workers provide human-centric micro-assistance. Together, these components support a lifecycle that enables continuous creation, testing, reuse, and governance—all managed under a role-based platform that adapts to both technical and non-technical users.
+The EverWorker architecture is designed for **modularity**, **scalability**, and **flexibility**. Universal Workers offer broad utility, Specialized Workers deliver precise automation, and Assistant Workers provide human-centric micro-assistance. Together, these components support a lifecycle that enables continuous creation, testing, reuse, and governance - all managed under a role-based platform that adapts to both technical and non-technical users.
