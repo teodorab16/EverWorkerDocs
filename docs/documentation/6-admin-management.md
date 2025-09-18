@@ -23,7 +23,7 @@ These are presented as sub-tabs at the top of the content area.
 
 ***
 
-## Overview Section
+# Overview Section
 
 #### Key features:
 
