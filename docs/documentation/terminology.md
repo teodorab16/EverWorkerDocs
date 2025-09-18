@@ -11,7 +11,6 @@ metadata:
 * **Users** consume Workers, **Builders** create them, and **Admins** maintain the platform.
 * **EKE** and **Memory Management** power the intelligence and context in all conversations.
 * **Canvas** allows workflow design for Specialized Workers, while Universal Worker Builder manages Universal Workers.
-* **Observatory** ensures governance, while the Dashboard proves value.
 * Everything relies on structured, governed access through roles and entry points.
 
 ***
