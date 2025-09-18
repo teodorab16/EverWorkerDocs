@@ -31,30 +31,38 @@ The central dashboard for **monitoring all Worker activity** - both Universal an
 * Worker Types: Universal vs. Specialized breakdown
 * Filters: Date range, Worker type, user, tags
 
-1. ### Success & Failure Tracking
-   Track how Workers perform across executions to identify quality, stability, and reliability.
-   * Two-level failure metrics:
-     a. **% of Workers that failed** (out of all active Workers)
-     b. **% of Executions that failed** (out of all executions)
-   * Filterable by:
-     * Worker type (Universal/Specialized)
-     * Individual user
-     * Execution time window
-   * Visualized via **stacked line charts**
-2. ### Resource Utilization & ROI
-   Provides business visibility into the impact and cost-effectiveness of automation.
-   * **Estimated Hours Saved** with Workers
-   * **Cost Saved**: Based on builder-provided time-per-task × hourly rate
-   * Driven by manual config at Worker creation level
-3. ### Debugging & Execution Logging
-   Deep-dive tools to trace and troubleshoot performance.
-   * **Execution Table View**:
-     * Worker Name, Type
-     * Who ran it
-     * Date/time, duration
-     * Status: Success / Fail
-   * Sortable and filterable — designed for Admins/Builders
-   * Used to quickly identify problem patterns (e.g., misconfigured agents, failing logic)
+### Success & Failure Tracking
+
+Track how Workers perform across executions to identify quality, stability, and reliability.
+
+* Two-level failure metrics:
+  a. **% of Workers that failed** (out of all active Workers)
+  b. **% of Executions that failed** (out of all executions)
+* Filterable by:
+  * Worker type (Universal/Specialized)
+  * Individual user
+  * Execution time window
+* Visualized via **stacked line charts**
+
+### Resource Utilization & ROI
+
+Provides business visibility into the impact and cost-effectiveness of automation.
+
+* **Estimated Hours Saved** with Workers
+* **Cost Saved**: Based on builder-provided time-per-task × hourly rate
+* Driven by manual config at Worker creation level
+
+### Debugging & Execution Logging
+
+Deep-dive tools to trace and troubleshoot performance.
+
+* **Execution Table View**:
+  * Worker Name, Type
+  * Who ran it
+  * Date/time, duration
+  * Status: Success / Fail
+* Sortable and filterable — designed for Admins/Builders
+* Used to quickly identify problem patterns (e.g., misconfigured agents, failing logic)
 
 ***
 
