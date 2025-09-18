@@ -7,7 +7,7 @@ metadata:
 ---
 This section covers the system for integrating external services and managing providers and connectors.
 
-## Topics Covered:
+# Topics Covered:
 
 * **Provider Architecture**: OpenAPI-based external service integrations
 * **Connector Management**: Authentication and access control for providers
@@ -17,7 +17,7 @@ This section covers the system for integrating external services and managing pr
 
 ***
 
-### Provider Architecture
+## Provider Architecture
 
 Providers in EverWorker represent **external APIs or service ecosystems** (e.g., Microsoft 365, OpenAI, GitHub) defined using **OpenAPI specifications**. Each Provider includes a detailed schema of endpoints and methods, enabling Workers to interact with external services programmatically and consistently.
 
@@ -27,7 +27,7 @@ Providers in EverWorker represent **external APIs or service ecosystems** (e.g.,
 
 ***
 
-### Connector Management
+## Connector Management
 
 Connectors are **instances of Providers**, configured with **authentication credentials and context-specific settings** (e.g., for different tenants, users, or environments).
 
@@ -38,7 +38,7 @@ Connectors are **instances of Providers**, configured with **authentication cred
 
 ***
 
-### Central Repository
+## Central Repository
 
 EverWorker maintains a **curated library of Providers**, regularly updated through the API Scraper engine. This is known as the **Provider Central Repository**.
 
@@ -49,7 +49,7 @@ EverWorker maintains a **curated library of Providers**, regularly updated throu
 
 ***
 
-### OAuth and Authentication Flows
+## OAuth and Authentication Flows
 
 EverWorker supports **multiple authentication models** to handle secure, multi-user environments:
 
@@ -60,7 +60,7 @@ EverWorker supports **multiple authentication models** to handle secure, multi-u
 
 ***
 
-### Provider Versioning and Updates
+## Provider Versioning and Updates
 
 Providers are versioned through EverWorker's backend tooling:
 
@@ -69,6 +69,6 @@ Providers are versioned through EverWorker's backend tooling:
 
 ***
 
-## Summary
+# Summary
 
 The Provider system in EverWorker ensures **secure, flexible, and up-to-date integrations** across any enterprise or third-party services. With a clear separation between Providers and Connectors, customers can manage complex authentication needs while safely reusing integrations across Workers. Combined with a central repository and real-time version tracking, EverWorker makes external service orchestration fast, reliable, and enterprise-ready.
