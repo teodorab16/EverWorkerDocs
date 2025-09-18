@@ -26,6 +26,8 @@ Use this node as the first node when you need to collect input from the user bef
 
 # Raw Usage Example
 
+![](https://files.readme.io/8066fe858cf65d5f1d294fb919d7b076cdbd283654ef3c485b48adfd1813e83c-image.png)
+
 <br />
 
 # Capabilities
