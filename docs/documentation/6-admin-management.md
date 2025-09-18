@@ -61,7 +61,6 @@ These are presented as sub-tabs at the top of the content area.
 | User                 | No            | No           | No                          | No        | No               | No                 | No             | No               |
 | Builder              | Yes           | No           | No                          | No        | Yes (Limited)    | No                 | No             | No               |
 | Admin                | Yes           | Yes          | Yes                         | Yes       | Yes              | Yes                | Yes            | Yes              |
-| ~~Super Admin~~      | Full          | Full         | Full                        | Full      | Full             | Full               | Full           | Full             |
 | Dashboard Viewer     | No            | No           | No                          | No        | Yes              | No                 | No             | No               |
 | Log Reader           | No            | No           | No                          | Yes       | No               | No                 | No             | No               |
 | Memory Manager       | No            | No           | No                          | No        | No               | No                 | Yes            | No               |
