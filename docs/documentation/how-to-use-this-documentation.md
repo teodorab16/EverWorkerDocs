@@ -20,7 +20,6 @@ Sections are grouped by functional area:
 3–4: Integrations and memory
 5–7: User interfaces, admin tools, and security
 8–9: Business-facing dashboards and UX
-10: Internal-only tools for the EverWorker team
 
 # 🧭 Who Should Read What
 
@@ -28,7 +27,6 @@ Product & UX teams → Start with sections 1, 2, 3, 5, and 9
 Builders & Engineers → Focus on 1–4, 6, 7
 Admins → Focus on 6, 7, and 10
 Business stakeholders → Start with 5 and 8
-Internal platform teams → See section 10 for technical platform governance and monitoring systems
 
 # 🧩 What's Inside
 
