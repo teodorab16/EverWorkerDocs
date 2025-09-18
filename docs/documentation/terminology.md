@@ -93,7 +93,7 @@ An interface for building Universal Workers using five structured tabs:
 * Skills: Tools and capabilities integrated into the Worker.
 * Summary: Final review and deployment screen.
 
-### 🤹🏽‍♂️ Skills
+### 📖 Skills
 
 Capabilities that a Worker can use, composed of:
 
