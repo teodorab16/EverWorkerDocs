@@ -7,7 +7,7 @@ metadata:
 ---
 This section covers the foundational architecture of the worker system, including different worker types and their lifecycle management.
 
-## Topics Covered:
+# Topics Covered:
 
 * Universal Workers: General-purpose, reusable AI agents that can be customized and shared
 * Specialized Workers: Deeply customized agents built for specific use cases using Canvas/Studio
@@ -48,7 +48,9 @@ Assistant Workers are lightweight, contextual agents tailored to assist humans i
 * Technically implemented as Universal Workers with preconfigured OAuth (personal) connectors and UI behaviors
 * Focused on user-specific authorization and real-time integration with personal data
 
-### Worker Lifecycle Management
+***
+
+## Worker Lifecycle Management
 
 1. #### Creation
    * Universal Workers: Built through a structured builder UI with 5 configuration tabs
@@ -68,6 +70,6 @@ Assistant Workers are lightweight, contextual agents tailored to assist humans i
 
 ***
 
-### Summary
+# Summary
 
 The EverWorker architecture is designed for **modularity**, **scalability**, and **flexibility**. Universal Workers offer broad utility, Specialized Workers deliver precise automation, and Assistant Workers provide human-centric micro-assistance. Together, these components support a lifecycle that enables continuous creation, testing, reuse, and governance - all managed under a role-based platform that adapts to both technical and non-technical users.
