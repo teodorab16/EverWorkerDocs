@@ -25,8 +25,7 @@ The central dashboard for **monitoring all Worker activity** - both Universal an
 
 ### Key metrics include:
 
--Total Workers (created)
-
+* Total Workers (created)
 * Workers Used (actively interacted with)
 * Utilization Rate (% of Workers in use)
 * Worker Types: Universal vs. Specialized breakdown
