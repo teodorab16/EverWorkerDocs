@@ -10,7 +10,7 @@ metadata:
 * **User Management**: Roles (User, Builder, Admin), permissions, and directory sync
 * **Platform Settings**: Remote Connection, License Management
 
-<br />
+***
 
 ## Platform Settings
 
