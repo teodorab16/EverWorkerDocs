@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-### Summary of Terminology Relationships
+## Summary of Terminology Relationships
 
 * A **Worker** is the main product, combining behavior (Brain), knowledge (Memory), and tools (Skills) — all of which use **Providers** via **Connectors**.
 * **Users** consume Workers, **Builders** create them, and **Admins** maintain the platform.
@@ -14,21 +14,23 @@ metadata:
 * **Observatory** ensures governance, while the Dashboard proves value.
 * Everything relies on structured, governed access through roles and entry points.
 
-### Worker
+***
+
+### 👷 Worker
 
 An AI agent designed to perform tasks using LLMs, memory, connectors, and structured logic. Workers can be created, configured, and deployed through the EverWorker platform.
 
 * **Universal Worker**: A general-purpose worker with flexible configuration, suitable for a wide range of tasks. Built using the Universal Worker Builder.
 * Specialized Worker: A focused, task-specific worker constructed visually in the Canvas interface using nodes and flows.
 
-### Provider
+### 🧑🏽‍💼 Provider
 
 An OpenAPI-based definition for external APIs or services. It acts as the technical foundation for integrating external systems into Workers.
 
 * **Custom Provider**: A user-defined OpenAPI Provider not in the central repository.
 * **Central Repository Provider**: Curated and managed by EverWorker. Syncable by customers.
 
-### Connector
+### 🔌 Connector
 
 A configuration that connects a Worker to a specific instance of a Provider, managing authentication and access.
 
@@ -37,23 +39,23 @@ A configuration that connects a Worker to a specific instance of a Provider, man
 
 <br />
 
-### Business User
+### 👤 Business User
 
 A non-technical individual who interacts with pre-built Universal Workers via chat. Users don’t modify logic, skills, or memory—they access existing functionality and can upload context (files, URLs) at runtime.
 
-### Builder
+### 👤 Builder
 
 A technical or advanced user who creates, edits, and configures Workers. Builders use tools like the Universal Worker Builder and Canvas to define skills, behavior, and integrations.
 
-### Admin
+### 👤 Admin
 
 Responsible for managing infrastructure, Providers, users, and global configurations. Admins govern access control, observability, memory management, and platform operations.
 
-### EKE (Enterprise Knowledge Engine)
+### 💭 EKE (Enterprise Knowledge Engine)
 
 The intelligence layer of the platform. It enables Workers to integrate and reason over enterprise-specific knowledge, tools, APIs, and memory in a secure and context-aware way.
 
-### Memory
+### 🤖 Memory
 
 Refers to the platform’s system for ingesting, storing, retrieving, and injecting knowledge into LLM conversations.
 
@@ -65,7 +67,7 @@ Refers to the platform’s system for ingesting, storing, retrieving, and inject
 * Chunking: Automatic splitting of large files for embedding.
 * Metadata Filtering: Tagging and filtering content by origin, title, creation date, etc.
 
-### Session (Universal Worker Chat)
+### ⏱️ Session (Universal Worker Chat)
 
 A single conversation thread with a Worker. Sessions have individualized context and memory settings.
 
@@ -82,7 +84,7 @@ Visual builder for Specialized Workers. Allows no-code or low-code construction 
 * Raw Tab: Manual code editing for each node.
 * Status Indicators: Show readiness, execution results, and issues in each node.
 
-### Universal Worker Builder
+### 🛠️ Universal Worker Builder
 
 An interface for building Universal Workers using five structured tabs:
 
@@ -92,7 +94,7 @@ An interface for building Universal Workers using five structured tabs:
 * Skills: Tools and capabilities integrated into the Worker.
 * Summary: Final review and deployment screen.
 
-### Skills
+### 🤹🏽‍♂️ Skills
 
 Capabilities that a Worker can use, composed of:
 
@@ -101,21 +103,11 @@ Capabilities that a Worker can use, composed of:
 
 Skills are selected in the Worker Builder and can be enabled/disabled per session.
 
-### Launchpad
+### 🚀 Launchpad
 
 The future home screen for Users, which will display active sessions, suggested actions, and personalized guidance for interacting with Workers.
 
-### Observatory
-
-The monitoring and analytics layer of the platform, providing visibility into worker usage, performance, and platform operations.
-
-* Customer → License → App Hierarchy: For multi-tenant management.
-* Log Viewer: Drillable logs with filtering and metadata.
-* Dashboards: Charts for ROI, worker usage, error rates, etc.
-* Remote Connection Management: Monitors EverWorker connection to central systems.
-* Metrics Collection: For CPU, memory, system activity.
-
-### Analytics Dashboard
+### 📈 Analytics Dashboard
 
 Tracks performance, ROI, and efficiency of digital Workers.
 
@@ -123,7 +115,7 @@ Tracks performance, ROI, and efficiency of digital Workers.
 * Utilization Charts: Measure how much each Worker is used.
 * Failure Rates: Track unsuccessful executions by worker or overall.
 
-### API Scraper
+### 💻 API Scraper
 
 A tool that extracts content from websites using XML sitemaps to feed data into memory.
 
@@ -131,7 +123,7 @@ A tool that extracts content from websites using XML sitemaps to feed data into 
 * Sync from Master: Reuse shared scraping configurations.
 * Performance Settings: Configure concurrency, filters, and timing.
 
-### Entry Points
+### 🚪 Entry Points
 
 Defined access interfaces based on roles.
 
@@ -140,6 +132,6 @@ Defined access interfaces based on roles.
 * Admin: Complete system access.
 * Dashboard Viewer: Analytics view only.
 
-### MCP (Model Context Protocol)
+### 🤖 MCP (Model Context Protocol)
 
 An emerging integration feature to allow dynamic, secure, and consistent communication between Workers and external servers or agents.
