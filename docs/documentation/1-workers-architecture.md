@@ -15,7 +15,7 @@ metadata:
 
 ***
 
-## 👩🏽‍💼 Worker Types
+## 🤖 Worker Types
 
 ### &#x20;Universal Workers
 
