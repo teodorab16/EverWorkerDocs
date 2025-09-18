@@ -1,8 +1,8 @@
 ---
 title: 2. Builder Tools
 excerpt: >-
-  This section provides guidance for creation, configuration and deployment of
-  AI agents
+  This section provides guidance for the creation, configuration and deployment
+  of AI agents
 deprecated: false
 hidden: false
 metadata:
