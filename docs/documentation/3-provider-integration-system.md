@@ -18,7 +18,7 @@ metadata:
 
 ***
 
-## Provider Architecture
+## 📐 Provider Architecture
 
 Providers in EverWorker represent **external APIs or service ecosystems** (e.g., Microsoft 365, OpenAI, GitHub) defined using **OpenAPI specifications**. Each Provider includes a detailed schema of endpoints and methods, enabling Workers to interact with external services programmatically and consistently.
 
@@ -28,7 +28,7 @@ Providers in EverWorker represent **external APIs or service ecosystems** (e.g.,
 
 ***
 
-## Connector Management
+## 🔌 Connector Management
 
 Connectors are **instances of Providers**, configured with **authentication credentials and context-specific settings** (e.g., for different tenants, users, or environments).
 
@@ -39,7 +39,7 @@ Connectors are **instances of Providers**, configured with **authentication cred
 
 ***
 
-## Central Repository
+## 💽 Central Repository
 
 EverWorker maintains a **curated library of Providers**, regularly updated through the API Scraper engine. This is known as the **Provider Central Repository**.
 
@@ -50,7 +50,7 @@ EverWorker maintains a **curated library of Providers**, regularly updated throu
 
 ***
 
-## OAuth and Authentication Flows
+## 🪪 OAuth and Authentication Flows
 
 EverWorker supports **multiple authentication models** to handle secure, multi-user environments:
 
@@ -61,7 +61,7 @@ EverWorker supports **multiple authentication models** to handle secure, multi-u
 
 ***
 
-## Provider Versioning and Updates
+## 🍂 Provider Versioning and Updates
 
 Providers are versioned through EverWorker's backend tooling:
 
