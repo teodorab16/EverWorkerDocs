@@ -17,7 +17,7 @@ metadata:
 
 ## 👩🏽‍💼 Worker Types
 
-### 🧑🏻‍💼 Universal Workers
+### &#x20;Universal Workers
 
 Universal Workers are general-purpose AI agents designed to be flexible, modular, and reusable across various tasks.
 They are created using the Universal Worker Builder, where Builders define:
@@ -29,7 +29,7 @@ They are created using the Universal Worker Builder, where Builders define:
 
 Universal Workers support OAuth integrations, file uploads, and dynamic session contexts. They are ideal for users who need consistent, intelligent support across a range of workflows.
 
-### 🧑🏽‍🚒 Specialized Workers
+### &#x20;Specialized Workers
 
 Specialized Workers are workflow-driven agents built for specific, structured tasks using the Canvas interface.
 They rely on node-based logic, supporting complex control flows, conditions, and data operations.
@@ -40,7 +40,7 @@ Key characteristics:
 * Modular: Each node can use its own connector and execute independently
 * Flexible: Suitable for automation, backend processes, and domain-specific logic
 
-### 💁🏼‍♂️ Assistant Workers
+### &#x20;Assistant Workers
 
 Assistant Workers are lightweight, contextual agents tailored to assist humans in narrow scenarios, like connecting to a user’s Gmail or calendar.
 
