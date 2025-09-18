@@ -23,36 +23,43 @@ These are presented as sub-tabs at the top of the content area.
 
 ***
 
-1. ## Overview Section
-   #### Key features:
-   * **Master Server Connection**
-     * Displays connection status to the main server (e.g., jarvis.everworker.ai • Remote).
-     * Includes a refresh button and connection state (e.g., “Connected”).
-   * **License Information**
-     * Shows current license tier (e.g., "Basic").
-     * Displays the number of active workers (e.g., 12 / 23 workers)
-   * **Recent Users**
-     * Lists recently active or pending users, along with email and status.
-     * “Manage users” button provides access to deeper user administration.
-2. ## User Management Section
-   #### Key features:
-   * **Tabs for External and Microsoft Users**
-     * Allows switching between user types (likely reflecting different login methods).
-   * **User Table**
-     * Columns: Name, Email, Job Title, Status (e.g., Active, Pending), Roles (e.g., user, admin, builder), and Actions.
-     * Each user can have multiple roles and a status badge for clarity.
-     * Pagination and search functionality to filter users by name or email.
-     * **User Actions**
-       * Via a menu (three-dot icon), you can:
-         * Resend Invitation (likely for users with “Pending” status).
-         * Delete User.
-     * **Create New User Button**
-       * Provides a form or workflow to invite or register new users into the system.
-   #### Core Roles:
-   * User: Can chat with Workers
-   * Builder: Can create/edit Workers and manage memory
-   * Admin: Full system access, including user roles, connectors, observability
-   * Dashboard Viewer: Read-only access to analytics and dashboards
+## Overview Section
+
+#### Key features:
+
+* **Master Server Connection**
+  * Displays connection status to the main server (e.g., jarvis.everworker.ai • Remote).
+  * Includes a refresh button and connection state (e.g., “Connected”).
+* **License Information**
+  * Shows current license tier (e.g., "Basic").
+  * Displays the number of active workers (e.g., 12 / 23 workers)
+* **Recent Users**
+  * Lists recently active or pending users, along with email and status.
+  * “Manage users” button provides access to deeper user administration.
+
+## User Management Section
+
+#### Key features:
+
+* **Tabs for External and Microsoft Users**
+  * Allows switching between user types (likely reflecting different login methods).
+* **User Table**
+  * Columns: Name, Email, Job Title, Status (e.g., Active, Pending), Roles (e.g., user, admin, builder), and Actions.
+  * Each user can have multiple roles and a status badge for clarity.
+  * Pagination and search functionality to filter users by name or email.
+  * **User Actions**
+    * Via a menu (three-dot icon), you can:
+      * Resend Invitation (likely for users with “Pending” status).
+      * Delete User.
+  * **Create New User Button**
+    * Provides a form or workflow to invite or register new users into the system.
+
+#### Core Roles:
+
+* User: Can chat with Workers
+* Builder: Can create/edit Workers and manage memory
+* Admin: Full system access, including user roles, connectors, observability
+* Dashboard Viewer: Read-only access to analytics and dashboards
 
 <br />
 
