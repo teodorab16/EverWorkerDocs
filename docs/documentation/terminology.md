@@ -15,7 +15,7 @@ metadata:
 
 ***
 
-### 👷 Worker
+### 🤖 Worker
 
 An AI agent designed to perform tasks using LLMs, memory, connectors, and structured logic. Workers can be created, configured, and deployed through the EverWorker platform.
 
@@ -54,7 +54,7 @@ Responsible for managing infrastructure, Providers, users, and global configurat
 
 The intelligence layer of the platform. It enables Workers to integrate and reason over enterprise-specific knowledge, tools, APIs, and memory in a secure and context-aware way.
 
-### 🤖 Memory
+### 🧠 Memory
 
 Refers to the platform’s system for ingesting, storing, retrieving, and injecting knowledge into LLM conversations.
 
