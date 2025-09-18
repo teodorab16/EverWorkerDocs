@@ -1,12 +1,13 @@
 ---
 title: 3. Provider & Integration System
+excerpt: >-
+  This section covers the system for integrating external services and managing
+  providers and connectors.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-This section covers the system for integrating external services and managing providers and connectors.
-
 # Topics Covered:
 
 * **Provider Architecture**: OpenAPI-based external service integrations
