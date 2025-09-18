@@ -1,20 +1,24 @@
 ---
 title: 4. Memory & Knowledge Management (EKE)
+excerpt: >-
+  This section covers the Enterprise Knowledge Engine and memory management
+  systems.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-This section covers the Enterprise Knowledge Engine and memory management systems.
-Topics Covered:
-Enterprise Knowledge Engine (EKE): Intelligence layer orchestrating knowledge access
-Vector Memory: Document and knowledge embedding system
-Session Context: Temporary and persistent memory across interactions
-Memory Items: Creation, modification, and management of knowledge base
+# Topics Covered:
+
+* **Enterprise Knowledge Engine (EKE)**: Intelligence layer orchestrating knowledge access
+* **Vector Memory**: Document and knowledge embedding system
+* **Session Context**: Temporary and persistent memory across interactions
+* **Memory Items**: Creation, modification, and management of knowledge base
 
 ***
 
-Vector Memory
+## Vector Memory
+
 EverWorker uses Vector Memory to store and retrieve unstructured knowledge, such as documents, articles, or manual notes.
 Supports semantic retrieval using vector embeddings
 Each memory item is broken into chunks and embedded using models like nomic-embed-text or mxbai
