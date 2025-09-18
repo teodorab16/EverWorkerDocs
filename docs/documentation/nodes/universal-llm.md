@@ -9,6 +9,8 @@ metadata:
 
 Universal Large Language Model execution that supports any LLM vendor through a single interface. This stateless node provides universal access to OpenAI, Anthropic, Google, and other LLM providers using direct HTTP calls.
 
+.
+
 # When to Use
 
 Use this node when you need a stateless, single-call LLM interaction with any vendor. Perfect for workflows that need tool_calls preserved in responses for downstream processing, or when you want direct HTTP API calls without tool execution overhead.
