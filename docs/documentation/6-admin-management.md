@@ -12,7 +12,7 @@ metadata:
 
 ***
 
-# ⚙️ Platform Settings
+# Platform Settings
 
 The **Settings** menu tab has two main sections:
 
