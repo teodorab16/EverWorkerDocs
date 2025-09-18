@@ -86,6 +86,8 @@ Use this node when you need a stateless, single-call LLM interaction with any ve
 
 # Result Access
 
-<br />
+`{{nodeId.result.content}}`- Generated text response
+`{{nodeId.result.tool_calls}}` - Tool call requests (if any)
+`{{nodeId.result}}` - Full message object
 
 <br />
