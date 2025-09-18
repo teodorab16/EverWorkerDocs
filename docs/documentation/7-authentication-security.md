@@ -8,14 +8,14 @@ metadata:
 ---
 <br />
 
-# Topics Covered:
+### Topics Covered:
 
 * **Role-Based Access Control**: User, Builder, Admin permissions
 * **Authentication Methods**: SSO, SCIM, external account integration
 
 ***
 
-## Role-Based Access Control
+# 👤 Role-Based Access Control
 
 EverWorker uses **granular, role-based permissions** to control access to platform features.
 
@@ -25,7 +25,7 @@ EverWorker uses **granular, role-based permissions** to control access to platfo
 
 ***
 
-## Authentication Methods
+# 🔒 Authentication Methods
 
 The platform supports multiple login and identity systems:
 
