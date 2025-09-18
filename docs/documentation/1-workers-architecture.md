@@ -66,6 +66,8 @@ Assistant Workers are lightweight, contextual agents tailored to assist humans i
    -Specialized Workers are reusable as modules within other agents
    -Templates can be saved and reused for consistent setups across teams
 
+***
+
 ### Summary
 
 The EverWorker architecture is designed for **modularity**, **scalability**, and **flexibility**. Universal Workers offer broad utility, Specialized Workers deliver precise automation, and Assistant Workers provide human-centric micro-assistance. Together, these components support a lifecycle that enables continuous creation, testing, reuse, and governance—all managed under a role-based platform that adapts to both technical and non-technical users.
