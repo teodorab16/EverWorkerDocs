@@ -73,7 +73,7 @@ A single conversation thread with a Worker. Sessions have individualized context
 * Session Summary: Automatically generated or user-edited summaries for quick recall.
 * Session History: Log of previous chats, searchable and user-manageable.
 
-### Canvas
+### 🖼️ Canvas
 
 Visual builder for Specialized Workers. Allows no-code or low-code construction of task flows through a node-based interface.
 
@@ -107,7 +107,6 @@ The future home screen for Users, which will display active sessions, suggested 
 
 ### Observatory
 
-
 The monitoring and analytics layer of the platform, providing visibility into worker usage, performance, and platform operations.
 
 * Customer → License → App Hierarchy: For multi-tenant management.
@@ -117,7 +116,6 @@ The monitoring and analytics layer of the platform, providing visibility into wo
 * Metrics Collection: For CPU, memory, system activity.
 
 ### Analytics Dashboard
-
 
 Tracks performance, ROI, and efficiency of digital Workers.
 
@@ -143,6 +141,5 @@ Defined access interfaces based on roles.
 * Dashboard Viewer: Analytics view only.
 
 ### MCP (Model Context Protocol)
-
 
 An emerging integration feature to allow dynamic, secure, and consistent communication between Workers and external servers or agents.
