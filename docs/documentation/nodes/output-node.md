@@ -45,15 +45,21 @@ Use this node as the final node in your workflow to define exactly what data sho
 
 # Capabilities
 
-Extract specific field values from previous nodes
-Format final output structure
-Support template syntax for dynamic extraction
-Handle complex nested data structures
-Advanced Features
-Deep object property extraction
-Array element access with dot notation
-Multiple output field configuration
-Template-based value transformation
-Result Access
-((nodeId.result)) - Final processed result
-((nodeId.parameterName)) - Any defined parameter value
+* Extract specific field values from previous nodes
+* Format final output structure
+* Support template syntax for dynamic extraction
+* Handle complex nested data structures
+
+# Advanced Features
+
+* Deep object property extraction
+* Array element access with dot notation
+* Multiple output field configuration
+*  Template-based value transformation
+
+# Result Access
+
+`{{nodeId.result}}` - Final processed result
+`{{nodeId.parameterName}}` - Any defined parameter value
+
+<br />
