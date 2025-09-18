@@ -22,7 +22,7 @@ Use this node as the final node in your workflow to define exactly what data sho
 
 # Raw Usage Example
 
-<br />
+``json ``
 
 Capabilities
 Extract specific field values from previous nodes
