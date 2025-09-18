@@ -76,9 +76,7 @@ This AI-driven assistant helps Builders **create workflows through natural langu
 
 ***
 
-Workflow Logic and Node Connections
-
-
+## Workflow Logic and Node Connections
 
 * Nodes are linked via **input/output ports** to create directed execution chains
 * Each connection passes structured data or control signals
@@ -88,9 +86,7 @@ Workflow Logic and Node Connections
 
 ***
 
-Templates and Skill Combinations
-
-
+## Templates and Skill Combinations
 
 Builders can accelerate development using templated instructions, logic blocks, and skill bundles:
 
