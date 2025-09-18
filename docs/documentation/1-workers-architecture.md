@@ -14,7 +14,7 @@ This section covers the foundational architecture of the worker system, includin
 * Assistant Workers: Context-specific agents that exist only to assist humans in specific workflows
 * Worker lifecycle management (creation, deployment, versioning, sharing)
 
-<br />
+***
 
 ## Worker Types
 
