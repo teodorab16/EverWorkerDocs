@@ -16,8 +16,24 @@ Use this node as the final node in your workflow to define exactly what data sho
 # Parameters
 
 * result (required) - The final result to output from the worker
-  * Example: `{{previousNode.result}}`
-  * Example: `{{1.result.summary}}`
-  * Example: `{{2.result.data.items}}`
+  * Example: ((previousNode.result))
+  * Example: ((1.result.summary))
+  * Example: ((2.result.data.items))
 
 # Raw Usage Example
+
+<br />
+
+Capabilities
+Extract specific field values from previous nodes
+Format final output structure
+Support template syntax for dynamic extraction
+Handle complex nested data structures
+Advanced Features
+Deep object property extraction
+Array element access with dot notation
+Multiple output field configuration
+Template-based value transformation
+Result Access
+((nodeId.result)) - Final processed result
+((nodeId.parameterName)) - Any defined parameter value
