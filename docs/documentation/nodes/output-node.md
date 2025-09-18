@@ -16,7 +16,7 @@ Use this node as the final node in your workflow to define exactly what data sho
 # Parameters
 
 * result (required) - The final result to output from the worker
-  * Example: ((previousNode.result))
+  * Example: `{{previousNode.result))`
   * Example: ((1.result.summary))
   * Example: ((2.result.data.items))
 
