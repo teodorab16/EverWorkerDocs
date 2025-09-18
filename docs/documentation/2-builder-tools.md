@@ -7,7 +7,7 @@ metadata:
 ---
 The **Builder Tools** section of the EverWorker platform provides everything a Builder needs to create, configure, and deploy powerful AI agents tailored to specific workflows. It includes both **visual** and **natural language** creation tools to accommodate a range of technical skill levels and complexity requirements.
 
-## Topics Covered:
+# Topics Covered:
 
 * **Universal Worker Builder**: A structured, multi-tab interface for configuring and deploying Universal Workers
 * **Canvas (formerly Studio)**: A visual, node-based interface for building Specialized Workers through drag-and-drop logic blocks, connectors, and custom flows.
@@ -97,6 +97,6 @@ Builders can accelerate development using templated instructions, logic blocks, 
 
 ***
 
-## Summary
+# Summary
 
 The Builder Tools in EverWorker are designed to make **complex AI workflows accessible and customizable**, whether through code, visuals, or natural language. Canvas offers power and structure for building specialized logic, while Worker Creator provides speed and ease. Combined with rich node types and reusable templates, these tools enable Builders to create flexible, intelligent automation tailored to any business use case.
