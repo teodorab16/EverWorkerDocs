@@ -22,7 +22,7 @@ An AI agent designed to perform tasks using LLMs, memory, connectors, and struct
 * **Universal Worker**: A general-purpose worker with flexible configuration, suitable for a wide range of tasks. Built using the Universal Worker Builder.
 * Specialized Worker: A focused, task-specific worker constructed visually in the Canvas interface using nodes and flows.
 
-### 🧑🏽‍💼 Provider
+### 🧩 Provider
 
 An OpenAPI-based definition for external APIs or services. It acts as the technical foundation for integrating external systems into Workers.
 
