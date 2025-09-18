@@ -1,16 +1,15 @@
 ---
 title: 2. Builder Tools
 excerpt: >-
-  The **Builder Tools** section of the EverWorker platform provides everything a
-  Builder needs to create, configure, and deploy powerful AI agents tailored to
-  specific workflows. It includes both **visual** and **natural language**
-  creation tools to accommodate a range of technical skill levels and complexity
-  requirements.
+  This section provides guidance for creation, configuration and deployment of
+  AI agents
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
+The **Builder Tools** section of the EverWorker platform provides everything a Builder needs to create, configure, and deploy powerful AI agents tailored to specific workflows. It includes both **visual** and **natural language** creation tools to accommodate a range of technical skill levels and complexity requirements.
+
 # Topics Covered:
 
 * **Universal Worker Builder**: A structured, multi-tab interface for configuring and deploying Universal Workers
