@@ -10,7 +10,7 @@ metadata:
 ---
 The **Builder Tools** section of the EverWorker platform provides everything a Builder needs to create, configure, and deploy powerful AI agents tailored to specific workflows. It includes both **visual** and **natural language** creation tools to accommodate a range of technical skill levels and complexity requirements.
 
-# Topics Covered:
+### Topics Covered:
 
 * **Universal Worker Builder**: A structured, multi-tab interface for configuring and deploying Universal Workers
 * **Canvas (formerly Studio)**: A visual, node-based interface for building Specialized Workers through drag-and-drop logic blocks, connectors, and custom flows.
@@ -19,7 +19,7 @@ The **Builder Tools** section of the EverWorker platform provides everything a B
 
 ***
 
-## 🛠️ Universal Worker Builder
+# 🛠️ Universal Worker Builder
 
 A structured UI that guides Builders through the configuration of **Universal Workers**, which are reusable, general-purpose agents.
 
@@ -35,7 +35,7 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 
 ***
 
-## 🖼️ Canvas
+# 🖼️ Canvas
 
 **Canvas** is EverWorker’s **visual builder** for creating **Specialized Workers**. It provides a **drag-and-drop, node-based interface** to design workflows that execute structured logic.
 
@@ -66,7 +66,7 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 
 ***
 
-## 💬 Worker Creator (Chat)
+# 💬 Worker Creator (Chat)
 
 This AI-driven assistant helps Builders **create workflows through natural language instructions**. It is integrated into Canvas and designed to accelerate setup by translating user prompts into executable node structures.
 
@@ -79,7 +79,7 @@ This AI-driven assistant helps Builders **create workflows through natural langu
 
 ***
 
-## ⚙️ Workflow Logic and Node Connections
+# ⚙️ Workflow Logic and Node Connections
 
 * Nodes are linked via **input/output ports** to create directed execution chains
 * Each connection passes structured data or control signals
@@ -89,7 +89,7 @@ This AI-driven assistant helps Builders **create workflows through natural langu
 
 ***
 
-## 📒 Templates and Skill Combinations
+# 📒 Templates and Skill Combinations
 
 Builders can accelerate development using templated instructions, logic blocks, and skill bundles:
 
