@@ -22,9 +22,29 @@ Use this node as the final node in your workflow to define exactly what data sho
 
 # Raw Usage Example
 
-<br />
+```json
+{
+    name: "Final Output",
+    description: "Output Node - used to extract specific field values from the output",
+    nodeId: "n", 
+    operationReference: {
+        methodId: "output_node"
+    },
+    parameters: [
+        {
+            name: "summary", 
+            value: "{{nodeId.result.summary}}" // Extract summary field
+        },
+        {
+            name: "status",
+            value: "{{nodeId.result.status}}" // Extract status field  
+        }
+    ]
+}
+```
 
-Capabilities
+# Capabilities
+
 Extract specific field values from previous nodes
 Format final output structure
 Support template syntax for dynamic extraction
