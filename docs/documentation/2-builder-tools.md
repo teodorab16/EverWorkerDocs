@@ -35,7 +35,7 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 
 ***
 
-## Canvas (formerly Studio)
+## Canvas
 
 **Canvas** is EverWorker’s **visual builder** for creating **Specialized Workers**. It provides a **drag-and-drop, node-based interface** to design workflows that execute structured logic.
 
