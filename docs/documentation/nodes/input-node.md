@@ -1,5 +1,5 @@
 ---
-title: Input Node
+title: + Input Node
 deprecated: false
 hidden: false
 metadata:
