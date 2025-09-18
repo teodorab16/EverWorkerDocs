@@ -28,7 +28,20 @@ Use this node as the first node when you need to collect input from the user bef
 
 ![](https://files.readme.io/8066fe858cf65d5f1d294fb919d7b076cdbd283654ef3c485b48adfd1813e83c-image.png)
 
-<br />
+```
+{
+    name: "User Input Collection",
+    description: "Input Node - used to setup input parameters", 
+    nodeId: "0",
+    operationReference: {
+        methodId: "input_node"
+    },
+    parameters: [
+        { name: "userMessage", value: "Enter your input here" }, // User text input
+        { name: "uploadedFile", value: null } // Optional file upload
+    ]
+}
+```
 
 # Capabilities
 
