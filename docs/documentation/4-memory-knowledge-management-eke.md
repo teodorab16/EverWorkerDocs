@@ -17,7 +17,7 @@ metadata:
 
 ***
 
-## Vector Memory
+## 💭 Vector Memory
 
 EverWorker uses **Vector Memory** to store and retrieve unstructured knowledge, such as documents, articles, or manual notes.
 
@@ -29,7 +29,7 @@ EverWorker uses **Vector Memory** to store and retrieve unstructured knowledge, 
 
 ***
 
-## Session Context
+## ⏱️ Session Context
 
 Each interaction session maintains its own scoped **Session Context** - a mix of:
 
