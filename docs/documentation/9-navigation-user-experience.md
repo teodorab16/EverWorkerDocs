@@ -8,7 +8,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# Topics Covered:
+### Topics Covered:
 
 * **Persona-Based Navigation**: Tailored interfaces for Users, Builders, and Admins
 * **Menu Structure**: Organized access to platform features
@@ -17,7 +17,7 @@ metadata:
 
 ***
 
-## Persona-Based Navigation
+# Persona-Based Navigation
 
 The EverWorker platform adapts its interface based on the user’s role, ensuring clarity and minimizing cognitive overload.
 
@@ -43,7 +43,7 @@ The EverWorker platform adapts its interface based on the user’s role, ensurin
 
 ***
 
-## Menu Structure
+# Menu Structure
 
 The platform uses a **left-hand vertical sidebar** for persistent navigation, organized by function:
 
@@ -61,7 +61,7 @@ Each section expands into **contextual sub-navigation** or modal views when need
 
 ***
 
-## Design System
+# Design System
 
 EverWorker employs a consistent, lightweight, and scalable **design system**:
 
@@ -75,15 +75,14 @@ EverWorker employs a consistent, lightweight, and scalable **design system**:
 
 ***
 
-Entry Points
-
-
+# Entry Points
 
 Role-specific landing experiences ensure users are directed to what matters:
-User → Enters directly into the Worker List or last active session
-Builder → Enters into Canvas or a project dashboard
-Admin → Lands on Platform Center or Observatory
-First-time users see a guided onboarding modal with contextual tips and examples
+
+* User → Enters directly into the Worker List or last active session
+* Builder → Enters into Canvas or a project dashboard
+* Admin → Lands on Platform Center or Observatory
+* First-time users see a guided onboarding modal with contextual tips and examples
 
 ***
 
