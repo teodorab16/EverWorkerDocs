@@ -131,6 +131,6 @@ Defined access interfaces based on roles.
 * Admin: Complete system access.
 * Dashboard Viewer: Analytics view only.
 
-### 🤖 MCP (Model Context Protocol)
+### 🗣️ MCP (Model Context Protocol)
 
 An emerging integration feature to allow dynamic, secure, and consistent communication between Workers and external servers or agents.
