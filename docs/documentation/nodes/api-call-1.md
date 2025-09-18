@@ -13,4 +13,6 @@ Standard API call functionality for HTTP requests to external services and integ
 
 Use this node to integrate with external APIs, fetch data from web services, or send data to third-party systems. Essential for connecting your workflow to external data sources and services. Always run a test to see the output structure before connecting to other nodes.
 
+> **⚠️** Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
 **Important**: This node requires a globalId to be set in the operationReference for provider authentication:
