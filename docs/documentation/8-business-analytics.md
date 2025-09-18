@@ -10,7 +10,7 @@ metadata:
 ---
 <br />
 
-# Topics Covered:
+### Topics Covered:
 
 * **Execution Analytics Dashboard**: Worker performance and usage metrics
 * **Success/Failure Tracking**: Error rates and execution statistics
@@ -19,7 +19,7 @@ metadata:
 
 ***
 
-## Execution Analytics Dashboard
+# 📊 Execution Analytics Dashboard
 
 The central dashboard for **monitoring all Worker activity** - both Universal and Specialized.
 
