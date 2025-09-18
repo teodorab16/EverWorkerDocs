@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# Topics Covered:
+### Topics Covered
 
 * **User Management**: Roles (User, Builder, Admin), permissions, and directory sync
 * **Platform Settings**: Remote Connection, License Management
