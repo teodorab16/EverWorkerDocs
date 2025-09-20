@@ -1,10 +1,11 @@
 ---
-title: 9. Navigation & User Experience
+title: Navigation & User Experience
 excerpt: >-
   This section covers the navigation structure and user experience design
   patterns.
 deprecated: false
 hidden: false
+icon: fad fa-square-9
 metadata:
   robots: index
 ---
@@ -17,7 +18,7 @@ metadata:
 
 ***
 
-# 🧭 Persona-Based Navigation
+# Persona-Based Navigation
 
 The EverWorker platform adapts its interface based on the user’s role, ensuring clarity and minimizing cognitive overload.
 
@@ -43,7 +44,7 @@ The EverWorker platform adapts its interface based on the user’s role, ensurin
 
 ***
 
-# 📘 Menu Structure
+# Menu Structure
 
 The platform uses a **left-hand vertical sidebar** for persistent navigation, organized by function:
 
@@ -61,7 +62,7 @@ Each section expands into **contextual sub-navigation** or modal views when need
 
 ***
 
-# 💡 Design System
+# Design System
 
 EverWorker employs a consistent, lightweight, and scalable **design system**:
 
@@ -75,7 +76,7 @@ EverWorker employs a consistent, lightweight, and scalable **design system**:
 
 ***
 
-# 🚪 Entry Points
+# Entry Points
 
 Role-specific landing experiences ensure users are directed to what matters:
 
