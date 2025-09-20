@@ -1,8 +1,9 @@
 ---
-title: 5. Business User Experience & Interfaces
+title: Business User Experience & Interfaces
 excerpt: This section covers the business user-facing interfaces and experience design.
 deprecated: false
 hidden: false
+icon: fad fa-square-5
 metadata:
   robots: index
 ---
@@ -16,7 +17,7 @@ metadata:
 
 ***
 
-# 💬 Worker Chat
+# Worker Chat
 
 The primary interaction interface where Users communicate with Universal Workers.
 
@@ -31,7 +32,7 @@ The primary interaction interface where Users communicate with Universal Workers
 
 ***
 
-# ⏱️ Session Management
+# Session Management
 
 Each new conversation with a Worker creates a **dedicated session** with its own memory, settings, and context.
 
@@ -44,7 +45,7 @@ Each new conversation with a Worker creates a **dedicated session** with its own
 
 ***
 
-# 📁 File Upload & Management
+# File Upload & Management
 
 Users can upload documents to provide additional context during conversations.
 
@@ -55,7 +56,7 @@ Users can upload documents to provide additional context during conversations.
 
 ***
 
-# 🔎 Search & Filtering
+# Search & Filtering
 
 Users can easily discover and navigate content through search and tag systems.
 
