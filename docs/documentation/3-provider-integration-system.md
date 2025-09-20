@@ -1,10 +1,11 @@
 ---
-title: 3. Provider & Integration System
+title: Provider & Integration System
 excerpt: >-
   This section covers the system for integrating external services and managing
   providers and connectors.
 deprecated: false
 hidden: false
+icon: fad fa-square-3
 metadata:
   robots: index
 ---
