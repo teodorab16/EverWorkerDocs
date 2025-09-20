@@ -2,6 +2,7 @@
 title: Terminology
 deprecated: false
 hidden: false
+icon: fad fa-books
 metadata:
   robots: index
 ---
