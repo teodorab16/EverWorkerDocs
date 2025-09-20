@@ -1,7 +1,8 @@
 ---
-title: 6. Admin & Management
+title: Admin & Management
 deprecated: false
 hidden: false
+icon: fad fa-square-6
 metadata:
   robots: index
 ---
@@ -23,7 +24,7 @@ These are presented as sub-tabs at the top of the content area.
 
 ***
 
-## 🪟 Overview Section
+## Overview Section
 
 #### Key features:
 
@@ -37,7 +38,7 @@ These are presented as sub-tabs at the top of the content area.
   * Lists recently active or pending users, along with email and status.
   * “Manage users” button provides access to deeper user administration.
 
-## 👤 User Management Section
+## User Management Section
 
 #### Key features:
 
