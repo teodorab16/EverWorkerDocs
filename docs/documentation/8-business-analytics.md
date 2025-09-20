@@ -1,10 +1,11 @@
 ---
-title: 8. Business Analytics
+title: Business Analytics
 excerpt: >-
   This section covers the analytics. monitoring and settings capabilities of the
   platform.
 deprecated: false
 hidden: false
+icon: fad fa-square-8
 metadata:
   robots: index
 ---
@@ -19,7 +20,7 @@ metadata:
 
 ***
 
-# 📊 Execution Analytics Dashboard
+# Execution Analytics Dashboard
 
 The central dashboard for **monitoring all Worker activity** - both Universal and Specialized.
 
