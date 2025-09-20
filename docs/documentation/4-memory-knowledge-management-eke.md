@@ -1,10 +1,11 @@
 ---
-title: 4. Memory & Knowledge Management (EKE)
+title: Memory & Knowledge Management (EKE)
 excerpt: >-
   This section covers the Enterprise Knowledge Engine and memory management
   systems.
 deprecated: false
 hidden: false
+icon: fad fa-square-4
 metadata:
   robots: index
 ---
