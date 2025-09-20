@@ -3,6 +3,7 @@ title: 1. Workers Architecture
 excerpt: This section covers the foundational architecture of the worker system
 deprecated: false
 hidden: false
+icon: fad fa-square-1
 metadata:
   robots: index
 ---
