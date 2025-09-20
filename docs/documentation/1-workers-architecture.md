@@ -1,5 +1,5 @@
 ---
-title: 1. Workers Architecture
+title: Workers Architecture
 excerpt: This section covers the foundational architecture of the worker system
 deprecated: false
 hidden: false
