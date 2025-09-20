@@ -1,8 +1,9 @@
 ---
-title: 7. Authentication & Security
+title: Authentication & Security
 excerpt: This section covers the authentication and security systems.
 deprecated: false
 hidden: false
+icon: fad fa-square-7
 metadata:
   robots: index
 ---
@@ -15,7 +16,7 @@ metadata:
 
 ***
 
-# 👤 Role-Based Access Control
+# Role-Based Access Control
 
 EverWorker uses **granular, role-based permissions** to control access to platform features.
 
@@ -25,7 +26,7 @@ EverWorker uses **granular, role-based permissions** to control access to platfo
 
 ***
 
-# 🔒 Authentication Methods
+# Authentication Methods
 
 The platform supports multiple login and identity systems:
 
