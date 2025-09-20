@@ -1,5 +1,5 @@
 ---
-title: 2. Builder Tools
+title: Builder Tools
 excerpt: >-
   This section provides guidance for the creation, configuration and deployment
   of AI agents
