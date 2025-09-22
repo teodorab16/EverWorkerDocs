@@ -13,7 +13,7 @@ metadata:
 
 **Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token and its expiration date in Settings.
 
-**Agent** - a specific universal or specialized worked designed in the platform. Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
+**Agent** - a specific universal or specialized worker designed in the platform. Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
 
 **Execution** - A single run of an agent. Execution and its ID is important to query status and results for a certain run that was called using API. Executions are referenced using ExecutionID that is visible in a result response to an API call to execute an agent.
 
