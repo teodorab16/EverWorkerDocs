@@ -61,9 +61,9 @@ HTTPS executions are called against Base URL for your organization, that looks l
 
 ## Health Check
 
-URL path: `api/v1/agents/health`
-Method: `GET`
-Headers: `Authorization: bearer <token>`
+* URL path: `api/v1/agents/health`
+* Method: `GET`
+* Headers: `Authorization: bearer <token>`
 
 Typical response:
 
@@ -87,11 +87,11 @@ Typical response:
 
 ## Execute Agent
 
-URL path: `api/v1/agents/execute`
-Method: `POST`
-Header: `Authorization: bearer <token>`
-Header: `Content-Type: application/json`
-Body: `Body in JSON format with agentID, sessionID and input parameters in JSON format`
+* URL path: `api/v1/agents/execute`
+* Method: `POST`
+* Header: `Authorization: bearer <token>`
+* Header: `Content-Type: application/json`
+* Body: `Body in JSON format with agentID, sessionID and input parameters in JSON format`
 
 Input parameters depend on what input parameters were configured in the actual worker.
 
@@ -139,9 +139,9 @@ From this execution result you can find two important variables:
 
 ## Get Execution Logs
 
-URL path: `api/v1/execution-logs?executionId={{ExecutionId}}`
-Method: `GET`
-Header: `Authorization: bearer <token>`
+* URL path: `api/v1/execution-logs?executionId={{ExecutionId}}`
+* Method: `GET`
+* Header: `Authorization: bearer <token>`
 
 Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
 
