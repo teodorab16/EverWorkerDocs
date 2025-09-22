@@ -27,6 +27,13 @@ Tokens can be revoked from the same interface where they are created
 
 ![](https://files.readme.io/d2dc437d49bf6cdaa159da6019665cb26c275f9f09413dcbe01280e5de394bf9-image.png)
 
+During the token creation, you have 4 different permission types you can assign to the topic.
+
+* `agent:execute` - allowing to use this token to execute agents (workers)
+* `agent:logs` - allowing to use this token to read agent (worker) logs
+* `agents:health` - allowing to use this token to view platform health
+* `observatory:write` - allowing to use this token for superadmin operations not covered by this guide
+
 Make sure to copy the token value to a secure vault/password manager/write it down, because you cannot access its value in web UI after it's created for security considerations.
 
 In all future requests, this token will be used in headers of HTTP requests. Header name "Auhorization", header value "bearer `<token>`".
