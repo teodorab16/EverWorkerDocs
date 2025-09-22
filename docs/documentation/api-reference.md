@@ -49,6 +49,8 @@ AgentID can be found in URL of a worker.
 
 `SessionID` allows to continue previous conversation with a Universal Worker. You can only obtain it after executing an agent at least once. The execution result will contain the sessionID. You can also set the history limit in each request to control the amount of chat history used for further executions.
 
+For an example, check the "Execute Agent" -> "Example execution result" below.
+
 # Base URL
 
 HTTPS executions are called against Base URL for your organization, that looks like `account_name`.everworker.ai.  So if your account name is "test", then a target URL for a call with the URL path "api/v1/agents/health" would be `https://test.everworker.ai/api/v1/agents/health`.
@@ -89,14 +91,14 @@ URL path: `api/v1/agents/execute`
 Method: `POST`
 Header: `Authorization: bearer <token>`
 Header: `Content-Type: application/json`
-Body: `Body with agentID, sessionID and input parameters in JSON format`
+Body: `Body in JSON format with agentID, sessionID and input parameters in JSON format`
 
 Input parameters depend on what input parameters were configured in the actual worker.
 
 * For Universal worker, it is typically "userMessage" that consists of "role" (user) and "content".
-* For Specialized worker, it will be a list of input parameters used in Input node, with the names given to them in Canvas. 
+* For Specialized worker, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
 
-Example body usage when executing Universal Worker.
+### Example body usage when executing Universal Worker.
 
 ```
 {
@@ -107,7 +109,7 @@ Example body usage when executing Universal Worker.
       "userMessage":
       {
         "role": "user",
-        "content": "Hello, please help me with this task"
+        "content": "Hello, please tell me which licenses does the user testc@everworker.ai have?"
       },
       "messageHistoryLimit": 10
     },
@@ -115,6 +117,71 @@ Example body usage when executing Universal Worker.
 }
 ```
 
-<br />
+### Example execution result
+
+```json
+{
+    "success": true,
+    "data": {
+        "sessionId": "pjk6AumJnByJrJdTQ",
+        "executionId": "3b0b49e4-4b63-4a45-9d9a-bb59cece5650",
+        "promptTokens": 1248
+    }
+}
+```
+
+From this execution result you can find two important variables:
+
+* **SessionID** - allows you to continue this conversation in the next POST request to the same worker.
+* **ExecutionID** - allows you to actually GET the execution status/result.
 
 <br />
+
+## Get Execution Logs
+
+URL path: `api/v1/execution-logs?executionId={{ExecutionId}}`
+Method: `GET`
+Header: `Authorization: bearer <token>`
+
+Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
+
+### Example execution log retrieval result
+
+```json
+{
+    "success": true,
+    "data": {
+        "_id": "W3B6ZPGqWzy9PcASs",
+        "executionStarted": "2025-09-22T07:01:19.758Z",
+        "executionEnded": "2025-09-22T07:01:36.494Z",
+        "nodeResults": [{
+            "userMessage": {
+                "role": "user",
+                "content": "Hello, please tell me which licenses does the user testc@everworker.ai have?"
+            },
+            "messageHistoryLimit": 10
+        }, {
+            "ok": true,
+            "result": {
+                "role": "assistant",
+                "content": "### Licenses for testc@everworker.ai\n\n| User (UPN) | Assigned licenses |\n|---|---|\n| test@everworker.ai | - Power BI (Free)  \n- Microsoft Power Automate Free  \n- Microsoft 365 Business Basic |",
+                "refusal": null,
+                "annotations": []
+            },
+            "nodeId": 1,
+            "executionStarted": "2025-09-22T07:01:19.761Z",
+            "executionFinished": "2025-09-22T07:01:36.494Z"
+        }],
+        "ctx": {
+            "userId": "BXBH9cs77TsvhjjsH",
+            "agentId": "ZbAfoT2ecydnFZC4K",
+            "sessionId": "pZk6AumJnByJrJdTQ",
+            "executionId": "3b0b49e4-4b63-4a45-9d9a-bb59cece5650"
+        },
+        "time": 16736,
+        "finalResult": []
+    }
+}
+```
+
+From this answer in JSON format you can easily extract LLM response, as well as check other parameters, such as the amount of time it took.
