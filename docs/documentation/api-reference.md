@@ -3,7 +3,7 @@ title: API reference
 excerpt: This section explains how to execute agents via HTTPS API requests
 deprecated: false
 hidden: false
-icon: fad fa-square-9
+icon: fad fa-dice-d10
 metadata:
   robots: index
 ---
