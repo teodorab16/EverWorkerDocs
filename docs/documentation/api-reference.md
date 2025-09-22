@@ -9,7 +9,7 @@ metadata:
 ---
 # Terminology
 
-**API request** - a web request executed via application capable of sending such requests. Example include but are not limited to browsers, POSTMAN, customer programs written in any language capable of executing https-based requests. Typical request types used with EverWorker platform are POST and GET type requests. API requests consist of headers and a body in JSON format (for POST requests). Authentication is done via using tokens in one of headers.
+**API request** - a web request executed via application capable of sending such requests. Example include but are not limited to browsers, POSTMAN, custom programs written in any language capable of executing https-based requests. Typical request types used with EverWorker platform are POST and GET type requests. API requests consist of headers and a body in JSON format (for POST requests). Authentication is done via using tokens in one of headers.
 
 **Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token and its expiration date in Settings.
 
