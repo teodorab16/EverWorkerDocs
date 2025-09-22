@@ -11,7 +11,7 @@ metadata:
 
 **API request** - a web request executed via application capable of sending such requests. Example include but are not limited to browsers, POSTMAN, custom programs written in any language capable of executing https-based requests. Typical request types used with EverWorker platform are POST and GET type requests. API requests consist of headers and a body in JSON format (for POST requests). Authentication is done via using tokens in one of headers.
 
-**Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token and its expiration date in Settings.
+**Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token (but not its value) and its expiration date in Settings.
 
 **Agent** - a specific universal or specialized worker designed in the platform. Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
 
