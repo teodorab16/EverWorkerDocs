@@ -21,7 +21,7 @@ metadata:
 
 # Authentication and token creation
 
-In order to be able to execute API requests towards the platform, a user must access their profile (top right corner button with a dropdown), switch to "Api Tokens" tab and generate a new token with a custom name and expiration date.
+In order to be able to execute API requests towards the platform, a user must access their profile (top right corner button with a dropdown), switch to "API Tokens" tab and generate a new token with a custom name and expiration date.
 
 Tokens can be revoked from the same interface where they are created
 
