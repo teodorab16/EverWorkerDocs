@@ -17,7 +17,7 @@ metadata:
 
 **AgentID** - Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
 
-**Execution **- A single run of an agent. Execution and its ID is important to query status and results for a certain run that was called using API.
+**Execution** - A single run of an agent. Execution and its ID is important to query status and results for a certain run that was called using API.
 
 # Authentication and token creation
 
