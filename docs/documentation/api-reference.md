@@ -11,7 +11,7 @@ metadata:
 
 **API request** - a web request executed via application capable of sending such requests. Example include but are not limited to browsers, POSTMAN, customer programs written in any language capable of executing https-based requests. Typical request types used with EverWorker platform are POST and GET type requests. API requests consist of headers and a body in JSON format (for POST requests). Authentication is done via using tokens in one of headers.
 
-**Token (Bearer token)** - authentication method used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrator can see each token and its expiration date in Settings.
+**Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token and its expiration date in Settings.
 
 **Agent** - a specific universal or specialized worked designed in the platform.
 
@@ -37,3 +37,79 @@ During the token creation, you have 4 different permission types you can assign 
 Make sure to copy the token value to a secure vault/password manager/write it down, because you cannot access its value in web UI after it's created for security considerations.
 
 In all future requests, this token will be used in headers of HTTP requests. Header name "Auhorization", header value "bearer `<token>`".
+
+# Finding AgentID
+
+AgentID can be found in URL of a worker.
+
+* When you chat with a Universal Worker, its URL will look like https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K. Here `FbAfoT2ecyPnFZC4K` is AgentID.
+* When you edit a Specialized Worker in Canvas, its URL will look like https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte. Here `ofim7r2az6dxgSDte` is AgentID.
+
+# Finding SessionID
+
+`SessionID` allows to continue previous conversation with a Universal Worker. You can only obtain it after executing an agent at least once. The execution result will contain the sessionID. You can also set the history limit in each request to control the amount of chat history used for further executions.
+
+# Base URL
+
+HTTPS executions are called against Base URL for your organization, that looks like `account_name`.everworker.ai.  So if your account name is "test", then a target URL for a call with the URL path "api/v1/agents/health" would be `https://test.everworker.ai/api/v1/agents/health`.
+
+<br />
+
+# API call types
+
+## Health Check
+
+URL path: `api/v1/agents/health`
+Method: `GET`
+Headers: `Authorization: bearer <token>`
+
+Typical response:
+
+```json
+{
+    "success": true,
+    "data": {
+        "service": "agents-api",
+        "status": "healthy",
+        "timestamp": "2025-09-01T01:42:33.786Z",
+        "orchestrator": {
+            "available": true,
+            "activeExecutions": {},
+            "maxConcurrentExecutions": 0
+        }
+    }
+}
+```
+
+<br />
+
+## Execute Agent
+
+URL path: `api/v1/agents/health`
+Method: `POST`
+Header: `Authorization: bearer <token>`
+Header: `Content-Type: application/json`
+Body: `Body with agentID, sessionID and input parameters in JSON format`
+
+Example executing Universal Worker.
+
+```
+{
+	"agentId": "{{agentId}}",
+	"sessionId": "new_session",
+		"inputParams":
+    {
+      "userMessage":
+      {
+        "role": "user",
+        "content": "Hello, please help me with this task"
+      },
+      "messageHistoryLimit": 10
+    },
+    "bypassCache": false
+}
+```
+
+<br />
+
+<br />
