@@ -42,8 +42,8 @@ In all future requests, this token will be used in headers of HTTP requests. Hea
 
 AgentID can be found in URL of a worker.
 
-* When you chat with a Universal Worker, its URL will look like https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K. Here `FbAfoT2ecyPnFZC4K` is AgentID.
-* When you edit a Specialized Worker in Canvas, its URL will look like https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte. Here `ofim7r2az6dxgSDte` is AgentID.
+* When you chat with a Universal Worker, its URL will look like [https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
+* When you edit a Specialized Worker in Canvas, its URL will look like [https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte](https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte). Here `ofim7r2az6dxgSDte` is AgentID.
 
 # Finding SessionID
 
@@ -85,13 +85,18 @@ Typical response:
 
 ## Execute Agent
 
-URL path: `api/v1/agents/health`
+URL path: `api/v1/agents/execute`
 Method: `POST`
 Header: `Authorization: bearer <token>`
 Header: `Content-Type: application/json`
 Body: `Body with agentID, sessionID and input parameters in JSON format`
 
-Example executing Universal Worker.
+Input parameters depend on what input parameters were configured in the actual worker.
+
+* For Universal worker, it is typically "userMessage" that consists of "role" (user) and "content".
+* For Specialized worker, it will be a list of input parameters used in Input node, with the names given to them in Canvas. 
+
+Example body usage when executing Universal Worker.
 
 ```
 {
