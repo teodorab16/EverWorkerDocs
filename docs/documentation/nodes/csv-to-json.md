@@ -1,5 +1,8 @@
 ---
 title: ● CSV to JSON
+excerpt: >-
+  A node used to convert CSV data to JSON format for easier processing by other
+  nodes.
 deprecated: false
 hidden: false
 metadata:
