@@ -1,5 +1,8 @@
 ---
 title: ● Switch Worker
+excerpt: >-
+  A node used for a conditional execution based on switch/case logic. Executes
+  different workers based on the value of a switch expression.
 deprecated: false
 hidden: false
 metadata:
