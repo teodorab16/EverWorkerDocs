@@ -1,5 +1,6 @@
 ---
 title: ● Map Worker
+excerpt: 'A node that allows parallel array processing with sub-workers. '
 deprecated: false
 hidden: false
 metadata:
