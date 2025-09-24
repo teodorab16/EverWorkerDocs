@@ -1,5 +1,6 @@
 ---
 title: ● Vector Search
+excerpt: A node used to search vector databases using semantic similarity.
 deprecated: false
 hidden: false
 metadata:
