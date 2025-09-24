@@ -1,5 +1,6 @@
 ---
 title: ● Storage Upload
+excerpt: A node used to upload files to storage service and get public URL
 deprecated: false
 hidden: false
 metadata:
