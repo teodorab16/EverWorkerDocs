@@ -1,5 +1,8 @@
 ---
 title: ● Read URL
+excerpt: >-
+  Universal URL reader for web content that extracts and converts web page
+  content to clean, structured text.
 deprecated: false
 hidden: false
 metadata:
