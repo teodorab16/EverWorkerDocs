@@ -1,5 +1,8 @@
 ---
 title: ● PDF to Images
+excerpt: >-
+  A node used to convert PDF files to images with configurable resolution and
+  format settings
 deprecated: false
 hidden: false
 metadata:
