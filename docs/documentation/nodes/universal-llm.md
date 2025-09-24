@@ -1,5 +1,10 @@
 ---
 title: ● Universal LLM
+excerpt: >-
+  A node used to perform Large Language Model execution that supports any LLM
+  vendor through a single interface. This stateless node provides universal
+  access to OpenAI, Anthropic, Google, and other LLM providers using direct HTTP
+  calls.
 deprecated: false
 hidden: false
 metadata:
