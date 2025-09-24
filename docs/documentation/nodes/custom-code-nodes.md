@@ -1,5 +1,8 @@
 ---
 title: ● Custom Code Nodes
+excerpt: >-
+  Canvas allows you to create your own algorithms and advanced processes using
+  Custom Code nodes.
 deprecated: false
 hidden: false
 metadata:
