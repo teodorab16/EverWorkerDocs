@@ -1,5 +1,9 @@
 ---
 title: ● API Call
+excerpt: >-
+  A node that has a standard API call functionality for HTTP requests to
+  external services and integrations. Supports all standard HTTP methods with
+  flexible parameter handling and authentication.
 deprecated: false
 hidden: false
 metadata:
