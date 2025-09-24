@@ -1,5 +1,8 @@
 ---
 title: ● Browser
+excerpt: >-
+  A node with browser automation capabilities for complex web interactions, form
+  filling, and dynamic content extraction.
 deprecated: false
 hidden: false
 metadata:
