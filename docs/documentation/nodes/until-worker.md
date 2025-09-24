@@ -1,5 +1,6 @@
 ---
 title: ● Until Worker
+excerpt: Iterative execution node that runs until a condition becomes true
 deprecated: false
 hidden: false
 metadata:
