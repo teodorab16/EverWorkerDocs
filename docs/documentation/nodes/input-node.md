@@ -1,5 +1,6 @@
 ---
 title: ● Input Node
+excerpt: A node used to define input data at the beginning of the Worker (AI agent)
 deprecated: false
 hidden: false
 metadata:
