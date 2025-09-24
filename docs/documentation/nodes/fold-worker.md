@@ -1,5 +1,6 @@
 ---
 title: ● Fold Worker
+excerpt: A node that allows to accumulate array of results into a single value.
 deprecated: false
 hidden: false
 metadata:
