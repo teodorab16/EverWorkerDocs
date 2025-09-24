@@ -1,5 +1,6 @@
 ---
 title: ● Output Node
+excerpt: A node used to define output data at the end of the Worker (AI agent)
 deprecated: false
 hidden: false
 metadata:
