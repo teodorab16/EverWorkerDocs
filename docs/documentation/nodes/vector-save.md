@@ -1,5 +1,6 @@
 ---
 title: ● Vector Save
+excerpt: A node used to Save data to vector storage for semantic search and retrieval.
 deprecated: false
 hidden: false
 metadata:
