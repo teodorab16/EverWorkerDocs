@@ -1,5 +1,8 @@
 ---
 title: ● Worker Call
+excerpt: >-
+  A node used to execute a single sub-worker with parameters, enabling modular
+  workflow composition and task delegation to specialized components.
 deprecated: false
 hidden: false
 metadata:
