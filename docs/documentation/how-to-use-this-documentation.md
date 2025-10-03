@@ -1,5 +1,5 @@
 ---
-title: How to Use This Documentation
+title: Explore EverWorker Product Documentation
 excerpt: Documentation overview
 deprecated: false
 hidden: false
