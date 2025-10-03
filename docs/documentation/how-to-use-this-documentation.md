@@ -1,6 +1,6 @@
 ---
 title: Explore EverWorker Product Documentation
-excerpt: Documentation overview
+excerpt: Overview
 deprecated: false
 hidden: false
 icon: fad fa-location-question
