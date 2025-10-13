@@ -64,18 +64,11 @@ These are presented as sub-tabs at the top of the content area.
 
 <br />
 
-| Role                 | Build Workers | Manage Users | Manage Providers/ Connector | View Logs | Access Analytics | License Management | Memory Control | Queue Management |
-| :------------------- | :------------ | :----------- | :-------------------------- | :-------- | :--------------- | :----------------- | :------------- | :--------------- |
-| User                 | No            | No           | No                          | No        | No               | No                 | No             | No               |
-| Builder              | Yes           | No           | No                          | No        | Yes (Limited)    | No                 | No             | No               |
-| Admin                | Yes           | Yes          | Yes                         | Yes       | Yes              | Yes                | Yes            | Yes              |
-| Dashboard Viewer     | No            | No           | No                          | No        | Yes              | No                 | No             | No               |
-| Log Reader           | No            | No           | No                          | Yes       | No               | No                 | No             | No               |
-| Memory Manager       | No            | No           | No                          | No        | No               | No                 | Yes            | No               |
-| Integrations Manager | No            | No           | Yes                         | No        | No               | No                 | No             | No               |
-| License Admin        | No            | No           | No                          | No        | No               | Yes                | No             | No               |
-| Secrets Manager      | Planned       | Planned      | Yes                         | No        | No               | No                 | No             | No               |
-| Queue Manager        | No            | No           | No                          | No        | No               | No                 | No             | No               |
+| Role    | Build Workers | Manage Users | Manage Providers/ Connector | View Logs | Access Analytics | License Management | Memory Control | Queue Management |
+| :------ | :------------ | :----------- | :-------------------------- | :-------- | :--------------- | :----------------- | :------------- | :--------------- |
+| User    | No            | No           | No                          | No        | No               | No                 | No             | No               |
+| Builder | Yes           | No           | No                          | No        | Yes (Limited)    | No                 | No             | No               |
+| Admin   | Yes           | Yes          | Yes                         | Yes       | Yes              | Yes                | Yes            | Yes              |
 
 <br />
 
