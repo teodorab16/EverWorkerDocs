@@ -60,7 +60,6 @@ These are presented as sub-tabs at the top of the content area.
 * User: Can chat with Workers
 * Builder: Can create/edit Workers and manage memory
 * Admin: Full system access, including user roles, connectors, observability
-* Dashboard Viewer: Read-only access to analytics and dashboards
 
 <br />
 
@@ -102,51 +101,6 @@ These are presented as sub-tabs at the top of the content area.
   * Provider/connector management
   * System configuration (log cleanup, performance monitoring)
   * License allocation
-  * Full access to Observatory
-
-**Super Admin** (`SUPERADMIN`)
-
-* Primary Audience: Internal/system-level admin (usually EverWorker team)
-* Access:
-  * Unrestricted platform access
-  * Manages internal instance configuration, security, global settings
-  * Controls all other roles and tenant-level settings
-* Not customer-facing
-
-**Dashboard Viewer**
-
-* Primary Audience: Business stakeholders, analysts
-* Access:
-  * Read-only access to analytics dashboards (ROI, usage, engagement)
-  * No access to Builder tools or system configurations
-
-**License Administrator**
-
-* Primary Audience: Procurement or IT role
-* Access:
-  * Manage licenses, usage limits, and customer instance provisioning
-  * Note: May not be a standalone UI role yet, but scoped internally for platform enforcement
-
-**Log Reader**
-
-* Primary Audience: Technical support or QA
-* Access:
-  * Read-only access to platform and system execution logs
-  * Cannot modify workers or system settings
-
-**Memory Manager**
-
-* Primary Audience: Knowledge admins
-* Access:
-  * Add/remove memory items
-  * Manage embedding configuration, chunking, tagging, and access controls
-
-**Integrations Manager**
-
-* Primary Audience: DevOps / Integration lead
-* Access:
-  * Configure, enable, or disable external system integrations
-  * Manage connector settings, tokens, and test API access
 
 ***
 
