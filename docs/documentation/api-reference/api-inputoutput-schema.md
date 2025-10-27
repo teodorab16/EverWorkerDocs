@@ -34,29 +34,23 @@ metadata:
 
 ```json Success: True
 {
-  "success": boolean,
-  "data": {
-    // Internal ID
-		"_id": string,
-		// Start time
-    "executionStarted": datetime,	
-    "nodeResults": [
-			// For each node
-      null,	
-      ...,
-			null
-    ],
-    "ctx": {
-			// ID of the user calling the agent
-      "userId": string,
-			// ID of the agent
-      "agentId": string,
-			// ID of the session
-      "sessionId": string,
-			// Same as the one in GET URL
-      "executionId": string
-    }
-  }
+"success": boolean,
+"data":
+{
+"_id": string, // Internal ID
+"executionStarted": datetime,	// Start time
+"nodeResults": [	
+null,	// For each node
+...,
+null // For each node
+],
+"ctx": {
+"userId": string, // ID of the user calling the agent
+"agentId": string, // ID of the agent
+"sessionId": string, // ID of the session
+"executionId": string // Same as the one in GET URL
+}
+}
 }
 ```
 ```json Success: False
