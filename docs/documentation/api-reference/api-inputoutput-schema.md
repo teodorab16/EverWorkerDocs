@@ -74,7 +74,7 @@ metadata:
 		"executionEnded": datetime,	// Worker execution end time
 		"nodeResults": [	
 			inputParams?: object,	// All input parameters for the worker in JSON format
-			{	// FOR EACH NODE
+			{	// For each node
 				"ok": boolean,	// True/false
 				"status": number,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server).
 				"statusText": string,	// Human-readable status text
