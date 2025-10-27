@@ -68,7 +68,7 @@ metadata:
 ```json Success: True
 {
 	"success": true,
-  "data":
+	"data":
 	{
 		"_id": string,
 		"executionStarted": datetime,	// Worker execution start time
@@ -124,7 +124,7 @@ metadata:
 
 Examples of node outputs for nodes with "Result" object = **JSON ** vs "Result" object = **Array of JSON objects**:
 
-```
+```json
 // Nodes that produce single output (i.e. LLM node)
                 {
                     ok: true,
