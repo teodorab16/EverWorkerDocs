@@ -10,11 +10,11 @@ metadata:
 
 ```json Success: True
 {
-  "success": true,						// Indicates that platform received and processed the request
+  "success": true,	// Indicates that platform received and processed the request
   "data": {
-    "sessionId": string,			// ID of the session, can be used to send another execution to the same session
-    "executionId": string,		// Execution ID to query the result
-    "promptTokens": integer		// Number of tokens used in prompt
+    "sessionId": string,	// ID of the session, can be used to send another execution to the same session
+    "executionId": string,	// Execution ID to query the result
+    "promptTokens": integer	// Number of tokens used in prompt
   }
 }
 ```
@@ -35,18 +35,18 @@ metadata:
 {
   "success": boolean,
   "data": {
-    "_id": string,								// Internal ID
+    "_id": string,	// Internal ID
     "executionStarted": datetime,	// Start time
     "nodeResults": [
-      null, // For each node
+      null,	// For each node
       ...,
 			null
     ],
     "ctx": {
-      "userId": string,						// ID of the user calling the agent
-      "agentId": string,					// ID of the agent
-      "sessionId": string,				// ID of the session
-      "executionId": string 			// Same as the one in GET URL
+      "userId": string,	// ID of the user calling the agent
+      "agentId": string,	// ID of the agent
+      "sessionId": string,	// ID of the session
+      "executionId": string	// Same as the one in GET URL
     }
   }
 }
@@ -69,22 +69,22 @@ metadata:
   "success": true,
   "data": {
     "_id": string,
-    "executionStarted": datetime,
-    "executionEnded": datetime,
+    "executionStarted": datetime,	// Worker execution start time
+    "executionEnded": datetime,	// Worker execution end time
     "nodeResults": [
 			// For each node
-      inputParams?: object, 	// All input parameters for the worker in JSON format
+      inputParams?: object,	// All input parameters for the worker in JSON format
 
-      {												// FOR EACH NODE, Success example of STANDARD node
+      {	// FOR EACH NODE, Success example of STANDARD node
 
-        "ok": boolean,						// Example for successful node
-        "status": int,				// 200 is standard OK response
-        "statusText": string, // Human-readable status text
-				"error": string,			// (OPTIONAL: Only if OK is false) Human-Readable error text
-        "result": object,			// Output object / array of objects of the node in JSON format
-        "nodeId": int,										// ID of the node
-        "executionStarted": datetime,		// Time of execution start
-        "executionFinished": datetime		// Time of execution end
+        "ok": boolean,	// True/false
+        "status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
+        "statusText": string,	// Human-readable status text
+				"error": string,	// (OPTIONAL: Only if OK is false) Human-Readable error text
+        "result": object,	// Output object / array of objects of the node in JSON format
+        "nodeId": int,	// ID of the node
+        "executionStarted": datetime,	// Time of node execution start
+        "executionFinished": datetime	// Time of node execution end
       },
 			...
     ],
@@ -95,15 +95,15 @@ metadata:
       "executionId": string
     },
     "time": int,
-    "finalResult": [						// This is an array because API supports agents with multiple output nodes, but the Web UI allows to create single output nodes manually only, so in most of scenarios this array contains only one element.
+    "finalResult": [	// This is an array because API supports agents with multiple output nodes, but the Web UI allows to create single output nodes manually only, so in most of scenarios this array contains only one element.
       {
         "ok": boolean,
-        "status": 200,
-        "statusText": string, 	// Human-readable status text
+        "status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
+        "statusText": string,	// Human-readable status text
 				"error":	 string, 			// (OPTIONAL: Only if OK is false) Human-Readable error text
         "result": object,				// Output of the final worker OUTPUT node outputParams in JSON format
         "nodeId": int,					// Node ID of the final workr OUTPUT node
-        "executionStarted": datetime,		// Worker execution start time
+        "executionStarted": datetime,		// ??
         "executionFinished": datetime		// Worker execution stop time
       }
     ]
