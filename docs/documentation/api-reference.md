@@ -25,7 +25,7 @@ In order to be able to execute API requests towards the platform, a user must ac
 
 Tokens can be revoked from the same interface where they are created
 
-![](https://files.readme.io/d2dc437d49bf6cdaa159da6019665cb26c275f9f09413dcbe01280e5de394bf9-image.png)
+<Image border={false} src="https://files.readme.io/d2dc437d49bf6cdaa159da6019665cb26c275f9f09413dcbe01280e5de394bf9-image.png" />
 
 During the token creation, you have 4 different permission types you can assign to the topic.
 
@@ -97,6 +97,8 @@ Input parameters depend on what input parameters were configured in the actual w
 
 * For Universal worker, it is typically "userMessage" that consists of "role" (user) and "content".
 * For Specialized worker, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
+
+"**bypassCache**" is an optional boolean that forces a fresh execution, skipping any cached result for identical inputs. If omitted or set to false, the platform may return a cached result when available.
 
 ### Example body usage when executing Universal Worker.
 
