@@ -1,5 +1,6 @@
 ---
 title: API output schema
+excerpt: Part of the results are controlled by the worker builder/node type.
 deprecated: false
 hidden: true
 icon: fad fa-code-simple
@@ -27,8 +28,6 @@ metadata:
 ```
 
 ***
-
-<br />
 
 **Get execution logs (GET) request output schema - execution in progress** :
 
