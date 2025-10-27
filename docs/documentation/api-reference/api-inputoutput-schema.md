@@ -120,8 +120,6 @@ metadata:
 
 ***
 
-<br />
-
 **Examples** of node-specific RESULT outputs in different format:
 
 ```json
