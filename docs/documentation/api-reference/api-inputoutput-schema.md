@@ -13,12 +13,9 @@ metadata:
 	// Indicates that platform received and processed the request
   "success": true,
   "data": {
-		// ID of the session, can be used to send another execution to the same session
-    "sessionId": string,
-		// Execution ID to query the result
-    "executionId": string,
-		// Number of tokens used in prompt
-    "promptTokens": integer
+    "sessionId": string, // ID of the session, can be used to send another execution to the same session
+    "executionId": string, // Execution ID to query the result
+    "promptTokens": integer // Number of tokens used in prompt
   }
 }
 ```
