@@ -134,9 +134,6 @@ metadata:
   headers: object
 }
 
-
-
-
 // PDF to image node
 [
 	{
