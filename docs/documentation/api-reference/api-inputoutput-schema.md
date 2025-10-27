@@ -10,12 +10,12 @@ metadata:
 
 ```json Success: True
 {
-	"success": true, // Indicates that platform received and processed the request
-  "data": {
-    "sessionId": string, // ID of the session, can be used to send another execution to the same session
-    "executionId": string, // Execution ID to query the result
-    "promptTokens": integer // Number of tokens used in prompt
-  }
+"success": true, // Indicates that platform received and processed the request
+"data": {
+"sessionId": string, // ID of the session, can be used to send another execution to the same session
+"executionId": string, // Execution ID to query the result
+"promptTokens": integer // Number of tokens used in prompt
+}
 }
 ```
 ```json Success: False
