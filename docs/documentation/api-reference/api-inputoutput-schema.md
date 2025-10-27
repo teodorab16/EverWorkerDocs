@@ -87,26 +87,28 @@ metadata:
 			},
 			...
 		],
-    "ctx": {
-      "userId": string,
-      "agentId": string,
-      "sessionId": string,
-      "executionId": string
-    },
-    "time": int,
-    "finalResult": [	// This is an array because API supports agents with multiple output nodes, but the Web UI allows to create single output nodes manually only, so in most of scenarios this array contains only one element.
-      {
-        "ok": boolean,
-        "status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
-        "statusText": string,	// Human-readable status text
-"error":	 string, 			// (OPTIONAL: Only if OK is false) Human-Readable error text
-        "result": object,	// Output of the final worker OUTPUT node outputParams in JSON format
-        "nodeId": int,	// Node ID of the final workr OUTPUT node
-        "executionStarted": datetime,	// ??
-        "executionFinished": datetime	// Worker execution stop time
-      }
-    ]
-  }
+		"ctx":
+		{
+			"userId": string,
+			"agentId": string,
+			"sessionId": string,
+			"executionId": string
+  	},
+		"time": int,
+  	"finalResult":
+		[	// This is an array because API supports agents with multiple output nodes, but the Web UI allows to create single output nodes manually only, so in most of scenarios this array contains only one element.
+			{
+				"ok": boolean,
+				"status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
+				"statusText": string,	// Human-readable status text
+				"error":	 string, 			// (OPTIONAL: Only if OK is false) Human-Readable error text
+				"result": object,	// Output of the final worker OUTPUT node outputParams in JSON format
+				"nodeId": int,	// Node ID of the final workr OUTPUT node
+				"executionStarted": datetime,	// ??
+				"executionFinished": datetime	// Worker execution stop time
+      },
+		],
+	},
 }
 ```
 ```json Success: false
