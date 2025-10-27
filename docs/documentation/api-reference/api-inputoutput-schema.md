@@ -106,7 +106,7 @@ metadata:
 				"nodeId": int,	// Node ID of the final workr OUTPUT node
 				"executionStarted": datetime,	// ??
 				"executionFinished": datetime	// Worker execution stop time
-      },
+			},
 		],
 	},
 }
