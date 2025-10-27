@@ -177,9 +177,6 @@ metadata:
     errors?: Array<{ index: number, error: string }>,
 }
 
-// Render-markdown
-string // File URL in string format
-
 // Read URL
 {
   content: string, // Clean markdown content
