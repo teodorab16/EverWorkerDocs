@@ -68,8 +68,8 @@ metadata:
 ```json Success: True
 {
 	"success": true,
-	"data":
-  {
+  "data":
+	{
 		"_id": string,
 		"executionStarted": datetime,	// Worker execution start time
 		"executionEnded": datetime,	// Worker execution end time
