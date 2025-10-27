@@ -2,7 +2,7 @@
 title: API output schema
 excerpt: Part of the results are controlled by the worker builder/node type.
 deprecated: false
-hidden: true
+hidden: false
 icon: fad fa-code-simple
 metadata:
   robots: index
