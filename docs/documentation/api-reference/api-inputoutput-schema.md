@@ -10,11 +10,15 @@ metadata:
 
 ```json Success: True
 {
-  "success": true,	// Indicates that platform received and processed the request
+	// Indicates that platform received and processed the request
+  "success": true,
   "data": {
-    "sessionId": string,	// ID of the session, can be used to send another execution to the same session
-    "executionId": string,	// Execution ID to query the result
-    "promptTokens": integer	// Number of tokens used in prompt
+		// ID of the session, can be used to send another execution to the same session
+    "sessionId": string,
+		// Execution ID to query the result
+    "executionId": string,
+		// Number of tokens used in prompt
+    "promptTokens": integer
   }
 }
 ```
@@ -35,18 +39,25 @@ metadata:
 {
   "success": boolean,
   "data": {
-    "_id": string,	// Internal ID
-    "executionStarted": datetime,	// Start time
+    // Internal ID
+		"_id": string,
+		// Start time
+    "executionStarted": datetime,	
     "nodeResults": [
-      null,	// For each node
+			// For each node
+      null,	
       ...,
 			null
     ],
     "ctx": {
-      "userId": string,	// ID of the user calling the agent
-      "agentId": string,	// ID of the agent
-      "sessionId": string,	// ID of the session
-      "executionId": string	// Same as the one in GET URL
+			// ID of the user calling the agent
+      "userId": string,
+			// ID of the agent
+      "agentId": string,
+			// ID of the session
+      "sessionId": string,
+			// Same as the one in GET URL
+      "executionId": string
     }
   }
 }
