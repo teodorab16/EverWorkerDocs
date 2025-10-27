@@ -6,7 +6,7 @@ icon: fad fa-code-simple
 metadata:
   robots: index
 ---
-**Agent execute (POST) request output schema**:
+**Agent execute (POST) request output schema** :
 
 ```json Success: True
 {
@@ -25,7 +25,11 @@ metadata:
 }
 ```
 
-Get execution logs (GET) request output schema - execution in progress:
+***
+
+<br />
+
+**Get execution logs (GET) request output schema - execution in progress** :
 
 ```json Success: True
 {
@@ -54,9 +58,11 @@ Get execution logs (GET) request output schema - execution in progress:
 }
 ```
 
+***
+
 <br />
 
-Get execution logs (GET) request output schema - execution finished
+**Get execution logs (GET) request output schema - execution finished** :
 
 ```json Success: True
 {
@@ -110,6 +116,10 @@ Get execution logs (GET) request output schema - execution finished
   "error": string 		// Human-readable message. The HTTP status code reflects the error type (e.g., 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). No data object is included on failures.
 }
 ```
+
+***
+
+<br />
 
 Examples of node outputs for nodes with "Result" object = **JSON ** vs "Result" object = **Array of JSON objects**:
 
