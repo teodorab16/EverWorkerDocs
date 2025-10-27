@@ -128,6 +128,16 @@ metadata:
 // NB! Code worker nodes, Universal API nodes have output schema built into the node (that you can change during building)
 // NB! LLM nodes and other nodes that come from configured providers have provider-specific and sometimes model-specific output schema
 
+// API call
+{
+  data: object,
+  status: int,
+  headers: object
+}
+
+
+
+
 // PDF to image node
 [
 	{
@@ -173,13 +183,29 @@ metadata:
     results: any[];
     totalItems: number;  // number of inputs
     successCount: number;
-    errorCount: number
+    errorCount: number;
     effectiveConcurrency: number;  // max number of items that were processed in parallel
     errors?: Array<{ index: number; error: string }>;
 }
 
 // Render-markdown
 string // File URL in string format
+
+// Read URL
+{
+  content: string; // Clean markdown content
+  title: string; // Page title
+  url: string; // URL that was read
+}
+
+// Storage upload
+{
+  url: string; // Public URL of uploaded file
+  filename: string; // Final stored filename
+  secret: string; // Secret key for secure access
+  size: string; // File size in bytes
+  contentType: string; // MIME type of the file
+}
 
 // Switch worker
 {
