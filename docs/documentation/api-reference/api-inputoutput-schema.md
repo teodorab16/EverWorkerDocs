@@ -67,7 +67,7 @@ metadata:
 
 ```json Success: True
 {
-	"success": true,
+  "success": true,
 	"data":
 	{
 		"_id": string,
