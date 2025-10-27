@@ -1,5 +1,5 @@
 ---
-title: API input/output schema
+title: API output schema
 deprecated: false
 hidden: true
 icon: fad fa-code-simple
@@ -34,7 +34,7 @@ metadata:
 
 ```json Success: True
 {
-	"success": boolean,
+	"success": true,
 	"data":
 	{
 		"_id": string, // Internal ID
@@ -80,7 +80,7 @@ metadata:
 				"status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server).
 				"statusText": string,	// Human-readable status text
 				"error": string,	// (OPTIONAL: Only if OK is false) Human-Readable error text
-				"result": object,	// Output object / array of objects of the node in JSON format
+				"result": any,	// Node-specific output object / array
 				"nodeId": int,	// ID of the node
 				"executionStarted": datetime,	// Time of node execution start
 				"executionFinished": datetime	// Time of node execution end
@@ -122,18 +122,18 @@ metadata:
 
 <br />
 
-Examples of node outputs for nodes with "Result" object = **JSON ** vs "Result" object = **Array of JSON objects**:
+**Examples** of node-specific RESULT outputs in different format:
 
 ```json
-// Nodes that produce single output (i.e. LLM node)
+// Nodes that produce single output (give examples)
                 {
                     ok: true,
-                    result: { role: 'assistant', content: '{ "response": "This is worker response" }' },
+                    result: { role: 'assistant', content: '{ "response": "This is  the worker response" }' },
                     nodeId: 4,
                     executionStarted: '2025-10-23T18:39:33.968Z',
                     executionFinished: '2025-10-23T18:39:34.702Z',
                 }
-// Nodes that produce an array of outputs (i.e. PDF to image)
+// PDF to image node
                 {
                     ok: true,
                     status: 200,
@@ -155,4 +155,9 @@ Examples of node outputs for nodes with "Result" object = **JSON ** vs "Result" 
                     executionStarted: '2025-10-23T18:39:26.534Z',
                     executionFinished: '2025-10-23T18:39:28.641Z',
                 },
+// Browser node output
+
+
 ```
+
+<br />
