@@ -93,7 +93,7 @@ metadata:
 			"agentId": string,
 			"sessionId": string,
 			"executionId": string
-  	},
+		},
 		"time": int,
   	"finalResult":
 		[	// This is an array because API supports agents with multiple output nodes, but the Web UI allows to create single output nodes manually only, so in most of scenarios this array contains only one element.
