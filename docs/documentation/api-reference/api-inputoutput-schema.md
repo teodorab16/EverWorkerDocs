@@ -127,6 +127,7 @@ metadata:
 ```json
 // NB! Code worker nodes, Universal API nodes have output schema built into the node (that you can change during building)
 // NB! LLM nodes and other nodes that come from configured providers have provider-specific and sometimes model-specific output schema
+// You must always run these nodes first at least once to generate and be able to connect/see the output/output schema.
 
 // API call
 {
