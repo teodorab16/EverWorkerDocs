@@ -44,14 +44,14 @@ metadata:
 			...,
 			null // For each node
 		],
-"ctx":
-{
-"userId": string, // ID of the user calling the agent
-"agentId": string, // ID of the agent
-"sessionId": string, // ID of the session
-"executionId": string // Same as the one in GET URL
-}
-}
+		"ctx":
+		{
+			"userId": string, // ID of the user calling the agent
+			"agentId": string, // ID of the agent
+			"sessionId": string, // ID of the session
+			"executionId": string // Same as the one in GET URL
+		}
+	}
 }
 ```
 ```json Success: False
@@ -63,34 +63,30 @@ metadata:
 
 ***
 
-<br />
-
 **Get execution logs (GET) request output schema - execution finished** :
 
 ```json Success: True
 {
-  "success": true,
-  "data": {
-    "_id": string,
-    "executionStarted": datetime,	// Worker execution start time
-    "executionEnded": datetime,	// Worker execution end time
-    "nodeResults": [
-			// For each node
-      inputParams?: object,	// All input parameters for the worker in JSON format
-
-      {	// FOR EACH NODE, Success example of STANDARD node
-
-        "ok": boolean,	// True/false
-        "status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
-      "statusText": string,	// Human-readable status text
-"error": string,	// (OPTIONAL: Only if OK is false) Human-Readable error text
-        "result": object,	// Output object / array of objects of the node in JSON format
-        "nodeId": int,	// ID of the node
-        "executionStarted": datetime,	// Time of node execution start
-        "executionFinished": datetime	// Time of node execution end
-      },
+	"success": true,
+	"data":
+  {
+		"_id": string,
+		"executionStarted": datetime,	// Worker execution start time
+		"executionEnded": datetime,	// Worker execution end time
+		"nodeResults": [	
+			inputParams?: object,	// All input parameters for the worker in JSON format
+			{	// FOR EACH NODE
+				"ok": boolean,	// True/false
+				"status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server).
+				"statusText": string,	// Human-readable status text
+				"error": string,	// (OPTIONAL: Only if OK is false) Human-Readable error text
+				"result": object,	// Output object / array of objects of the node in JSON format
+				"nodeId": int,	// ID of the node
+				"executionStarted": datetime,	// Time of node execution start
+				"executionFinished": datetime	// Time of node execution end
+			},
 			...
-    ],
+		],
     "ctx": {
       "userId": string,
       "agentId": string,
