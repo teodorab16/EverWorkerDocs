@@ -79,8 +79,8 @@ metadata:
 
         "ok": boolean,	// True/false
         "status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
-        "statusText": string,	// Human-readable status text
-				"error": string,	// (OPTIONAL: Only if OK is false) Human-Readable error text
+      "statusText": string,	// Human-readable status text
+"error": string,	// (OPTIONAL: Only if OK is false) Human-Readable error text
         "result": object,	// Output object / array of objects of the node in JSON format
         "nodeId": int,	// ID of the node
         "executionStarted": datetime,	// Time of node execution start
@@ -100,11 +100,11 @@ metadata:
         "ok": boolean,
         "status": int,	// The HTTP status code reflects the error type (e.g., 200 OK, 400 validation, 401 auth, 403 permission, 429 rate limit, 500 server). 
         "statusText": string,	// Human-readable status text
-				"error":	 string, 			// (OPTIONAL: Only if OK is false) Human-Readable error text
-        "result": object,				// Output of the final worker OUTPUT node outputParams in JSON format
-        "nodeId": int,					// Node ID of the final workr OUTPUT node
-        "executionStarted": datetime,		// ??
-        "executionFinished": datetime		// Worker execution stop time
+"error":	 string, 			// (OPTIONAL: Only if OK is false) Human-Readable error text
+        "result": object,	// Output of the final worker OUTPUT node outputParams in JSON format
+        "nodeId": int,	// Node ID of the final workr OUTPUT node
+        "executionStarted": datetime,	// ??
+        "executionFinished": datetime	// Worker execution stop time
       }
     ]
   }
