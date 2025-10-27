@@ -34,17 +34,18 @@ metadata:
 
 ```json Success: True
 {
-"success": boolean,
-"data":
+	"success": boolean,
+	"data":
+	{
+		"_id": string, // Internal ID
+		"executionStarted": datetime,	// Start time
+		"nodeResults": [	
+			null,	// For each node
+			...,
+			null // For each node
+		],
+"ctx":
 {
-"_id": string, // Internal ID
-"executionStarted": datetime,	// Start time
-"nodeResults": [	
-null,	// For each node
-...,
-null // For each node
-],
-"ctx": {
 "userId": string, // ID of the user calling the agent
 "agentId": string, // ID of the agent
 "sessionId": string, // ID of the session
