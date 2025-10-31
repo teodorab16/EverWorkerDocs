@@ -52,7 +52,7 @@ Memory Items are **modular, reusable knowledge blocks**. Key properties:
 * Access-controlled and assigned to workspaces or roles
 * Are the building blocks of Worker cognition
 
-<br />
+***
 
 # File Upload Support
 
