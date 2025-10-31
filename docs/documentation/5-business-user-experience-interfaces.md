@@ -51,7 +51,9 @@ Users can upload documents to provide additional context during conversations.
 
 * **In-chat uploads** are temporary (valid only during the session) _(Coming soon)_
 * **Persistent files** are uploaded via the Session Settings panel, becoming part of session memory
-* Supported formats: PDF, Word, images
+* **Supported formats** : You can upload the following file types in chat or session context:
+  > .pdf, .docx, .doc, .txt, .md, .rtf
+  :warning: Only text-based PDF files are supported. Images, scanned PDFs, and tabular files (.xlsx, .csv) cannot be processed at this time.
 * Files are embedded into vector memory and used for response generation when enabled
 
 ***
