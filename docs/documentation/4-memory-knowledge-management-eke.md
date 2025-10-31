@@ -52,6 +52,16 @@ Memory Items are **modular, reusable knowledge blocks**. Key properties:
 * Access-controlled and assigned to workspaces or roles
 * Are the building blocks of Worker cognition
 
+<br />
+
+# File Upload Support
+
+You can upload the following file types in chat or session context:
+
+> .pdf, .docx, .doc, .txt, .md, .rtf
+
+:information_source: Note: Only text-based PDF files are supported. Images, scanned PDFs, and tabular files (.xlsx, .csv) cannot be processed at this time.
+
 ***
 
 # Summary
