@@ -19,7 +19,7 @@ metadata:
 
 # Worker Chat
 
-The primary interaction interface where Users communicate with Universal Workers.
+The primary interaction interface where Users communicate with AI Workers.
 
 * Supports **text, image, and URL input**
 * Users can **view the Worker’s skills** and **knowledge** sources.

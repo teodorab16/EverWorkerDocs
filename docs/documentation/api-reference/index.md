@@ -42,12 +42,12 @@ In all future requests, this token will be used in headers of HTTP requests. Hea
 
 AgentID can be found in URL of a worker.
 
-* When you chat with a Universal Worker, its URL will look like [https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
-* When you edit a Specialized Worker in Canvas, its URL will look like [https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte](https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte). Here `ofim7r2az6dxgSDte` is AgentID.
+* When you chat with an AI Worker, its URL will look like [https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
+* When you edit an AI Workflow in Canvas, its URL will look like [https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte](https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte). Here `ofim7r2az6dxgSDte` is AgentID.
 
 # Finding SessionID
 
-`SessionID` allows to continue previous conversation with a Universal Worker. You can only obtain it after executing an agent at least once. The execution result will contain the sessionID. You can also set the history limit in each request to control the amount of chat history used for further executions.
+`SessionID` allows to continue previous conversation with an AI Worker. You can only obtain it after executing an agent at least once. The execution result will contain the sessionID. You can also set the history limit in each request to control the amount of chat history used for further executions.
 
 For an example, check the "Execute Agent" -> "Example execution result" below.
 
@@ -95,12 +95,12 @@ Typical response:
 
 Input parameters depend on what input parameters were configured in the actual worker.
 
-* For Universal worker, it is typically "userMessage" that consists of "role" (user) and "content".
-* For Specialized worker, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
+* For AI Worker, it is typically "userMessage" that consists of "role" (user) and "content".
+* For AI Workflow, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
 
 "**bypassCache**" is an optional boolean that forces a fresh execution, skipping any cached result for identical inputs. If omitted or set to false, the platform may return a cached result when available.
 
-### Example body usage when executing Universal Worker.
+### Example body usage when executing AI Worker.
 
 ```
 {

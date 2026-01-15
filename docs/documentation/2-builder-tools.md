@@ -13,23 +13,23 @@ The **Builder Tools** section of the EverWorker platform provides everything a B
 
 ### Topics Covered:
 
-* **Universal Worker Builder**: A structured, multi-tab interface for configuring and deploying Universal Workers
-* **Canvas (formerly Studio)**: A visual, node-based interface for building Specialized Workers through drag-and-drop logic blocks, connectors, and custom flows.
+* **AI Worker Builder**: A structured, multi-tab interface for configuring and deploying AI Workers
+* **Canvas (formerly Studio)**: A visual, node-based interface for building AI Workflows through drag-and-drop logic blocks, connectors, and custom flows.
 * **Worker Creator (Chat)**: An AI-powered assistant that helps Builders generate workflows using natural language prompts—ideal for quick prototyping and non-technical creators.
 * **Node Types, Connections, and Workflow Logic**: Details on available nodes (API, conditional logic, vector memory, etc.), how they connect, and how workflows execute step-by-step.
 
 ***
 
-# Universal Worker Builder
+# AI Worker Builder
 
-A structured UI that guides Builders through the configuration of **Universal Workers**, which are reusable, general-purpose agents.
+A structured UI that guides Builders through the configuration of **AI Workers**, which are reusable, general-purpose agents.
 
 ### Key Tabs:
 
 * **Profile** – Define name, avatar, description, tags, and visibility (public/private)
 * **Knowledge** – Attach vector memory sets, select embedder, configure retrieval behavior
 * **Brain** – Set up input structure, tone, formatting, and base LLM parameters
-* **Skills** – Add connectors, APIs, or embedded Specialized Workers as callable tools
+* **Skills** – Add connectors, APIs, or embedded AI Workflows as callable tools
 * **Summary** – Final validation screen with a toggle for public sharing and template generation
 
 _`Best for: Workers used across teams or tasks with dynamic input/output handling`_
@@ -38,7 +38,7 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 
 # Canvas
 
-**Canvas** is EverWorker’s **visual builder** for creating **Specialized Workers**. It provides a **drag-and-drop, node-based interface** to design workflows that execute structured logic.
+**Canvas** is EverWorker's **visual builder** for creating **AI Workflows**. It provides a **drag-and-drop, node-based interface** to design workflows that execute structured logic.
 
 ### Key Capabilities:
 
@@ -95,8 +95,8 @@ This AI-driven assistant helps Builders **create workflows through natural langu
 Builders can accelerate development using templated instructions, logic blocks, and skill bundles:
 
 * **Behavior Templates**: Prewritten prompt structures for different agent personas
-* **Skill Combinations**: Suggested sets of Specialized Workers and API integrations based on common workflows
-* **Worker Templates**: Entire Universal or Specialized Worker blueprints, reusable and modifiable
+* **Skill Combinations**: Suggested sets of AI Workflows and API integrations based on common workflows
+* **Worker Templates**: Entire AI Worker or AI Workflow blueprints, reusable and modifiable
 * Future features will support **AI-suggested templates** and **version-controlled templates** across teams
 
 ***

@@ -29,7 +29,7 @@ The EverWorker platform adapts its interface based on the user’s role, ensurin
 * **Builder:**
   * Access to:
     * **Canvas**
-    * **Universal Worker Builder**
+    * **AI Worker Builder**
     * **Worker Creator (Chat)**
     * **Memory Manager**
     * **Connectors & Providers**
