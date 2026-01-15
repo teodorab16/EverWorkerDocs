@@ -7,7 +7,7 @@ icon: fad fa-location-question
 metadata:
   robots: index
 ---
-This guide provides a structured overview of the EverWorker V2 Platform as of the August 2025 release. It’s designed to help product teams, engineers, builders, and internal admins understand how the platform works across its major domains — from architecture and creation tools to security, analytics, and internal systems.
+This guide provides a structured overview of the EverWorker Platform. It’s designed to help product teams, engineers, builders, and internal admins understand how the platform works across its major domains — from architecture and creation tools to security, analytics, and internal systems.
 
 # Start with Terminology
 
