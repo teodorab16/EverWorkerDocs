@@ -20,16 +20,17 @@ Each numbered section focuses on a core system or capability within the EverWork
 Sections are grouped by functional area:
 
 * 1–2: How Workers are built
-* 3–4: Integrations and memory
-* 5–7: User interfaces, admin tools, and security
-* 8–9: Business-facing dashboards and UX
+* 3–4: Integrations and skills
+* 5: Memory and knowledge
+* 6–8: User interfaces, admin tools, and security
+* 9–10: Business-facing dashboards and UX
 
 # Who Should Read What
 
-* Product & UX teams → Start with sections 1, 2, 3, 5, and 9
-* Builders & Engineers → Focus on 1–4, 6, 7
-* Admins → Focus on 6 and 7
-* Business stakeholders → Start with 5 and 8
+* Product & UX teams → Start with sections 1, 2, 3, 6, and 10
+* Builders & Engineers → Focus on 1–5, 7, 8
+* Admins → Focus on 7 and 8
+* Business stakeholders → Start with 6 and 9
 
 # What's Inside
 

@@ -2,7 +2,7 @@
 title: Admin & Management
 deprecated: false
 hidden: false
-icon: fad fa-square-6
+icon: fad fa-square-7
 metadata:
   robots: index
 ---
@@ -30,13 +30,13 @@ These are presented as sub-tabs at the top of the content area.
 
 * **Master Server Connection**
   * Displays connection status to the main server (e.g., jarvis.everworker.ai • Remote).
-  * Includes a refresh button and connection state (e.g., “Connected”).
+  * Includes a refresh button and connection state (e.g., "Connected").
 * **License Information**
   * Shows current license tier (e.g., "Basic").
   * Displays the number of active workers (e.g., 12 / 23 workers)
 * **Recent Users**
   * Lists recently active or pending users, along with email and status.
-  * “Manage users” button provides access to deeper user administration.
+  * "Manage users" button provides access to deeper user administration.
 
 ## User Management Section
 
@@ -50,7 +50,7 @@ These are presented as sub-tabs at the top of the content area.
   * Pagination and search functionality to filter users by name or email.
   * **User Actions**
     * Via a menu (three-dot icon), you can:
-      * Resend Invitation (likely for users with “Pending” status).
+      * Resend Invitation (likely for users with "Pending" status).
       * Delete User.
   * **Create New User Button**
     * Provides a form or workflow to invite or register new users into the system.
@@ -106,4 +106,4 @@ These are presented as sub-tabs at the top of the content area.
 
 # Summary
 
-EverWorker’s Admin & Management systems provide the structure and tools needed to **run the platform securely at scale**. From user roles and connectors to knowledge storage and observability, these systems ensure the platform remains **governable, transparent, and enterprise-ready** — while empowering Builders and Users alike.
+EverWorker's Admin & Management systems provide the structure and tools needed to **run the platform securely at scale**. From user roles and connectors to knowledge storage and observability, these systems ensure the platform remains **governable, transparent, and enterprise-ready** — while empowering Builders and Users alike.

@@ -3,7 +3,7 @@ title: Authentication & Security
 excerpt: This section covers the authentication and security systems.
 deprecated: false
 hidden: false
-icon: fad fa-square-7
+icon: fad fa-square-8
 metadata:
   robots: index
 ---

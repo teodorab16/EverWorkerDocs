@@ -5,7 +5,7 @@ excerpt: >-
   platform.
 deprecated: false
 hidden: false
-icon: fad fa-square-8
+icon: fad fa-square-9
 metadata:
   robots: index
 ---
@@ -22,14 +22,14 @@ metadata:
 
 # Execution Analytics Dashboard
 
-The central dashboard for **monitoring all Worker activity** - both Universal and Specialized.
+The central dashboard for **monitoring all Worker activity** - both AI Workers and AI Workflows.
 
 ### Key metrics include:
 
 * Total Workers (created)
 * Workers Used (actively interacted with)
 * Utilization Rate (% of Workers in use)
-* Worker Types: Universal vs. Specialized breakdown
+* Worker Types: AI Workers vs. AI Workflows breakdown
 * Filters: Date range, Worker type, user, tags
 
 ### Success & Failure Tracking
@@ -40,7 +40,7 @@ Track how Workers perform across executions to identify quality, stability, and 
   a. **% of Workers that failed** (out of all active Workers)
   b. **% of Executions that failed** (out of all executions)
 * Filterable by:
-  * Worker type (Universal/Specialized)
+  * Worker type (AI Workers/AI Workflows)
   * Individual user
   * Execution time window
 * Visualized via **stacked line charts**
@@ -69,4 +69,4 @@ Deep-dive tools to trace and troubleshoot performance.
 
 # Summary
 
-EverWorker’s analytics and monitoring tools give both **business and technical users** what they need: from high-level automation impact and usage trends to low-level debugging and system health. Designed for **clarity, drill-down, and operational awareness**, the platform's analytics unlock both ROI insights and engineering precision.
+EverWorker's analytics and monitoring tools give both **business and technical users** what they need: from high-level automation impact and usage trends to low-level debugging and system health. Designed for **clarity, drill-down, and operational awareness**, the platform's analytics unlock both ROI insights and engineering precision.

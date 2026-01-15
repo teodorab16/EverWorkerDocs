@@ -3,7 +3,7 @@ title: Business User Experience & Interfaces
 excerpt: This section covers the business user-facing interfaces and experience design.
 deprecated: false
 hidden: false
-icon: fad fa-square-5
+icon: fad fa-square-6
 metadata:
   robots: index
 ---
@@ -22,7 +22,7 @@ metadata:
 The primary interaction interface where Users communicate with AI Workers.
 
 * Supports **text, image, and URL input**
-* Users can **view the Worker’s skills** and **knowledge** sources.
+* Users can **view the Worker's skills** and **knowledge** sources.
 * Displays the **Worker's thinking trace** (collapsed chain-of-thought) for transparency
 * Chat controls:
   * Enter to send

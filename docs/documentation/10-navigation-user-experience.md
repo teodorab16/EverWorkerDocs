@@ -5,7 +5,7 @@ excerpt: >-
   patterns.
 deprecated: false
 hidden: false
-icon: fad fa-square-9
+icon: fad fa-square-10
 metadata:
   robots: index
 ---
@@ -20,7 +20,7 @@ metadata:
 
 # Persona-Based Navigation
 
-The EverWorker platform adapts its interface based on the user’s role, ensuring clarity and minimizing cognitive overload.
+The EverWorker platform adapts its interface based on the user's role, ensuring clarity and minimizing cognitive overload.
 
 * **User**:
   * Sees only the **Worker Chat Interface**
@@ -49,7 +49,7 @@ The EverWorker platform adapts its interface based on the user’s role, ensurin
 The platform uses a **left-hand vertical sidebar** for persistent navigation, organized by function:
 
 1. **Home / Launchpad** (role-based)
-2. **Workers** (Universal, Specialized)
+2. **Workers** (AI Workers, AI Workflows)
 3. **Canvas**
 4. **Memory**
 5. **Connectors**
@@ -89,4 +89,4 @@ Role-specific landing experiences ensure users are directed to what matters:
 
 # Summary
 
-EverWorker’s navigation model is designed to be intuitive, role-aware, and task-oriented. Whether you're a User looking to get work done, a Builder launching workflows, or an Admin overseeing platform operations, the interface adapts to keep you focused and productive with minimal friction.
+EverWorker's navigation model is designed to be intuitive, role-aware, and task-oriented. Whether you're a User looking to get work done, a Builder launching workflows, or an Admin overseeing platform operations, the interface adapts to keep you focused and productive with minimal friction.
