@@ -5,7 +5,7 @@ excerpt: >-
   patterns.
 deprecated: false
 hidden: false
-icon: far fa-square-1
+icon: fad fa-chalkboard-user
 metadata:
   robots: index
 ---
