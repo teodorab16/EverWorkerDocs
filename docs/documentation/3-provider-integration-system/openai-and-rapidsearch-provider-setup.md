@@ -1,5 +1,5 @@
 ---
-title: Synchronizing default providers
+title: Synchronizing default providersX
 deprecated: false
 hidden: false
 icon: fad fa-square-3
