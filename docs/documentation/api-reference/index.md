@@ -188,3 +188,45 @@ Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
 
 From this answer in JSON format you can easily extract LLM response, as well as check other parameters, such as the amount of time it took.
 
+<br />
+
+## Get Execution Result
+
+* URL path: `api/v1/execution-result?executionId={{ExecutionId}}`
+* Method: `GET`
+* Header: `Authorization: bearer <token>`
+
+This endpoint returns the final result and status of an execution. It provides a simpler, lighter response compared to `execution-logs` - ideal when you only need the outcome rather than detailed node-by-node execution data.
+
+Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
+
+### Example execution result retrieval
+
+```json
+{
+    "success": true,
+    "data": {
+        "executionId": "3b0b49e4-4b63-4a45-9d9a-bb59cece5650",
+        "status": "completed",
+        "result": {
+            "role": "assistant",
+            "content": "### Licenses for testc@everworker.ai\n\n| User (UPN) | Assigned licenses |\n|---|---|\n| test@everworker.ai | - Power BI (Free)  \n- Microsoft Power Automate Free  \n- Microsoft 365 Business Basic |"
+        },
+        "executionTime": 16736
+    }
+}
+```
+
+### When to use execution-result vs execution-logs
+
+| Endpoint | Use Case |
+|----------|----------|
+| `execution-result` | When you only need the final output and status |
+| `execution-logs` | When you need detailed debugging info, node-by-node results, or timing data |
+
+### Possible status values
+
+* `completed` - Execution finished successfully
+* `failed` - Execution encountered an error
+* `running` - Execution is still in progress
+* `cancelled` - Execution was cancelled by user or system
