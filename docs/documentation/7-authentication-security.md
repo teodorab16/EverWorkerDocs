@@ -31,9 +31,7 @@ EverWorker uses **granular, role-based permissions** to control access to platfo
 The platform supports multiple login and identity systems:
 
 * **Password-based login**: Default method for manual user creation
-* **Microsoft OAuth (SSO)**: Seamless integration with Azure AD for enterprise users
-* **Directory Sync (SCIM)**: Planned support for SCIM to automate provisioning and deprovisioning (Coming soon)
-* **External User Support**: Invite external collaborators with scoped access and expiration controls
+* **Microsoft OAuth (SSO)**: Seamless integration with Azure AD for enterprise users. Allows to authenticate with any user of type "member" in Microsoft365 organization.
 
 ***
 
