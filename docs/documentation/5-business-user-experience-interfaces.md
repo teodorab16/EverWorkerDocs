@@ -19,7 +19,7 @@ metadata:
 
 # Worker Chat
 
-The primary interaction interface where Users communicate with Universal Workers.
+The primary interaction interface where Users communicate with AI Workers.
 
 * Supports **text, image, and URL input**
 * Users can **view the Worker’s skills** and **knowledge** sources.
@@ -53,7 +53,7 @@ Users can upload documents to provide additional context during conversations.
 * **Persistent files** are uploaded via the Session Settings panel, becoming part of session memory
 * **Supported formats** : You can upload the following file types in chat or session context:
   > .pdf, .docx, .doc, .txt, .md, .rtf
-  :warning: Only text-based PDF files are supported. Images, scanned PDFs, and tabular files (.xlsx, .csv) cannot be processed at this time.
+  > :warning: Only text-based PDF files are supported. Images, scanned PDFs, and tabular files (.xlsx, .csv) cannot be processed at this time.
 * Files are embedded into vector memory and used for response generation when enabled
 
 ***
