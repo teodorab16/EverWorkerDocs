@@ -13,7 +13,7 @@ metadata:
 
 **Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token (but not its value) and its expiration date in Settings.
 
-**Agent** - a specific universal or specialized worker designed in the platform. Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
+**Agent** - a specific universal or AI Workflow designed in the platform. Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
 
 **Execution** - A single run of an agent. Execution and its ID is important to query status and results for a certain run that was called using API. Executions are referenced using ExecutionID that is visible in a result response to an API call to execute an agent.
 
@@ -42,8 +42,8 @@ In all future requests, this token will be used in headers of HTTP requests. Hea
 
 AgentID can be found in URL of a worker.
 
-* When you chat with a Universal Worker, its URL will look like [https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://agi.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
-* When you edit a Specialized Worker in Canvas, its URL will look like [https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte](https://agi.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte). Here `ofim7r2az6dxgSDte` is AgentID.
+* When you chat with a Universal Worker, its URL will look like [https://domain.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://domain.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
+* When you edit an AI Workflow in Canvas, its URL will look like [https://domain.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte](https://domain.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte). Here `ofim7r2az6dxgSDte` is AgentID.
 
 # Finding SessionID
 
@@ -96,7 +96,7 @@ Typical response:
 Input parameters depend on what input parameters were configured in the actual worker.
 
 * For Universal worker, it is typically "userMessage" that consists of "role" (user) and "content".
-* For Specialized worker, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
+* For AI Workflows, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
 
 "**bypassCache**" is an optional boolean that forces a fresh execution, skipping any cached result for identical inputs. If omitted or set to false, the platform may return a cached result when available.
 
