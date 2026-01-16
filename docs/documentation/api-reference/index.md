@@ -42,7 +42,7 @@ In all future requests, this token will be used in headers of HTTP requests. Hea
 
 AgentID can be found in URL of a worker.
 
-* When you chat with a Universal Worker, its URL will look like [https://domain.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://domain.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
+* When you chat with an AI Worker, its URL will look like [https://domain.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K](https://domain.everworker.ai/universal/chat/FbAfoT2ecyPnFZC4K). Here `FbAfoT2ecyPnFZC4K` is AgentID.
 * When you edit an AI Workflow in Canvas, its URL will look like [https://domain.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte](https://domain.everworker.ai/specialized/canvas/ofim7r2az6dxgSDte). Here `ofim7r2az6dxgSDte` is AgentID.
 
 # Finding SessionID
