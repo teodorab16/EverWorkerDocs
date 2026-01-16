@@ -35,7 +35,7 @@ Connectors are **instances of Providers**, configured with **authentication cred
 
 * Multiple Connectors can be created per Provider (e.g., two Gmail accounts, separate OpenAI keys)
 * Support for **authentication parameters** such as API keys, OAuth tokens, tenant IDs, and more
-* Assigned on a **per-node or per-worker** basis in Specialized Workers, and per skill in Universal Workers
+* Assigned on a **per-node or per-worker** basis in AI Workflows, and per skill in Universal Workers
 * Configurable via a secure UI, with role-based access (Builders/Admins)
 
 ***
