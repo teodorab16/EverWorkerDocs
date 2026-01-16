@@ -11,7 +11,7 @@ metadata:
 * A **Worker** is the main product, combining behavior (Brain), knowledge (Memory), and tools (Skills) — all of which use **Providers** via **Connectors**.
 * **Users** consume Workers, **Builders** create them, and **Admins** maintain the platform.
 * **EKE** and **Memory Management** power the intelligence and context in all conversations.
-* **Canvas** allows workflow design for AI Workflows, while Universal Worker Builder manages Universal Workers.
+* **Canvas** allows workflow design for AI Workflows, while AI Worker Builder manages AI Workers.
 * Everything relies on structured, governed access through roles and entry points.
 
 ***
@@ -20,7 +20,7 @@ metadata:
 
 An AI agent designed to perform tasks using LLMs, memory, connectors, and structured logic. Workers can be created, configured, and deployed through the EverWorker platform.
 
-* **Universal Worker**: A general-purpose worker with flexible configuration, suitable for a wide range of tasks. Built using the Universal Worker Builder.
+* **AI Worker**: A general-purpose worker with flexible configuration, suitable for a wide range of tasks. Built using the AI Worker Builder.
 * AI Workflow: A focused, task-specific worker constructed visually in the Canvas interface using nodes and flows.
 
 ### Provider
@@ -41,11 +41,11 @@ A configuration that connects a Worker to a specific instance of a Provider, man
 
 ### Business User
 
-A non-technical individual who interacts with pre-built Universal Workers via chat. Users don’t modify logic, skills, or memory—they access existing functionality and can upload context (files, URLs) at runtime.
+A non-technical individual who interacts with pre-built AI Workers via chat. Users don’t modify logic, skills, or memory—they access existing functionality and can upload context (files, URLs) at runtime.
 
 ### Builder
 
-A technical or advanced user who creates, edits, and configures Workers. Builders use tools like the Universal Worker Builder and Canvas to define skills, behavior, and integrations.
+A technical or advanced user who creates, edits, and configures Workers. Builders use tools like the AI Worker Builder and Canvas to define skills, behavior, and integrations.
 
 ### Admin
 
@@ -67,7 +67,7 @@ Refers to the platform’s system for ingesting, storing, retrieving, and inject
 * Chunking: Automatic splitting of large files for embedding.
 * Metadata Filtering: Tagging and filtering content by origin, title, creation date, etc.
 
-### Session (Universal Worker Chat)
+### Session (AI Worker Chat)
 
 A single conversation thread with a Worker. Sessions have individualized context and memory settings.
 
@@ -84,9 +84,9 @@ Visual builder for AI Workflows. Allows no-code or low-code construction of task
 * Raw Tab: Manual code editing for each node.
 * Status Indicators: Show readiness, execution results, and issues in each node.
 
-### Universal Worker Builder
+### AI Worker Builder
 
-An interface for building Universal Workers using five structured tabs:
+An interface for building AI Workers using five structured tabs:
 
 * Profile: Name, avatar, tags, and public/private toggle.
 * Knowledge: Memory and knowledge sources.
