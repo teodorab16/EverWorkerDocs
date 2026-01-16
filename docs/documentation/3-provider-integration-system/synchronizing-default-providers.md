@@ -31,7 +31,7 @@ Once the providers appear in the tile view of available providers, click "new co
 
 <Image border={false} src="https://files.readme.io/630d06ee9df9d3069d724f973083e7e6155d14f2fae54305c52056cd833ddfda-image.png" />
 
-The main settings that you want to chang are:
+The main variables that you want to change are:
 
 * Public Connector - If you enable this, other users can use this connector. If you do not enable this, only you can access this connector.
 * Connector secrets - based on provider configuration, you will see the string where you need to input your **API token** for the selected provider
