@@ -13,16 +13,16 @@ The **Builder Tools** section of the EverWorker platform provides everything a B
 
 ### Topics Covered:
 
-* **Universal Worker Builder**: A structured, multi-tab interface for configuring and deploying Universal Workers
+* **AI Worker Builder**: A structured, multi-tab interface for configuring and deploying AI Workers
 * **Canvas (formerly Studio)**: A visual, node-based interface for building AI Workflows through drag-and-drop logic blocks, connectors, and custom flows.
 * **Worker Creator (Chat)**: An AI-powered assistant that helps Builders generate workflows using natural language prompts—ideal for quick prototyping and non-technical creators.
 * **Node Types, Connections, and Workflow Logic**: Details on available nodes (API, conditional logic, vector memory, etc.), how they connect, and how workflows execute step-by-step.
 
 ***
 
-# Universal Worker Builder
+# AI Worker Builder
 
-A structured UI that guides Builders through the configuration of **Universal Workers**, which are reusable, general-purpose agents.
+A structured UI that guides Builders through the configuration of **AI Workers**, which are reusable, general-purpose agents.
 
 ### Key Tabs:
 
@@ -96,7 +96,7 @@ Builders can accelerate development using templated instructions, logic blocks, 
 
 * **Behavior Templates**: Prewritten prompt structures for different agent personas
 * **Skill Combinations**: Suggested sets of AI Workflows and API integrations based on common workflows
-* **Worker Templates**: Entire Universal or AI Workflow blueprints, reusable and modifiable
+* **Worker Templates**: Entire AI Worker or AI Workflow blueprints, reusable and modifiable
 * Future features will support **AI-suggested templates** and **version-controlled templates** across teams
 
 ***
