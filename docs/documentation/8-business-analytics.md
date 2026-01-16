@@ -40,7 +40,7 @@ Track how Workers perform across executions to identify quality, stability, and 
   a. **% of Workers that failed** (out of all active Workers)
   b. **% of Executions that failed** (out of all executions)
 * Filterable by:
-  * Worker type (Universal/Specialized)
+  * Worker type (Universal/AI Workflows)
   * Individual user
   * Execution time window
 * Visualized via **stacked line charts**
