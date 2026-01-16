@@ -85,7 +85,7 @@ These are presented as sub-tabs at the top of the content area.
 
 * Primary Audience: Power users, AI engineers, solution designers
 * Access:
-  * Full access to Universal Worker Builder and Canvas
+  * Full access to AI Worker Builder and Canvas
   * Configure memory, connectors, providers
   * Use Worker Creator (Chat) to auto-generate workflows
   * Test and deploy workers
