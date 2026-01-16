@@ -22,14 +22,14 @@ metadata:
 
 # Execution Analytics Dashboard
 
-The central dashboard for **monitoring all Worker activity** - both Universal and Specialized.
+The central dashboard for **monitoring all Worker activity** - both Universal and AI Workflows.
 
 ### Key metrics include:
 
 * Total Workers (created)
 * Workers Used (actively interacted with)
 * Utilization Rate (% of Workers in use)
-* Worker Types: Universal vs. Specialized breakdown
+* Worker Types: Universal vs. AI Workflows breakdown
 * Filters: Date range, Worker type, user, tags
 
 ### Success & Failure Tracking
