@@ -75,7 +75,7 @@ These are presented as sub-tabs at the top of the content area.
 
 * Primary Audience: End users (non-technical)
 * Access:
-  * View and chat with pre-built Universal Workers
+  * View and chat with pre-built AI Workers
   * Manage personal session context (files, URLs)
   * Cannot build, edit, or configure workers
 * Limitations:
