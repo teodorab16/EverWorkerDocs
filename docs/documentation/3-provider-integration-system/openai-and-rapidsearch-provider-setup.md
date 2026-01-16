@@ -36,4 +36,6 @@ Once the providers appear in the tile view of available providers, click "new co
 The main settings that you want to chang are:
 
 * Public Connector - If you enable this, other users can use this connector. If you do not enable this, only you can access this connector.
-* Connector secrets - based on provider configuration, you will see the string where you need to input your token for the selected provider
+* Connector secrets - based on provider configuration, you will see the string where you need to input your **API token** for the selected provider
+
+<br />
