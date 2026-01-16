@@ -21,7 +21,7 @@ metadata:
 EverWorker uses **granular, role-based permissions** to control access to platform features.
 
 * Each user is assigned a role: User, Builder, Admin, or specialized admin/user roles (e.g., **Log Reader, Memory Manager**)
-* Access to features like Canvas, Universal Worker Builder, Observability, Knowledge management, and license administration is governed by role
+* Access to features like Canvas, AI Worker Builder, Observability, Knowledge management, and license administration is governed by role
 * More on Roles and Admin **here**.
 
 ***
