@@ -2,7 +2,7 @@
 title: Synchronizing default providers
 deprecated: false
 hidden: false
-icon: fad fa-square-3
+icon: far fa-angles-down
 metadata:
   robots: index
 ---
