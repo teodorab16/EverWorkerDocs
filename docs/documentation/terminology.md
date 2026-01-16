@@ -11,7 +11,7 @@ metadata:
 * A **Worker** is the main product, combining behavior (Brain), knowledge (Memory), and tools (Skills) — all of which use **Providers** via **Connectors**.
 * **Users** consume Workers, **Builders** create them, and **Admins** maintain the platform.
 * **EKE** and **Memory Management** power the intelligence and context in all conversations.
-* **Canvas** allows workflow design for Specialized Workers, while Universal Worker Builder manages Universal Workers.
+* **Canvas** allows workflow design for AI Workflows, while Universal Worker Builder manages Universal Workers.
 * Everything relies on structured, governed access through roles and entry points.
 
 ***
@@ -21,7 +21,7 @@ metadata:
 An AI agent designed to perform tasks using LLMs, memory, connectors, and structured logic. Workers can be created, configured, and deployed through the EverWorker platform.
 
 * **Universal Worker**: A general-purpose worker with flexible configuration, suitable for a wide range of tasks. Built using the Universal Worker Builder.
-* Specialized Worker: A focused, task-specific worker constructed visually in the Canvas interface using nodes and flows.
+* AI Workflow: A focused, task-specific worker constructed visually in the Canvas interface using nodes and flows.
 
 ### Provider
 
@@ -77,7 +77,7 @@ A single conversation thread with a Worker. Sessions have individualized context
 
 ### Canvas
 
-Visual builder for Specialized Workers. Allows no-code or low-code construction of task flows through a node-based interface.
+Visual builder for AI Workflows. Allows no-code or low-code construction of task flows through a node-based interface.
 
 * Node: Building block of a workflow. Types include API Node, Code Executor, Vector Search, Invoke Worker, If/Case, etc.
 * Builder Chat: Natural language interface for generating nodes.
@@ -98,7 +98,7 @@ An interface for building Universal Workers using five structured tabs:
 
 Capabilities that a Worker can use, composed of:
 
-* Specialized Workers: Embedded as callable units within other Workers.
+* AI Workflows: Embedded as callable units within other Workers.
 * API Providers: Integrated external services (via Connectors).
 
 Skills are selected in the Worker Builder and can be enabled/disabled per session.
