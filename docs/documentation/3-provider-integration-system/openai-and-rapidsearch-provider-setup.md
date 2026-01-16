@@ -17,4 +17,8 @@ Synchronizing provider configuration
 
 You need administrator level access to the platform to setup providers and connectors.
 
-Select "Providers" on the left, switch to "Your API Providers" tab and click the "Sync from Master" button.
+1. Select "Providers" on the left, switch to "Your API Providers" tab and click the "Sync from Master" button.
+
+<Image border={false} src="https://files.readme.io/dc7fce7435ff94958a0fec6ce2b13f1d63471e403ab7022e7015b1c3e39f6898-image.png" />
+
+<br />
