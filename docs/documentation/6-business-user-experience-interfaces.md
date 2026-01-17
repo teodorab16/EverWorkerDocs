@@ -9,9 +9,9 @@ metadata:
 ---
 ### Topics Covered:
 
-* Worker Chat: Text, Image  and URL interaction capabilities
+* Worker Chat: Text, image, URL input and chat export (PDF/DOCX)
 * Workers Launchpad: Central hub for users
-* Session Management: History, context, and persistence
+* Session Management: Auto-titled sessions, history, context, and persistence
 * File Upload & Management: Temporary vs persistent file handling
 * Search & Filtering: Tag-based and semantic search
 
@@ -22,13 +22,23 @@ metadata:
 The primary interaction interface where Users communicate with AI Workers.
 
 * Supports **text, image, and URL input**
-* Users can **view the Worker's skills** and **knowledge** sources.
+* Users can **view the Worker's skills** and **knowledge** sources
 * Displays the **Worker's thinking trace** (collapsed chain-of-thought) for transparency
+* **Custom welcome messages** can be configured per Worker to greet users
 * Chat controls:
   * Enter to send
   * Shift + Enter for new lines
   * Paste URLs inline
-  * Attach files in chat
+  * Attach files and images in chat
+
+### Chat Export
+
+Export your conversation history in multiple formats:
+
+* **PDF Export**: Download the chat as a formatted PDF document
+* **DOCX Export**: Download the chat as a Microsoft Word document
+
+Exports include the full conversation history with messages, responses, and formatting preserved.
 
 ***
 
