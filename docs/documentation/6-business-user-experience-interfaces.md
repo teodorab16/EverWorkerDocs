@@ -10,7 +10,7 @@ metadata:
 ### Topics Covered:
 
 * Worker Chat: Text, Image  and URL interaction capabilities
-* Workers Launchpad: Central hub for users (Coming soon)
+* Workers Launchpad: Central hub for users
 * Session Management: History, context, and persistence
 * File Upload & Management: Temporary vs persistent file handling
 * Search & Filtering: Tag-based and semantic search
@@ -28,7 +28,7 @@ The primary interaction interface where Users communicate with AI Workers.
   * Enter to send
   * Shift + Enter for new lines
   * Paste URLs inline
-  * Attach files in chat _(Coming soon)_
+  * Attach files in chat
 
 ***
 
@@ -49,11 +49,11 @@ Each new conversation with a Worker creates a **dedicated session** with its own
 
 Users can upload documents to provide additional context during conversations.
 
-* **In-chat uploads** are temporary (valid only during the session) _(Coming soon)_
+* **In-chat uploads** are temporary (valid only during the session)
 * **Persistent files** are uploaded via the Session Settings panel, becoming part of session memory
 * **Supported formats** : You can upload the following file types in chat or session context:
-  > .pdf, .docx, .doc, .txt, .md, .rtf
-  :warning: Only text-based PDF files are supported. Images, scanned PDFs, and tabular files (.xlsx, .csv) cannot be processed at this time.
+  > .pdf, .docx, .doc, .txt, .md, .rtf, .xlsx, .csv
+  :warning: Only text-based PDF files are supported. Images and scanned PDFs cannot be processed at this time.
 * Files are embedded into vector memory and used for response generation when enabled
 
 ***
