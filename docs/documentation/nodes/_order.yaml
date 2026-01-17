@@ -9,7 +9,10 @@
 - storage-upload
 - vector-save
 - vector-search
+- save-to-collection
+- find-in-collection
 - worker-call
+- ai-worker-call
 - switch-worker
 - map-worker
 - fold-worker
