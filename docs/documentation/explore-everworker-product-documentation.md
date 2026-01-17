@@ -1,41 +1,72 @@
 ---
-title: Explore EverWorker Product Documentation
-excerpt: Overview
+title: EverWorker Platform Documentation
+excerpt: Your guide to building intelligent AI Workers and Workflows
 deprecated: false
 hidden: false
-icon: fad fa-location-question
+icon: fad fa-rocket-launch
 metadata:
   robots: index
 ---
-This guide provides a structured overview of the EverWorker Platform. It’s designed to help product teams, engineers, builders, and internal admins understand how the platform works across its major domains — from architecture and creation tools to security, analytics, and internal systems.
+Welcome to EverWorker, the enterprise platform for creating, deploying, and managing intelligent AI agents. This documentation helps you understand and use every aspect of the platform.
 
-# Start with Terminology
+***
 
-Before diving into individual modules, we recommend reviewing the Terminology page. It defines key concepts like Workers, Connectors, Memory, and EKE, etc. - ensuring a shared understanding across teams.
+# Quick Start by Role
 
-# Navigating the Guide
+| Role | Start Here | Key Sections |
+|------|------------|--------------|
+| **Users** | [Business User Experience](doc:6-business-user-experience-interfaces) | Chat interface, sessions, file uploads |
+| **Builders** | [Builder Tools](doc:2-builder-tools) | AI Worker Builder, Canvas, Skills |
+| **Admins** | [Admin & Management](doc:7-admin-management) | User management, security, analytics |
 
-Each numbered section focuses on a core system or capability within the EverWorker platform.
+***
 
-Sections are grouped by functional area:
+# Core Concepts
 
-* 1–2: How Workers are built
-* 3–4: Integrations and skills
-* 5: Memory and knowledge
-* 6–8: User interfaces, admin tools, and security
-* 9–10: Business-facing dashboards and UX
+Before exploring the platform, review the **[Terminology](doc:terminology)** page to understand key concepts:
 
-# Who Should Read What
+* **AI Workers** — Conversational AI agents for flexible tasks
+* **AI Workflows** — Visual node-based automations built in Canvas
+* **Providers & Connectors** — External API integrations
+* **Memory & Knowledge** — Enterprise knowledge management (EKE)
+* **Skills** — Capabilities that Workers can use (Workflows, APIs, MCP Tools)
 
-* Product & UX teams → Start with sections 1, 2, 3, 6, and 10
-* Builders & Engineers → Focus on 1–5, 7, 8
-* Admins → Focus on 7 and 8
-* Business stakeholders → Start with 6 and 9
+***
 
-# What's Inside
+# Documentation Sections
 
-Each page includes:
+### Building & Creating
+| Section | Description |
+|---------|-------------|
+| [Workers Architecture](doc:1-workers-architecture) | AI Workers vs AI Workflows, how they work |
+| [Builder Tools](doc:2-builder-tools) | AI Worker Builder, Canvas visual designer |
+| [Canvas Nodes](doc:nodes) | Complete reference for all workflow nodes |
 
-* A clear one-pager explaining the topic
-* A list of covered topics
-* A Timeline of high-level features to be released
+### Integrations & Capabilities
+| Section | Description |
+|---------|-------------|
+| [Provider & Integration System](doc:3-provider-integration-system) | API Providers, Connectors, LLM Models, OAuth |
+| [Skills & Capabilities](doc:4-skills-capabilities) | AI Workflows, API Providers, MCP Tools |
+| [Memory & Knowledge (EKE)](doc:5-memory-knowledge-management-eke) | Vector memory, knowledge sources, embeddings |
+
+### Platform Management
+| Section | Description |
+|---------|-------------|
+| [Business User Experience](doc:6-business-user-experience-interfaces) | Chat interface, sessions, file handling |
+| [Admin & Management](doc:7-admin-management) | Users, roles, organizations, observatory |
+| [Authentication & Security](doc:8-authentication-security) | OAuth, SSO, access control |
+
+### Analytics & Navigation
+| Section | Description |
+|---------|-------------|
+| [Business Analytics](doc:9-business-analytics) | ROI tracking, usage metrics, dashboards |
+| [Navigation & UX](doc:10-navigation-user-experience) | Menu structure, persona-based navigation |
+
+***
+
+# API Reference
+
+For programmatic access, see the **[API Reference](doc:api-reference)** section covering:
+* REST API endpoints for executing Workers
+* Webhook integrations
+* Output schema specifications
