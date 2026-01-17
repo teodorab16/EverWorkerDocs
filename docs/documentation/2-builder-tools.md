@@ -26,11 +26,19 @@ A structured UI that guides Builders through the configuration of **AI Workers**
 
 ### Key Tabs:
 
-* **Profile** – Define name, avatar, description, tags, and visibility (public/private)
+* **Profile** – Define name, avatar, description, tags, and custom welcome message
 * **Knowledge** – Attach vector memory sets, select embedder, configure retrieval behavior
 * **Brain** – Set up input structure, tone, formatting, and base LLM parameters
 * **Skills** – Add connectors, APIs, or embedded AI Workflows as callable tools
 * **Summary** – Final validation screen with a toggle for public sharing and template generation
+
+### Profile Tab Details
+
+The Profile tab allows Builders to configure the Worker's identity and user-facing presentation:
+
+* **Name & Avatar**: Set a recognizable name and visual identity
+* **Description & Tags**: Help users discover and understand the Worker's purpose
+* **Custom Welcome Message**: Configure a personalized greeting that users see when starting a new chat session with the Worker
 
 _`Best for: Workers used across teams or tasks with dynamic input/output handling`_
 
