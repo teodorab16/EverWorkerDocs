@@ -13,6 +13,7 @@ metadata:
 
 * **Provider Architecture**: OpenAPI-based external service integrations
 * **Connector Management**: Authentication and access control for providers
+* **LLM Management**: Configure and manage available LLM models
 * **Central Repository**: Curated provider library with sync capabilities
 * OAuth and authentication flows
 * Provider versioning and updates
@@ -26,6 +27,7 @@ Providers in EverWorker represent **external APIs or service ecosystems** (e.g.,
 * Providers serve as the **foundation for all tool-based capabilities** within Workers
 * Managed centrally by EverWorker through an automated **API Scraper system** that keeps specs current
 * Can support hundreds of providers, covering major enterprise and SaaS ecosystems
+* **Supports both JSON and YAML formats** for OpenAPI specification uploads
 
 ***
 
@@ -37,6 +39,39 @@ Connectors are **instances of Providers**, configured with **authentication cred
 * Support for **authentication parameters** such as API keys, OAuth tokens, tenant IDs, and more
 * Assigned on a **per-node or per-worker** basis in AI Workflows, and per skill in AI Workers
 * Configurable via a secure UI, with role-based access (Builders/Admins)
+
+***
+
+# LLM Management
+
+LLM Management allows Admins to configure and manage the **Large Language Models** available across the platform. This feature is accessible under **Providers** in the navigation menu.
+
+### Key Capabilities:
+
+* **Add New LLM Models**: Register new models with their provider, capabilities, and pricing
+* **Configure Model Features**: Define what each model supports:
+  * Reasoning, Streaming, Structured Output
+  * Function Calling, Fine-tuning, Realtime
+  * Predicted Outputs
+* **Input/Output Configuration**:
+  * Maximum token limits for input and output
+  * Cost per million tokens (CPM) for billing/budgeting
+  * Cached input pricing
+  * Modality support (text, image, audio)
+* **Enable/Disable Models**: Toggle model availability across the platform
+* **Edit and Delete**: Update model configurations or remove deprecated models
+
+### Model Properties:
+
+| Property | Description |
+|----------|-------------|
+| **Name** | The model identifier (e.g., gpt-4, claude-3-sonnet) |
+| **Provider** | The LLM provider (e.g., openai, anthropic, google) |
+| **Status** | Active or Inactive |
+| **Features** | Capabilities like streaming, function calling, etc. |
+| **Input Tokens** | Maximum context window size |
+| **Output Tokens** | Maximum response length |
+| **Cost (CPM)** | Pricing per million tokens for input and output |
 
 ***
 

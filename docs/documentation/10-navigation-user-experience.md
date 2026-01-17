@@ -32,7 +32,7 @@ The EverWorker platform adapts its interface based on the user's role, ensuring 
     * **AI Worker Builder**
     * **Worker Creator (Chat)**
     * **Memory Manager**
-    * **Connectors & Providers**
+    * **Providers** (including Connectors and LLM Management)
   * Tailored menus for creation, testing, and iteration
 * **Admin:**
   * Full platform access including:
@@ -52,10 +52,10 @@ The platform uses a **left-hand vertical sidebar** for persistent navigation, or
 2. **Workers** (AI Workers, AI Workflows)
 3. **Canvas**
 4. **Memory**
-5. **Connectors**
+5. **Providers** (Connectors, LLM Management)
 6. **Analytics**
 7. **Admin Tools** (visible to Admins only)
-8. **Settings** (personal + system)
+8. **Settings** (personal + system, Queue Manager)
 9. **Help & Support**
 
 Each section expands into **contextual sub-navigation** or modal views when needed.
