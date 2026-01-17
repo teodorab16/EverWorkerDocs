@@ -9,6 +9,7 @@ metadata:
 ### Topics Covered
 
 * **User Management**: Roles (User, Builder, Admin), permissions, and directory sync
+* **Organizations**: Team-based access control for departments and teams
 * **Platform Settings**: Remote Connection, License Management
 
 ***
@@ -101,6 +102,26 @@ These are presented as sub-tabs at the top of the content area.
   * Provider/connector management
   * System configuration (log cleanup, performance monitoring)
   * License allocation
+
+***
+
+# Organizations
+
+Organizations enable **team-based access control**, allowing companies to replicate their organizational structure within EverWorker. Key capabilities include:
+
+* **Organization Isolation**: Resources in one organization are not visible to others by default
+* **Multi-Organization Membership**: Users can belong to multiple organizations with different roles
+* **Flexible Visibility**: Four levels - Private, Organization, Shared, Company-Wide
+* **Organization Switching**: Users work in one organization at a time, easily switching between them
+
+### Admin Levels
+
+| Level | Scope | Capabilities |
+|-------|-------|--------------|
+| **Organization Admin** | Specific organization(s) | Full control within assigned organizations |
+| **Platform Admin** | All organizations | Create/delete organizations, platform-wide settings |
+
+For detailed information on Organizations, see the dedicated [Organizations](/docs/organizations) documentation.
 
 ***
 
