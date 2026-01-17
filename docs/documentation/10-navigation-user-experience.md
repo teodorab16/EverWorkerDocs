@@ -48,15 +48,12 @@ The EverWorker platform adapts its interface based on the user's role, ensuring 
 
 The platform uses a **left-hand vertical sidebar** for persistent navigation, organized by function:
 
-1. **Home / Launchpad** (role-based)
-2. **Workers** (AI Workers, AI Workflows)
-3. **Canvas**
-4. **Memory**
-5. **Providers** (Connectors, LLM Management)
-6. **Analytics**
-7. **Admin Tools** (visible to Admins only)
-8. **Settings** (personal + system, Queue Manager)
-9. **Help & Support**
+1. **AI Workers**
+2. **AI Workflows**
+3. **Knowledge**
+4. **Providers** (Your Connectors, Your API Providers, MCP Servers, Incoming Webhooks, LLM Models)
+5. **Analytics**
+6. **Settings** (visible to Admins only)
 
 Each section expands into **contextual sub-navigation** or modal views when needed.
 

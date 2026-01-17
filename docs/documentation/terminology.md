@@ -96,12 +96,13 @@ An interface for building AI Workers using five structured tabs:
 
 ### Skills
 
-Capabilities that a Worker can use, composed of:
+Capabilities that an AI Worker can use, composed of:
 
-* AI Workflows: Embedded as callable units within other Workers.
+* AI Workflows: Can be added as callable tools within AI Workers.
 * API Providers: Integrated external services (via Connectors).
+* MCP Tools: Tools from connected MCP servers.
 
-Skills are selected in the Worker Builder and can be enabled/disabled per session.
+Skills are selected in the AI Worker Builder and can be enabled/disabled per session.
 
 ### Launchpad
 

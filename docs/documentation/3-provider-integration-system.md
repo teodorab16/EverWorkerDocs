@@ -13,7 +13,7 @@ metadata:
 
 * **Provider Architecture**: OpenAPI-based external service integrations
 * **Connector Management**: Authentication and access control for providers
-* **LLM Management**: Configure and manage available LLM models
+* **LLM Models**: Configure and manage available LLM models
 * **Central Repository**: Curated provider library with sync capabilities
 * OAuth and authentication flows
 * Provider versioning and updates
@@ -42,9 +42,9 @@ Connectors are **instances of Providers**, configured with **authentication cred
 
 ***
 
-# LLM Management
+# LLM Models
 
-LLM Management allows Admins to configure and manage the **Large Language Models** available across the platform. This feature is accessible under **Providers** in the navigation menu.
+LLM Models allows Admins to configure and manage the **Large Language Models** available across the platform. This feature is accessible as a tab within **Providers** in the navigation menu (alongside Your Connectors, Your API Providers, MCP Servers, and Incoming Webhooks).
 
 ### Key Capabilities:
 
