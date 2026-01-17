@@ -55,6 +55,11 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 * **Node-by-node testing** and real-time execution feedback
 * **Custom connectors** per node for precise control of external service integration
 * **In-canvas metadata editing**: name, description, tags directly in the workspace
+* **Grid snap**: Nodes automatically align to grid for cleaner layouts
+* **Monaco Editor**: Professional code editing with syntax highlighting and IntelliSense for Code nodes
+* **Retry with delay**: Configure automatic retries with delay intervals for LLM and API nodes
+* **Node ID display**: Node IDs displayed on cards for easy reference and debugging
+* **Search in add-node list**: Quickly find nodes by name when adding new nodes to the canvas
 
 ### Node Types Include:
 
