@@ -90,7 +90,7 @@ EverWorker maintains a **curated library of Providers**, regularly updated throu
 
 EverWorker supports **multiple authentication models** to handle secure, multi-user environments:
 
-* **User OAuth**: Requires end-user login and consent (used in Assistant Workers)
+* **User OAuth**: Requires end-user login and consent (used when Workers need access to user's personal accounts)
 * **App Token**: Uses system-level access credential.
 * Supports **OAuth scopes, redirect flows, and token refresh logic**
 * Integrated seamlessly in chat, connector config UI, and session workflows

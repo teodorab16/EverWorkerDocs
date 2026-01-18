@@ -14,7 +14,7 @@ The **Builder Tools** section of the EverWorker platform provides everything a B
 ### Topics Covered:
 
 * **AI Worker Builder**: A structured, multi-tab interface for configuring and deploying AI Workers
-* **Canvas (formerly Studio)**: A visual, node-based interface for building AI Workflows through drag-and-drop logic blocks, connectors, and custom flows.
+* **Canvas**: A visual, node-based interface for building AI Workflows through drag-and-drop logic blocks, connectors, and custom flows.
 * **Worker Creator (Chat)**: An AI-powered assistant that helps Builders generate workflows using natural language prompts—ideal for quick prototyping and non-technical creators.
 * **Node Types, Connections, and Workflow Logic**: Details on available nodes (API, conditional logic, vector memory, etc.), how they connect, and how workflows execute step-by-step.
 
