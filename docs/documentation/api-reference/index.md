@@ -25,7 +25,7 @@ In order to be able to execute API requests towards the platform, a user must ac
 
 Tokens can be revoked from the same interface where they are created
 
-<Image border={false} src="https://files.readme.io/d2dc437d49bf6cdaa159da6019665cb26c275f9f09413dcbe01280e5de394bf9-image.png" />
+<Image align="center" border={false} src="https://files.readme.io/4c9b4a964d391a73caa10248439ffe7892766bcd34c78ef614c7d7fd93d47baf-Screenshot_2026-01-18_at_16.40.47.png" />
 
 During the token creation, you have 4 different permission types you can assign to the topic.
 
@@ -54,8 +54,6 @@ For an example, check the "Execute Agent" -> "Example execution result" below.
 # Base URL
 
 HTTPS executions are called against Base URL for your organization, that looks like `account_name`.everworker.ai.  So if your account name is "test", then a target URL for a call with the URL path "api/v1/agents/health" would be `https://test.everworker.ai/api/v1/agents/health`.
-
-<br />
 
 # API call types
 
@@ -219,10 +217,10 @@ Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
 
 ### When to use execution-result vs execution-logs
 
-| Endpoint | Use Case |
-|----------|----------|
-| `execution-result` | When you only need the final output and status |
-| `execution-logs` | When you need detailed debugging info, node-by-node results, or timing data |
+| Endpoint           | Use Case                                                                    |
+| ------------------ | --------------------------------------------------------------------------- |
+| `execution-result` | When you only need the final output and status                              |
+| `execution-logs`   | When you need detailed debugging info, node-by-node results, or timing data |
 
 ### Possible status values
 
