@@ -22,7 +22,7 @@ AI Workers are **conversational AI agents** designed to be flexible, modular, an
 
 They are created using the AI Worker Builder, where Builders define:
 
-* Profile: Name, avatar, and tags
+* Profile: Name, avatar, tags, customizable welcome message
 * Knowledge: Vector memory sources, context documents, semantic search
 * Brain: LLM configuration, behavior prompts, role, tone, output format
 * Skills: AI Workflows, API Providers (via Connectors), and MCP Tools
@@ -49,11 +49,11 @@ Key characteristics:
 
 AI Workers and AI Workflows are complementary:
 
-| | AI Workers | AI Workflows |
-|---|---|---|
-| **Interface** | Chat conversation | Structured input/output |
-| **Built with** | AI Worker Builder | Canvas |
-| **Best for** | Flexible, conversational tasks | Precise, repeatable automations |
+|                | AI Workers                     | AI Workflows                    |
+| -------------- | ------------------------------ | ------------------------------- |
+| **Interface**  | Chat conversation              | Structured input/output         |
+| **Built with** | AI Worker Builder              | Canvas                          |
+| **Best for**   | Flexible, conversational tasks | Precise, repeatable automations |
 
 **Key relationship**: AI Workflows can be added as **Skills** to AI Workers. This allows a conversational AI Worker to trigger precise automations when needed — combining the flexibility of chat with the reliability of structured workflows.
 
