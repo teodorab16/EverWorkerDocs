@@ -1,5 +1,5 @@
 ---
-title: API reference
+title: API Reference
 excerpt: This section explains how to execute agents via HTTPS API requests
 deprecated: false
 hidden: false
