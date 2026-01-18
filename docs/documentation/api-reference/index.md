@@ -13,7 +13,7 @@ metadata:
 
 **Token (JWT token)** - authentication secret used to impersonate a certain user in order to access the platform. Each user can create their own tokens, and administrators can see each token (but not its value) and its expiration date in Settings.
 
-**Agent** - a specific universal or specialized worker designed in the platform. Agents (workers) are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
+**Agent** - an AI Worker or AI Workflow designed in the platform. Agents are executable using API via their agentID that can be found in the URL of any agent configuration. AgentID is a unique identifier for each worker.
 
 **Execution** - A single run of an agent. Execution and its ID is important to query status and results for a certain run that was called using API. Executions are referenced using ExecutionID that is visible in a result response to an API call to execute an agent.
 
@@ -27,12 +27,13 @@ Tokens can be revoked from the same interface where they are created
 
 <Image align="center" border={false} src="https://files.readme.io/4c9b4a964d391a73caa10248439ffe7892766bcd34c78ef614c7d7fd93d47baf-Screenshot_2026-01-18_at_16.40.47.png" />
 
-During the token creation, you have 4 different permission types you can assign to the topic.
+During the token creation, you have 5 different permission types you can assign to the token:
 
-* `agent:execute` - allowing to use this token to execute agents (workers)
-* `agent:logs` - allowing to use this token to read agent (worker) logs
-* `agents:health` - allowing to use this token to view platform health
-* `observatory:write` - allowing to use this token for superadmin operations not covered by this guide
+* `agents:execute` - allows executing agents (AI Workers and AI Workflows) via REST API
+* `agents:logs` - allows accessing execution logs via REST API
+* `agents:health` - allows accessing health check endpoints
+* `observatory:write` - allows superadmin operations (not covered by this guide)
+* `admin:all` - full administrative access (admin only)
 
 Make sure to copy the token value to a secure vault/password manager/write it down, because you cannot access its value in web UI after it's created for security considerations.
 
@@ -96,9 +97,18 @@ Input parameters depend on what input parameters were configured in the actual w
 * For AI Worker, it is typically "userMessage" that consists of "role" (user) and "content".
 * For AI Workflow, it will be a list of input parameters used in Input node, with the names given to them in Canvas.
 
-"**bypassCache**" is an optional boolean that forces a fresh execution, skipping any cached result for identical inputs. If omitted or set to false, the platform may return a cached result when available.
+### Request body parameters
 
-### Example body usage when executing AI Worker.
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `agentId` | string | Yes | The unique identifier of the AI Worker or AI Workflow |
+| `sessionId` | string | No | Session ID to continue a conversation. Use `"new_session"` to start fresh |
+| `inputParams` | object | No | Input parameters for the agent (varies by agent type) |
+| `bypassCache` | boolean | No | Force fresh execution, skipping cached results (default: false) |
+| `parentExecutionId` | string | No | Link this execution to a parent execution for tracking |
+| `debugLogging` | boolean | No | Enable detailed debug logging for this execution |
+
+### Example body usage when executing AI Worker
 
 ```
 {
@@ -203,14 +213,12 @@ Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
 ```json
 {
     "success": true,
-    "data": {
-        "executionId": "3b0b49e4-4b63-4a45-9d9a-bb59cece5650",
-        "status": "completed",
-        "result": {
-            "role": "assistant",
-            "content": "### Licenses for testc@everworker.ai\n\n| User (UPN) | Assigned licenses |\n|---|---|\n| test@everworker.ai | - Power BI (Free)  \n- Microsoft Power Automate Free  \n- Microsoft 365 Business Basic |"
-        },
-        "executionTime": 16736
+    "status": "ended",
+    "executionStarted": "2025-09-22T07:01:19.758Z",
+    "executionEnded": "2025-09-22T07:01:36.494Z",
+    "result": {
+        "role": "assistant",
+        "content": "### Licenses for testc@everworker.ai\n\n| User (UPN) | Assigned licenses |\n|---|---|\n| test@everworker.ai | - Power BI (Free)  \n- Microsoft Power Automate Free  \n- Microsoft 365 Business Basic |"
     }
 }
 ```
@@ -224,7 +232,43 @@ Substitute `{{ExecutionID}}` with the ID returned by "Execute" POST request.
 
 ### Possible status values
 
-* `completed` - Execution finished successfully
+* `started` - Execution is still in progress
+* `ended` - Execution finished successfully
 * `failed` - Execution encountered an error
-* `running` - Execution is still in progress
-* `cancelled` - Execution was cancelled by user or system
+
+### Response fields
+
+| Field | Description |
+|-------|-------------|
+| `success` | Whether the API call succeeded |
+| `status` | Execution status (`started`, `ended`, or `failed`) |
+| `executionStarted` | Timestamp when execution began |
+| `executionEnded` | Timestamp when execution completed (only present if finished) |
+| `result` | The final output from the execution (only present if successful) |
+| `error` | Error details (only present if failed) |
+
+***
+
+# HTTP Status Codes
+
+All API endpoints return standard HTTP status codes:
+
+| Status Code | Meaning |
+|-------------|---------|
+| `200` | Success - Request completed successfully |
+| `400` | Bad Request - Invalid parameters or missing required fields |
+| `401` | Unauthorized - Invalid or missing authentication token |
+| `403` | Forbidden - Token lacks required scope/permissions |
+| `404` | Not Found - Execution ID does not exist |
+| `405` | Method Not Allowed - Wrong HTTP method used |
+| `429` | Too Many Requests - Rate limit exceeded |
+| `500` | Internal Server Error - Server-side error |
+
+### Error Response Format
+
+```json
+{
+    "success": false,
+    "error": "Error message describing what went wrong"
+}
+```
