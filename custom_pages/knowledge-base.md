@@ -3,17 +3,23 @@ title: Knowledge Base
 fullscreen: false
 hidden: false
 ---
-<script>
-  {`
-    fetch('https://dash.readme.com/api/v1/categories/kb-articles/page')
-      .then(res => res.json())
-      .then(pages => {
-        const list = pages.map(p => 
-          '<li><a href="/docs/' + p.slug + '">' + p.title + '</a></li>'
-        ).join('');
-        document.getElementById('kb-articles').innerHTML = '<ul>' + list + '</ul>';
-      });
-    `}
-</script>
+<div id="kb-articles">
+  <ul id="kb-list">
+  </ul>
+</div>
 
-<div id="kb-articles">Loading KB articles...</div>
+<script>
+{`
+// List your KB pages manually - easy to maintain
+const kbPages = [
+  { title: 'KB001: Troubleshooting Guide', slug: 'kb-001-troubleshooting' },
+  { title: 'KB002: VPC Deployment', slug: 'kb-002-vpc-deployment' },
+  // Add more as you create them
+];
+
+const list = kbPages.map(p => 
+  '<li><a href="/docs/' + p.slug + '">' + p.title + '</a></li>'
+).join('');
+document.getElementById('kb-list').innerHTML = list;
+`}
+</script>
