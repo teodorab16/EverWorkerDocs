@@ -8,13 +8,3 @@ hidden: false
 <Anchor label="LLM API failing due to content management policy" target="_blank" href="page:llm-api-fail-content-policy">LLM API failing due to content management policy</Anchor>
 
 <br />
-
-<div class="kb-table">
-  <input id="kbSearch" type="search" placeholder="Search KB…" />
-  <table>
-    <thead>
-      <tr><th>Page</th><th>Last updated</th></tr>
-    </thead>
-    <tbody id="kbRows"></tbody>
-  </table>
-</div>
