@@ -2,7 +2,7 @@
 title: LLM API failing due to content management policy
 excerpt: Potential solutions when LLM provider blocks intended request
 deprecated: false
-hidden: false
+hidden: true
 icon: fad fa-rocket-launch
 metadata:
   robots: index
