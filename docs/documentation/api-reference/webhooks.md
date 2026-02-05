@@ -1,9 +1,11 @@
 ---
 title: Webhooks
 excerpt: >-
-  Configure webhooks to trigger AI Workers and AI Workflows from external systems
+  Configure webhooks to trigger AI Workers and AI Workflows from external
+  systems
 deprecated: false
 hidden: false
+icon: 🪝
 metadata:
   robots: index
 ---
