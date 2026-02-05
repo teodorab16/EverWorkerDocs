@@ -1,5 +1,5 @@
 ---
-title: VPC log collection
+title: How to collect detailed logs from VPC setup
 excerpt: >-
   This article explains the proccess that allows to collect logging from all
   kubernetes pod replicas
