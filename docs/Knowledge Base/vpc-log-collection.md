@@ -15,8 +15,10 @@ Increase the log level by changing the environment variable EW_OBSERVATORY__LOG_
 
 # Collecting the logs
 
-1. Find the Deployment's pod label selector (copy the matchLabels)
+1. Find the Deployment's pod label selector (copy the matchLabels)  
+   `kubectl -n everworker get deploy everworker -o jsonpath='{.spec.selector.matchLabels}{"\n"}'`
 2. Use those labels to pull logs from ALL pods (all replicas)  
-   Example if you saw: `{"app":"everworker"`}
+   Example if you saw: `{"app":"everworker"`}  
+   ``kubectl -n everworker logs -l app=everworker --all-containers --prefix=true --timestamps=true``
 
 <br />
