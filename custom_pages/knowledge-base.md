@@ -3,8 +3,17 @@ title: Knowledge Base
 fullscreen: false
 hidden: false
 ---
-<Anchor label="How to collect VPC logs" target="_blank" href="page:collect-vpc-logs">How to collect VPC logs</Anchor>
+<script>
+{`
+fetch('https://dash.readme.com/api/v1/categories/kb-articles/docs')
+  .then(res => res.json())
+  .then(pages => {
+    const list = pages.map(p => 
+      '<li><a href="/docs/' + p.slug + '">' + p.title + '</a></li>'
+    ).join('');
+    document.getElementById('kb-articles').innerHTML = '<ul>' + list + '</ul>';
+  });
+`}
+</script>
 
-<Anchor label="LLM API failing due to content management policy" target="_blank" href="page:llm-api-fail-content-policy">LLM API failing due to content management policy</Anchor>
-
-<br />
+<div id="kb-articles">Loading KB articles...</div>
