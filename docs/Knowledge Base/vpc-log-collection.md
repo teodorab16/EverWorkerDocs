@@ -11,7 +11,7 @@ metadata:
 ---
 # Setting the log level
 
-Increase the log level by changing the environment variable EW_OBSERVATORY__LOG_LEVEL to DEBUG.
+Increase the log level by changing the environment variable EW_OBSERVATORY__LOG_LEVEL to DEBUG in 'values.yaml'.
 
 Reproduce the error after the change.
 
