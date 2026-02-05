@@ -1,5 +1,5 @@
 ---
-title: How to collect detailed logs from VPC setup
+title: 'KB001: How to collect detailed logs from VPC setup'
 fullscreen: false
 hidden: false
 ---
