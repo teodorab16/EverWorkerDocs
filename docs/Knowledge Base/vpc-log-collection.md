@@ -26,7 +26,7 @@ kubectl -n everworker get deploy everworker -o jsonpath='{.spec.selector.matchLa
 ```
 
 2. Use those labels to pull logs from ALL pods (all replicas)  
-   *Example if you saw: `{"app":"everworker"`}*
+   _Example if you saw: `{"app":"everworker"`}_
 
 ```
 kubectl -n everworker logs -l app=everworker --all-containers --prefix=true --timestamps=true
@@ -39,9 +39,9 @@ kubectl -n everworker logs -l app=everworker --all-containers --prefix=true --ti
 ```
 
 4. If pods restart, also capture the "previous" logs (per pod)  
-   *(kubectl can't do --previous with -l selector, so loop pods)*
+   _(kubectl can't do --previous with -l selector, so loop pods)_
 
-```Text Code
+```Text
 for p in $(kubectl -n everworker get pods -l app=everworker -o name); do
   kubectl -n everworker logs ${p#pod/} --all-containers --prefix=true --timestamps=true --previous \
     > "everworker_${p#pod/}_previous.log" 2>&1 || true
