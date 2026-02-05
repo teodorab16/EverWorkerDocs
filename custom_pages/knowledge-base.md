@@ -3,4 +3,4 @@ title: Knowledge Base
 fullscreen: false
 hidden: false
 ---
-How to collect detailed logs
+<Anchor label="How to collect VPC logs" target="_blank" href="doc:collect-vpc-logs">How to collect VPC logs</Anchor>
