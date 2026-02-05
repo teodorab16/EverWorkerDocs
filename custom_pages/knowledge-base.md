@@ -4,7 +4,7 @@ fullscreen: false
 hidden: false
 ---
 <div id="kb-articles">
-  <ul id="kb-list" />
+  <ul id="kb-list"></ul>
 </div>
 
 <script>
@@ -19,5 +19,5 @@ hidden: false
       '<li><a href="/page/' + p.slug + '">' + p.title + '</a></li>'
     ).join('');
     document.getElementById('kb-list').innerHTML = list;
-    `}
+  `}
 </script>
