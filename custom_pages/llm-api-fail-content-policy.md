@@ -1,5 +1,5 @@
 ---
-title: LLM API failing due to content management policy
+title: 'KB002: LLM API failing due to content management policy'
 fullscreen: false
 hidden: false
 ---
