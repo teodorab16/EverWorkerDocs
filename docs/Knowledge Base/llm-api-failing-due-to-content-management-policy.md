@@ -24,4 +24,8 @@ The text in the messages sent to the LLM triggers one of provider's security mea
 1. Review the cause of the issue. It is commonly one of JSON keys returned by the error message, in this case "Jailbreak".
 2. Relax certain settings if available in the LLM account settings to reduce the level of filtering.
 
-The availability of the setting and allowed parameters depend on the LLM provider. This information is intended to instruct the user about potential risks and potential existence of settings available to mitigate them, not to prevent or circumvent the provider's content management policy.
+<br />
+
+This is the example of Azure OpenAI configuration provided by the provider: https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/content-filters?view=foundry-classic
+
+The availability of the setting and allowed parameters depend on the LLM provider. This information is intended to instruct the user about potential risks and potential existence of content management settings available, not to prevent or circumvent the provider's content management policy.
