@@ -12,7 +12,7 @@ metadata:
 # Setting the log level
 
 Increase the log level by changing the environment variable EW_OBSERVATORY__LOG_LEVEL to DEBUG in 'values.yaml'.  
-Apply the setting by deploying the new environment variables for helm chart.
+Apply the setting by deploying the environment variables for helm chart.
 
 Reproduce the error after the change.
 
