@@ -11,10 +11,10 @@
 - vector-search
 - save-to-collection
 - find-in-collection
-- worker-call
-- ai-worker-call
-- switch-worker
-- map-worker
-- fold-worker
-- until-worker
-- custom-code-nodes
+- run-ai-workflow
+- run-ai-worker
+- route-workflow
+- repeat-workflow
+- combine-workflow-results
+- repeat-workflow-until
+- custom-nodes
