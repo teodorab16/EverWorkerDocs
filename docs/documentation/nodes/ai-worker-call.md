@@ -1,7 +1,7 @@
 ---
-title: ● AI Worker Call
+title: ● Run AI Worker
 excerpt: >-
-  A node used to execute an AI Worker (conversational agent) with a user prompt,
+  Prompt an AI Worker with your input and receive its response,
   enabling dynamic AI-powered interactions within workflows.
 deprecated: false
 hidden: false
@@ -10,9 +10,9 @@ metadata:
 ---
 # Overview
 
-Execute an AI Worker (agents with conversational capabilities) by passing a user prompt. AI Workers are typically conversational AI agents with tool-calling capabilities, enabling dynamic interactions and complex task delegation.
+Prompt an AI Worker with your input and receive its response. AI Workers are conversational AI agents with tool-calling capabilities, enabling dynamic interactions and complex task delegation.
 
-> **Note:** This is different from the Worker Call node which executes AI Workflows. Use this node when you want to call conversational AI agents.
+> **Note:** This is different from the Run AI Workflow node which executes AI Workflows. Use this node when you want to call conversational AI agents.
 
 # When to Use
 
@@ -60,7 +60,7 @@ Use this node to integrate AI conversational agents into your workflows, delegat
 ```json
 {
     name: "Multi-turn Conversation",
-    description: "AI Worker Call Node - multi-turn conversation with session continuity",
+    description: "Run AI Worker Node - multi-turn conversation with session continuity",
     nodeId: "n",
     operationReference: {
         methodId: "universal_worker_call"

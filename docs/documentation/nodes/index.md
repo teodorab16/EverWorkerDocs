@@ -23,7 +23,7 @@ Nodes are the building blocks of AI Workflows in Canvas. Each node performs a sp
 | Node | Purpose |
 |------|---------|
 | [Universal LLM](doc:universal-llm) | Call any configured LLM model |
-| [AI Worker Call](doc:ai-worker-call) | Invoke an AI Worker from a workflow |
+| [Run AI Worker](doc:ai-worker-call) | Prompt an AI Worker with your input and receive its response |
 
 ### Data & APIs
 | Node | Purpose |
@@ -46,16 +46,16 @@ Nodes are the building blocks of AI Workflows in Canvas. Each node performs a sp
 ### Control Flow
 | Node | Purpose |
 |------|---------|
-| [Worker Call](doc:worker-call) | Call another AI Workflow |
-| [Switch Worker](doc:switch-worker) | Conditional branching |
-| [Map Worker](doc:map-worker) | Process arrays in parallel |
-| [Fold Worker](doc:fold-worker) | Aggregate array results |
-| [Until Worker](doc:until-worker) | Loop until condition met |
+| [Run AI Workflow](doc:worker-call) | Execute another workflow with specific inputs |
+| [Route Workflow](doc:switch-worker) | Evaluate conditions and execute different workflows based on the result |
+| [Repeat Workflow](doc:map-worker) | Execute a workflow for each item in a list, in parallel |
+| [Combine Workflow Results](doc:fold-worker) | Combine results from multiple workflow executions into one |
+| [Repeat Workflow Until](doc:until-worker) | Execute a workflow repeatedly until a condition is met |
 
-### Code Execution
+### Foundation
 | Node | Purpose |
 |------|---------|
-| [Custom Code Nodes](doc:custom-code-nodes) | Execute JavaScript/Python code |
+| [Custom Nodes](doc:custom-code-nodes) | Execute JavaScript/Python code |
 
 ***
 

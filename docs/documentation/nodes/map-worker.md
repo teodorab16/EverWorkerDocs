@@ -1,43 +1,40 @@
 ---
-title: ● Map Worker
-excerpt: 'A node that allows parallel array processing with sub-workers. '
+title: ● Repeat Workflow
+excerpt: 'Execute a workflow for each item in a list, in parallel.'
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-Overview
+# Overview
 
-
-
-Parallel array processing with sub-workers. Processes arrays in parallel by executing a sub-worker on each element with configurable concurrency control.
+Execute a workflow for each item in a list, in parallel. Processes arrays by executing a workflow on each element with configurable concurrency control.
 
 # When to Use
-
 
 Use this node when you need to process arrays or lists in parallel, such as bulk operations on users, processing multiple files, or sending notifications to multiple recipients.
 
 # Parameters
 
-* arrayInput (required) - Array of items to process in parallel
+* arrayInput (required) - Array of items to process in parallel
   * Examples:
     * `{{previousNode.result.items}}`
-    * ` [1, 2, 3, 4, 5]`
+    * ` [1, 2, 3, 4, 5]`
     * `{{0.userList}}`
-* workerId (required) - Worker to execute on each array element
+* workerId (required) - Workflow to execute on each array element
   * Examples: "user-processor", "data-transformer", "email-sender"
-* inputParamName (optional) - Parameter name for passing array element to sub-worker
+* inputParamName (optional) - Parameter name for passing array element to the workflow
   * Default: "item"
   * Examples: "item", "user", "data"
-* concurrency (optional) - Maximum parallel executions (system-limited)
+* concurrency (optional) - Maximum parallel executions (system-limited)
   * Default: 3
   * Examples: 1, 5, 10
-* continueOnError (optional) - Whether to continue processing if an item fails
+* continueOnError (optional) - Whether to continue processing if an item fails
   * Default: false
   * Examples: true, false
-* inheritSession (optional) - Whether sub-workers inherit parent session context
+* inheritSession (optional) - Whether the workflow inherits parent session context
   * Default: false
-* parameterMapping (optional) - Optional mapping to transform array items to sub-worker expected format
+* parameterMapping (optional) - Optional mapping to transform array items to the workflow's expected format
   * Examples:
     * `{ "userId": "item.id", "userName": "item.name" }`
     * `{ "age": { "source": "item", "path": "profile.age" } }`
@@ -47,8 +44,8 @@ Use this node when you need to process arrays or lists in parallel, such as bulk
 ```json
 {
     name: "Process User List",
-    description: "Map Worker Node - process multiple users in parallel",
-    nodeId: "n", 
+    description: "Repeat Workflow Node - process multiple users in parallel",
+    nodeId: "n",
     operationReference: {
         methodId: "map_worker"
     },
@@ -58,10 +55,10 @@ Use this node when you need to process arrays or lists in parallel, such as bulk
             value: "{{previousNode.result.users}}" // Array of users
         },
         {
-            name: "workerId", 
-            value: "user-notification-sender" // Worker for each user
+            name: "workerId",
+            value: "user-notification-sender" // Workflow for each user
         },
-        { name: "inputParamName", value: "user" }, // Parameter name in sub-worker
+        { name: "inputParamName", value: "user" }, // Parameter name in workflow
         { name: "concurrency", value: 5 }, // Process 5 users at once
         { name: "continueOnError", value: true } // Skip failed users
     ]
@@ -74,7 +71,7 @@ Use this node when you need to process arrays or lists in parallel, such as bulk
 * Configurable concurrency control
 * Error handling strategies (fail-fast or continue)
 * Progress tracking and execution metrics
-* Dynamic parameter passing to sub-workers
+* Dynamic parameter passing to workflows
 
 # Advanced Features
 
@@ -85,7 +82,7 @@ Use this node when you need to process arrays or lists in parallel, such as bulk
 
 # Result Access
 
-`{{nodeId.results}}` - Array of all results
-`{{nodeId.results.0.result}}` - First item result
-`{{nodeId.successCount}}` - Number of successful executions
-`{{nodeId.errorCount}}` - Number of failed executions
+`{{nodeId.results}}` - Array of all results
+`{{nodeId.results.0.result}}` - First item result
+`{{nodeId.successCount}}` - Number of successful executions
+`{{nodeId.errorCount}}` - Number of failed executions

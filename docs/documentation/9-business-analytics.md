@@ -37,7 +37,7 @@ The central dashboard for **monitoring all Worker activity** - both AI Workers a
 Track how Workers perform across executions to identify quality, stability, and reliability.
 
 * Two-level failure metrics:
-  a. **% of Workers that failed** (out of all active Workers)
+  a. **% of Failed Worker Runs** (out of all active Workers)
   b. **% of Executions that failed** (out of all executions)
 * Filterable by:
   * Worker type (AI Workers/AI Workflows)

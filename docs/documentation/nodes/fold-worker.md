@@ -1,6 +1,6 @@
 ---
-title: ● Fold Worker
-excerpt: A node that allows to accumulate array of results into a single value.
+title: ● Combine Workflow Results
+excerpt: Combine results from multiple workflow executions into one.
 deprecated: false
 hidden: false
 metadata:
@@ -8,7 +8,7 @@ metadata:
 ---
 # Overview
 
-Sequential accumulator processing that processes an array sequentially using a sub-worker, accumulating results into a single value (reduce/fold pattern).
+Combine results from multiple workflow executions into one. Processes an array sequentially using a workflow, accumulating results into a single value (reduce/fold pattern).
 
 # When to Use
 
@@ -16,34 +16,34 @@ Use this node for sequential data aggregation, calculations that build upon prev
 
 # Parameters
 
-* arrayInput (required) - Array of items to process sequentially
+* arrayInput (required) - Array of items to process sequentially
   * Examples:
     * `[1, 2, 3, 4, 5]`
     * `[{id: 1}, {id: 2}]`
     * `{{previous_node.items}}`
-* workerId (required) - ID of the worker to execute for each item
+* workerId (required) - ID of the workflow to execute for each item
   * Examples: "data-aggregator", "sum-calculator", "report-builder"
-* initialAccumulator (required) - Starting accumulator value. Constants here persist across ALL iterations via safe merge.
+* initialAccumulator (required) - Starting accumulator value. Constants here persist across ALL iterations via safe merge.
   * Examples:
     * `{"sum": 0, "apiKey": "xyz123", "format": "json"}`
     * `{"total": 0, "baseUrl": "https://api.com", "results": []}`
     * `{}`
-* accumulatorParamName (optional) - Parameter name used to pass current accumulator to sub-worker
+* accumulatorParamName (optional) - Parameter name used to pass current accumulator to the workflow
   * Default: "accumulator"
   * Examples: "accumulator", "total", "result"
-* itemParamName (optional) - Parameter name used to pass current item to sub-worker
+* itemParamName (optional) - Parameter name used to pass current item to the workflow
   * Default: "item"
   * Examples: "item", "current", "data"
-* inheritSession (optional) - Whether sub-workers inherit the parent session context
+* inheritSession (optional) - Whether the workflow inherits the parent session context
   Default: false
-* errorMode (optional) - How to handle sub-worker errors
+* errorMode (optional) - How to handle workflow execution errors
   * Default: "strict" (stop on error)
   * Options: "strict", "safe" (skip and continue)
-* earlyTermination (optional) - Optional condition to stop processing before all items are done
-  * Example: `{"enabled": true, "checkProperty": "sum", "exitValue": 1000}`
-* accumulatorLimits (optional) - Memory limits and check intervals for large accumulator monitoring
-  * Example: `{"maxSizeBytes": 52428800, "memoryCheckInterval": 10}`
-* parameterMapping (optional) - Map accumulator and item fields to specific sub-worker parameters
+* earlyTermination (optional) - Optional condition to stop processing before all items are done
+  * Example: `{"enabled": true, "checkProperty": "sum", "exitValue": 1000}`
+* accumulatorLimits (optional) - Memory limits and check intervals for large accumulator monitoring
+  * Example: `{"maxSizeBytes": 52428800, "memoryCheckInterval": 10}`
+* parameterMapping (optional) - Map accumulator and item fields to specific workflow parameters
   * Examples:
     * `{"currentSum": "accumulator.sum", "value": "item.amount", "apiKey": "accumulator.apiKey"}`
     * `{"total": "accumulator", "data": "item"}`
@@ -53,10 +53,10 @@ Use this node for sequential data aggregation, calculations that build upon prev
 ```json
 {
     name: "Calculate Invoice Total with Fees",
-    description: "Sum invoice line items while preserving tax rate and API credentials",
+    description: "Combine Workflow Results - sum invoice line items while preserving tax rate and API credentials",
     nodeId: "2",
     operationReference: {
-        methodId: "fold_worker"  
+        methodId: "fold_worker"
     },
     parameters: [
         {
@@ -65,13 +65,13 @@ Use this node for sequential data aggregation, calculations that build upon prev
         },
         {
             name: "workerId",
-            value: "line-item-calculator" // Worker that calculates item totals
+            value: "line-item-calculator" // Workflow that calculates item totals
         },
         {
-            name: "initialAccumulator", 
+            name: "initialAccumulator",
             value: {
                 total: 0,
-                taxRate: 0.08, 
+                taxRate: 0.08,
                 currency: "USD",
                 apiKey: "invoice-api-123",
                 fees: []
@@ -81,10 +81,10 @@ Use this node for sequential data aggregation, calculations that build upon prev
             name: "parameterMapping",
             value: {
                 currentTotal: "accumulator.total",
-                taxRate: "accumulator.taxRate", 
+                taxRate: "accumulator.taxRate",
                 apiKey: "accumulator.apiKey",
                 lineItem: "item"
-            } // Map constants and evolving data to sub-worker parameters
+            } // Map constants and evolving data to workflow parameters
         },
         { name: "errorMode", value: "safe" }, // Continue if individual items fail
         {
@@ -112,15 +112,15 @@ Use this node for sequential data aggregation, calculations that build upon prev
 * Early Termination: Stop processing based on accumulator property conditions
 * Memory Safeguards: Automatic monitoring and warnings for large accumulators
 * Error Recovery: Safe mode allows skipping failed items while preserving accumulator
-* Parameter Mapping: Transform accumulator and item data for sub-worker compatibility
+* Parameter Mapping: Transform accumulator and item data for workflow compatibility
 * Progress Tracking: Detailed statistics on processing success and failures
-* Custom Parameter Names: Configure how accumulator and items are passed to sub-workers
-* Session Management: Optional session inheritance for stateful sub-workers
+* Custom Parameter Names: Configure how accumulator and items are passed to workflows
+* Session Management: Optional session inheritance for stateful workflows
 
 # Result Access
 
-`{{nodeId.finalAccumulator}}` - Access the final accumulated result
-`{{nodeId.processedItems}}` - Number of items successfully processed
-`{{nodeId.totalItems}}` - Total number of items in the input array
-`{{nodeId.skippedItems}}` - Number of items skipped due to errors
-`{{nodeId.memoryWarnings}}` - Count of memory usage warnings
+`{{nodeId.finalAccumulator}}` - Access the final accumulated result
+`{{nodeId.processedItems}}` - Number of items successfully processed
+`{{nodeId.totalItems}}` - Total number of items in the input array
+`{{nodeId.skippedItems}}` - Number of items skipped due to errors
+`{{nodeId.memoryWarnings}}` - Count of memory usage warnings

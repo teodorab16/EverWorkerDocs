@@ -1,8 +1,8 @@
 ---
-title: ● Custom Code Nodes
+title: ● Custom Nodes
 excerpt: >-
   Canvas allows you to create your own algorithms and advanced processes using
-  Custom Code nodes.
+  Custom Nodes.
 deprecated: false
 hidden: false
 metadata:
@@ -10,35 +10,35 @@ metadata:
 ---
 # Overview
 
-In addition to the built-in nodes above, EverWorker supports Custom Code Nodes that appear as a separate section in the "Add Node" dropdown.
+In addition to the built-in nodes above, EverWorker supports Custom Nodes that appear as a separate section in the "Add Node" dropdown.
 
-# What are Custom Code Nodes?
+# What are Custom Nodes?
 
-Custom Code Nodes are user-created JavaScript/TypeScript functions that can be saved and reused across workflows. They appear in the dropdown under a "Custom Code Nodes" section.
+Custom Nodes are user-created JavaScript/TypeScript functions that can be saved and reused across workflows. They appear in the dropdown under a "Foundation" section.
 
-# Creating Custom Code Nodes
+# Creating Custom Nodes
 
-1. Access Code Node Edtior from the menu in the left hand side.
+1. Access the Custom Node Editor from the menu in the left hand side.
 2. Write your custom JavaScript/TypeScript code
 3. Define input parameters your code expects
-4. Test and save your code node
+4. Test and save your custom node
 5. It will automatically appear in the "Add Node" dropdown
 
-# Using Custom Code Nodes
+# Using Custom Nodes
 
-When you select a custom code node from the dropdown:
+When you select a custom node from the dropdown:
 
-* The node uses methodId: "code_node" internally
-* It automatically gets a codeNodeId parameter pointing to your saved code
-* Additional parameters are generated based on your code node definition
+* The node uses methodId: "code_node" internally
+* It automatically gets a codeNodeId parameter pointing to your saved code
+* Additional parameters are generated based on your custom node definition
 * The display name shows your custom node name in green
 
-# Example Custom Code Node
+# Example Custom Node
 
-A custom code node might look like:
+A custom node might look like:
 
 ```javascript
-// Custom code that processes user data
+// Custom Node Handler
 function processUserData(userData, apiKey) {
     // Your custom logic here
     return {

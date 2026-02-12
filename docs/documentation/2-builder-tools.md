@@ -56,7 +56,7 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 * **Custom connectors** per node for precise control of external service integration
 * **In-canvas metadata editing**: name, description, tags directly in the workspace
 * **Grid snap**: Nodes automatically align to grid for cleaner layouts
-* **Monaco Editor**: Professional code editing with syntax highlighting and IntelliSense for Code nodes
+* **Monaco Editor**: Professional code editing with syntax highlighting and IntelliSense for Custom Nodes
 * **Retry with delay**: Configure automatic retries with delay intervals for LLM and API nodes
 * **Node ID display**: Node IDs displayed on cards for easy reference and debugging
 * **Search in add-node list**: Quickly find nodes by name when adding new nodes to the canvas
@@ -64,12 +64,12 @@ _`Best for: Workers used across teams or tasks with dynamic input/output handlin
 ### Node Types Include:
 
 * **API Node**: Call external services
-* **Code Executor**: Run JS/Python snippets
+* **Custom Node**: Run JS/Python snippets
 * **If / Case**: Conditional logic
 * **Map / Fold**: Looping and aggregation across lists
 * **Vector Search / Save**: Retrieve or store memory embeddings
 * **PDF to Image**: Convert documents for downstream processing
-* **Invoke Worker**: Trigger another Worker as a sub-process
+* **Run AI Workflow**: Execute another workflow with specific inputs
 * **BaaS**: Browser automation for UI workflows
 
 ### Current Focus:

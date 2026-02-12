@@ -79,7 +79,7 @@ A single conversation thread with a Worker. Sessions have individualized context
 
 Visual builder for AI Workflows. Allows no-code or low-code construction of task flows through a node-based interface.
 
-* Node: Building block of a workflow. Types include API Node, Code Executor, Vector Search, Invoke Worker, If/Case, etc.
+* Node: Building block of a workflow. Types include API Node, Custom Node, Vector Search, Run AI Workflow, If/Case, etc.
 * Builder Chat: Natural language interface for generating nodes.
 * Raw Tab: Manual code editing for each node.
 * Status Indicators: Show readiness, execution results, and issues in each node.

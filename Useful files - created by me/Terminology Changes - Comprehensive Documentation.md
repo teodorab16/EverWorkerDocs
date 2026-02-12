@@ -30,12 +30,12 @@
 | **Code Node / Custom Code** | **Custom Node** | UI labels, metadata, error messages, logs, dropdowns | Merged (PR #1778) |
 | **Custom Code Nodes** (category) | **Foundation** (category) | Canvas dropdown category | Merged (PR #1778) |
 | **Failed Workers** | **Failed Worker Runs** | Analytics metric card | Merged (PR #1483) |
-| **AI Workflow Call** (node name) | **Run AI Workflow** | Canvas control flow node `worker_call` | EN-2407 |
-| **AI Worker Call** (node name) | **Run AI Worker** | Canvas control flow node `universal_worker_call` | EN-2407 |
-| **Map Worker** (node name) | **Repeat Workflow** | Canvas control flow node `map_worker` | EN-2407 |
-| **Fold Worker** (node name) | **Combine Workflow Results** | Canvas control flow node `fold_worker` | EN-2407 |
-| **Switch Worker** (node name) | **Route Workflow** | Canvas control flow node `switch_worker` | EN-2407 |
-| **Until Worker** (node name) | **Repeat Workflow Until** | Canvas control flow node `until_worker` | EN-2407 |
+| **Worker Call** (node name) | **Run AI Workflow** — Execute another workflow with specific inputs | Canvas control flow node `worker_call` | EN-2407 |
+| **Map Worker** (node name) | **Repeat Workflow** — Execute a workflow for each item in a list, in parallel | Canvas control flow node `map_worker` | EN-2407 |
+| **Universal Worker Call** (node name) | **Run AI Worker** — Prompt an AI Worker with your input and receive its response | Canvas control flow node `universal_worker_call` | EN-2407 |
+| **Fold Worker** (node name) | **Combine Workflow Results** — Combine results from multiple workflow executions into one | Canvas control flow node `fold_worker` | EN-2407 |
+| **Switch Worker** (node name) | **Route Workflow** — Evaluate conditions and route data to different workflows | Canvas control flow node `switch_worker` | EN-2407 |
+| **Until Worker** (node name) | **Repeat Workflow Until** — Execute a workflow repeatedly until a condition is met | Canvas control flow node `until_worker` | EN-2407 |
 | "Select a worker..." (various) | "Select a workflow..." | Canvas worker select dropdowns, placeholders | EN-2407 (i18n) |
 | **Workers Available** | **Workforce Available** | Analytics metric card | Unmerged (EN-2824) |
 | **Workers Used** | **Total Executions** | Analytics metric card | Unmerged (EN-2824) |
@@ -44,14 +44,16 @@
 
 ### Canvas Node Renames (EN-2407)
 
-| Node ID | Old Name | New Name | Old Description | New Description |
-|---------|----------|----------|-----------------|-----------------|
-| `worker_call` | AI Workflow Call | **Run AI Workflow** | Execute a single sub-workflow with parameters | Execute another workflow with specific inputs |
-| `universal_worker_call` | AI Worker Call | **Run AI Worker** | Execute an AI worker | Prompt an AI Worker with your input and receive its response |
-| `map_worker` | Map Worker | **Repeat Workflow** | Parallel array processing with sub-workers | Execute a workflow for each item in a list, in parallel |
-| `fold_worker` | Fold Worker | **Combine Workflow Results** | Sequential accumulator processing | Combine results from multiple workflow executions into one |
-| `switch_worker` | Switch Worker | **Route Workflow** | Conditional execution based on switch/case logic | Evaluate conditions and execute different workflows based on the result |
-| `until_worker` | Until Worker | **Repeat Workflow Until** | Iterative execution until condition becomes true | Execute a workflow repeatedly until a condition is met |
+| Node ID | Old Name | New Name | What It Means (New Description) |
+|---------|----------|----------|---------------------------------|
+| `worker_call` | Worker Call | **Run AI Workflow** | Execute another workflow with specific inputs |
+| `map_worker` | Map Worker | **Repeat Workflow** | Execute a workflow for each item in a list, in parallel |
+| `universal_worker_call` | Universal Worker Call | **Run AI Worker** | Prompt an AI Worker with your input and receive its response |
+| `fold_worker` | Fold Worker | **Combine Workflow Results** | Combine results from multiple workflow executions into one |
+| `switch_worker` | Switch Worker | **Route Workflow** | Evaluate conditions and route data to different workflows - each workflow processes the data based on its specific purpose |
+| `until_worker` | Until Worker | **Repeat Workflow Until** | Execute a workflow repeatedly until a condition is met |
+
+> **Acceptance Criteria:** All "Worker" terminology in these nodes' UI (placeholders, labels, helper text) must be replaced with "Workflow". For example, Map Worker's `"Select a worker for map processing"` → `"Select a workflow for map processing..."`
 
 ---
 
@@ -306,14 +308,14 @@ Updated canvas node names/descriptions to be more user-friendly and added i18n s
 
 #### Node Metadata Renames (`CustomNodes.ts`)
 
-| Node ID | Old Name → New Name | Old Description → New Description |
-|---------|---------------------|-----------------------------------|
-| `worker_call` | AI Workflow Call → **Run AI Workflow** | Execute a single sub-workflow with parameters → Execute another workflow with specific inputs |
-| `universal_worker_call` | AI Worker Call → **Run AI Worker** | Execute an AI worker → Prompt an AI Worker with your input and receive its response |
-| `map_worker` | Map Worker → **Repeat Workflow** | Parallel array processing with sub-workers → Execute a workflow for each item in a list, in parallel |
-| `fold_worker` | Fold Worker → **Combine Workflow Results** | Sequential accumulator processing → Combine results from multiple workflow executions into one |
-| `switch_worker` | Switch Worker → **Route Workflow** | Conditional execution based on switch/case logic → Evaluate conditions and execute different workflows based on the result |
-| `until_worker` | Until Worker → **Repeat Workflow Until** | Iterative execution until condition becomes true → Execute a workflow repeatedly until a condition is met |
+| Node ID | Old Name → New Name | What It Means (New Description) |
+|---------|---------------------|---------------------------------|
+| `worker_call` | Worker Call → **Run AI Workflow** | Execute another workflow with specific inputs |
+| `map_worker` | Map Worker → **Repeat Workflow** | Execute a workflow for each item in a list, in parallel |
+| `universal_worker_call` | Universal Worker Call → **Run AI Worker** | Prompt an AI Worker with your input and receive its response |
+| `fold_worker` | Fold Worker → **Combine Workflow Results** | Combine results from multiple workflow executions into one |
+| `switch_worker` | Switch Worker → **Route Workflow** | Evaluate conditions and route data to different workflows - each workflow processes the data based on its specific purpose |
+| `until_worker` | Until Worker → **Repeat Workflow Until** | Execute a workflow repeatedly until a condition is met |
 
 #### Parameter Field Placeholders (`parameterFieldConfig.ts`)
 - `'Select a worker to call...'` → `'Select a workflow to call...'`
