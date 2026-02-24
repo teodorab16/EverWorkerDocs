@@ -33,6 +33,7 @@ Nodes are the building blocks of AI Workflows in Canvas. Each node performs a sp
 | [Browser](doc:browser) | Headless browser automation |
 | [CSV to JSON](doc:csv-to-json) | Convert CSV data to JSON format |
 | [PDF to Images](doc:pdf-to-images) | Convert PDF pages to images |
+| [Render Markdown](doc:render-markdown) | Convert Markdown to HTML, PDF, or DOCX |
 
 ### Storage & Memory
 | Node | Purpose |

@@ -6,6 +6,7 @@
 - browser
 - csv-to-json
 - pdf-to-images
+- render-markdown
 - storage-upload
 - vector-save
 - vector-search
