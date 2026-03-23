@@ -34,41 +34,41 @@ This guide describes parameters and fields you’ll find in the Provider creatio
 4. **Description**
 
    _Purpose:_
-   ``Longer-form detail on the Provider, use it to explain usage, scope, or internal notes.``
+   `Longer-form detail on the Provider, use it to explain usage, scope, or internal notes.`
 
    _Example:_
-   ``“This Provider handles all core CRM object endpoints for our marketing automation workflows. Use only with admin-scoped secrets.”``
+   `“This Provider handles all core CRM object endpoints for our marketing automation workflows. Use only with admin-scoped secrets.”`
 5. **Global ID**
 
-   Purpose:_
-   ``A unique machine-readable identifier for this Provider.
-   Used by connectors and code—usually lowercase, no spaces.``
+   _Purpose:_
+   `A unique machine-readable identifier for this Provider.
+   Used by connectors and code—usually lowercase, no spaces.`
 
    _Example:_
-   ``hubspot.crm, mycompany.privateapi``
+   `hubspot.crm, mycompany.privateapi`
 6. **Version**
 
    _Purpose:_
-   ``String to track API/provider versioning for upgrade and compatibility control.``
+   `String to track API/provider versioning for upgrade and compatibility control.`
 
    _Example:_
-   ``v1.0, 2023-04, beta``
+   `v1.0, 2023-04, beta`
 7. **Servers (Add Server)**
 
    _Purpose:_
-   ``Add one or more base URLs ("servers") that your API uses.``
+   `Add one or more base URLs ("servers") that your API uses.`
 
    _How To:_
-   ``Click “Add Server” and enter each base URL (e.g., [https://api.hubapi.com](https://api.hubapi.com)).
-   If the API is available in multiple regions or for different environments (test/prod), add all needed.``
-8. **Secrets (Add Secret)**  
+   `Click “Add Server” and enter each base URL (e.g., [https://api.hubapi.com](https://api.hubapi.com)).
+   If the API is available in multiple regions or for different environments (test/prod), add all needed.`
+8. **Secrets (Add Secret)**
 
    _Purpose:_
-   ``Add one or more base URLs ("servers") that your API uses.``
+   `Add one or more base URLs ("servers") that your API uses.`
 
    _How To:_
-   ``Click “Add Server” and enter each base URL (e.g., [https://api.hubapi.com](https://api.hubapi.com)).
-   If the API is available in multiple regions or for different environments (test/prod), add all needed.``
+   `Click “Add Server” and enter each base URL (e.g., [https://api.hubapi.com](https://api.hubapi.com)).
+   If the API is available in multiple regions or for different environments (test/prod), add all needed.`
 9. **Authentication**
    Controls how your Provider will add credentials to each API call, selecting how Everworker inserts the relevant secret.
    The following options are available:
