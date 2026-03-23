@@ -16,7 +16,7 @@ This guide explains each field in the **Connector creation UI**, along with reco
 
 > ℹ️ Connector overview
 >
-> Each Connector is tied to a single Provider and defines how Everworker should interact with a specific set of API endpoints.
+> Each Connector is tied to a single Provider and defines how Everworker should interact with a specific set of API endpoints. This is where you enter actual values for secrets, that become encoded and not visible to the platform users.
 
 ***
 
@@ -29,10 +29,6 @@ Select the existing **Provider** this Connector will use for API authentication 
 
 **How to use it:**  
 Use the dropdown to choose from previously created Providers.
-
-> ⚠️ Important
->
-> Each Connector can reference only **one** Provider.
 
 ***
 
@@ -77,34 +73,15 @@ It references the exact Global ID of the Provider the Connector is created from 
 **Purpose:**  
 The primary root endpoint or base path for the API requests this Connector will make.
 
-**How to use it:**  
-This is usually the path appended to the Provider's base URL. It may also include placeholders for parameters.
-
 **Example:**  
-`/v2/task`
-
-If the Provider base URL is `https://api.clickup.com`, the resulting request path becomes:  
-`https://api.clickup.com/v2/task`
+`https://api.hubapi.com`
 
 ***
 
 ### Authentication Mode
 
 **Purpose:**  
-Determines how authentication is managed for all endpoints in the Connector.
-
-**Options:**
-
-* **Inherited from Provider** — Uses the Provider's authentication method. This is the default.
-* **Override** — Lets you specify a different method for this Connector.
-
-**Use this when:**  
-You need more granular control, such as:
-
-* additional headers
-* different secrets
-* different OAuth scopes
-* endpoint-specific authentication behavior
+Generally it is configured to match the provider's Authentication mode, unless you intend otherwise.
 
 ***
 
@@ -123,36 +100,16 @@ Indicates whether this Connector can be used by anyone in your workspace or rema
 ### Connector Secrets
 
 **Purpose:**  
-Add credentials that are specific to this Connector and are not part of the shared Provider configuration.
+Add actual values to the secrets configured in Provider settings.
 
-**Use cases:**
-
-* endpoint-specific API keys
-* secondary tokens
-* connector-specific credentials
-
-> ❗️Security best practice
->
-> Never include secrets in the Connector **Name** or **Description**. Always use **Connector Secrets**, which are encrypted and access-controlled.
+<br />
 
 ***
 
 ### App Token OAuth Settings
 
 **Purpose:**  
-Configure OAuth flows and application tokens if this Connector needs to handle authentication differently from, or in addition to, the linked Provider.
-
-**Available fields:**
-
-* **Client ID / Client Secret** — if different from the Provider
-* **Scopes** — OAuth scopes required by this Connector
-* **Custom Auth URL / Token URL** — for non-standard OAuth flows
-
-**Best practices:**
-
-* Use these settings only when your Connector needs custom OAuth behavior
-* Leave them inherited by default unless your endpoints require different permissions
-* Override only when necessary to keep configuration simple and maintainable
+Allows to configure grant type and other properties for OAuth configuration if it's used in authentication.
 
 ***
 
@@ -175,11 +132,11 @@ Your Connector can then be:
 | **Provider**                 | Which configured Provider to use                                 |
 | **Name**                     | Human-readable Connector label                                   |
 | **Description**              | Purpose, endpoint group, and usage notes                         |
-| **Global ID**                | Unique, machine-friendly identifier                              |
-| **Main API URL**             | Default endpoint path or base request path                       |
+| **Global ID**                | Unique, machine-friendly identifier inherited from the provider  |
+| **Main API URL**             | Default endpoint path                                            |
 | **Authentication Mode**      | Inherit Provider auth or set custom auth                         |
 | **Public Connector**         | Whether this Connector is visible to others                      |
-| **Connector Secrets**        | Extra credentials just for this Connector                        |
+| **Connector Secrets**        | Secret values just for this Connector                            |
 | **App Token OAuth Settings** | Connector-specific OAuth configuration, typically left inherited |
 
 ***
