@@ -49,25 +49,38 @@ This guide describes parameters and fields you’ll find in the Provider creatio
    Purpose:
    Add one or more base URLs ("servers") that your API uses.
    How To:
+   Click “Add Server” and enter each base URL (e.g., [https://api.hubapi.com](https://api.hubapi.com)).
+   If the API is available in multiple regions or for different environments (test/prod), add all needed.
+8. **Secrets (Add Secret)**  
+   Purpose:
+   Add one or more base URLs ("servers") that your API uses.
+   How To:
    Click “Add Server” and enter each base URL (e.g., https://api.hubapi.com).
    If the API is available in multiple regions or for different environments (test/prod), add all needed.
-8. **OAuth Configuration**
-   If you select OAuth-based authentication, you’ll configure these specific fields:
+9. **Authentication**
+   Controls how your Provider will add credentials to each API call, selecting how Everworker inserts the relevant secret.
+   The following options are available:  
+   Header - custom header. Example: x-api-key: \<value\>
+10. **OAuth Configuration**
+    If you select OAuth-based authentication, you’ll configure these specific fields:
 
-   Default Authentication Mode
+    Default Authentication Mode
 
-   * App token: Uses a global credential for all calls (no per-user auth flow).
-   * User OAuth: Each user completes OAuth and gets their token.
-   * Hybrid: Combines app credentials (client_id/client_secret) with per-user tokens (sometimes required for enterprise APIs).
-   **OAuth Scopes**
+    * App token: Uses a global credential for all calls (no per-user auth flow).
 
-   * The permissions explicitly requested from the API (comma or space separated).
-   * Example: contacts.read deals.write
-   **Custom Authorization URL (Optional)**
+    * User OAuth: Each user completes OAuth and gets their token.
 
-   * If API provider uses a non-standard authentication initiation URL, specify here.
-   **Custom Token URL (Optional)**
+    * Hybrid: Combines app credentials (client_id/client_secret) with per-user tokens (sometimes required for enterprise APIs).
+      **OAuth Scopes**
 
-   * If exchanging a code/token is done via a non-standard endpoint.
+    * The permissions explicitly requested from the API (comma or space separated).
+
+    * Example: contacts.read deals.write
+      **Custom Authorization URL (Optional)**
+
+    * If API provider uses a non-standard authentication initiation URL, specify here.
+      **Custom Token URL (Optional)**
+
+    * If exchanging a code/token is done via a non-standard endpoint.
 
 _If using OAuth: Fill out all above, and be sure your secrets include client_id and client_secret as appropriate._
