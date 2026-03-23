@@ -106,7 +106,7 @@ _Example for Hubspot API using bearer token_
 
 ![](https://files.readme.io/4402ea2c40eb70a6e5bd2c78a32eaea912e9c5075e4f4f206c41d79443d133bd-image.png)
 
-**NB!Do not enter secret values here: the secret values will be added to the connector created from this provider (See [Creating a Connector](https://help.everworker.ai/docs/creating-a-connector) article).**
+**NB! Do not enter secret values here: the secret values will be added to the connector created from this provider (See [Creating a Connector](https://help.everworker.ai/docs/creating-a-connector) article).**
 
 ***
 
