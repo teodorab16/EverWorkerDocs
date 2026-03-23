@@ -1,5 +1,5 @@
 ---
-title: Creating a connector
+title: Creating a Connector
 deprecated: false
 hidden: false
 icon: far fa-angles-down
