@@ -149,7 +149,9 @@ If you select OAuth-based authentication, you’ll configure these specific fiel
 
 ***
 
-_If using OAuth: Fill out all above, and be sure your secrets include `client_id` and `client_secret` as appropriate._
+_If using OAuth: Fill out all above, and be sure your secrets include all secrets expected by the endpoint._
+
+Do not enter secret values here: the secret values will be added to the connector created from this provider (See [Creating a Connector](https://help.everworker.ai/docs/creating-a-connector) article).
 
 ***
 
