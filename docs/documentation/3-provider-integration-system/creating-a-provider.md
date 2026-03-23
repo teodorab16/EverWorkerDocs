@@ -6,6 +6,8 @@ icon: far fa-angles-down
 metadata:
   robots: index
 ---
+<br />
+
 # Providers
 
 A **Provider** in Everworker is your configuration template for connecting to any external API or service. Creating a Provider sets up all access, authentication, and basic structural information for future connectors and workflow nodes.
@@ -18,84 +20,85 @@ This guide describes parameters and fields you’ll find in the **Provider creat
 
 ### 1. **Choose File** _(OpenAPI Specs, optional)_
 
-**_Purpose:_**  
-`Allows you to import the API schema automatically via OpenAPI/Swagger file.`
+**Purpose:**  
+Allows you to import the API schema automatically via OpenAPI/Swagger file.
 
-**_How To:_**  
-`Click the file picker and upload the .json or .yaml file provided by the API owner.`
+**How To:**  
+Click the file picker and upload the `.json` or `.yaml` file provided by the API owner.
 
 ***
 
 ### 2. **Title**
 
-**_Purpose:_**  
-`Friendly name for this Provider, easily readable and unique within your workspace.`
+**Purpose:**  
+Friendly name for this Provider, easily readable and unique within your workspace.
 
-**_Example:_**  
-`Salesforce Prod, HubSpot Demo, Custom Private API`
+**Example:**  
+_Salesforce Prod, HubSpot Demo, Custom Private API_
 
 ***
 
 ### 3. **Summary**
 
-**_Purpose:_**  
-`A one-line summary or tag-line for the Provider’s function.`
+**Purpose:**  
+A one-line summary or tag-line for the Provider’s function.
 
-**_Example:_**  
-`“Main integration with HubSpot for contacts and deals.”`
+**Example:**  
+_Main integration with HubSpot for contacts and deals._
 
 ***
 
 ### 4. **Description**
 
-**_Purpose:_**  
-`Longer-form detail on the Provider, use it to explain usage, scope, or internal notes.`
+**Purpose:**  
+Longer-form detail on the Provider, use it to explain usage, scope, or internal notes.
 
-**_Example:_**  
-`“This Provider handles all core CRM object endpoints for our marketing automation workflows. Use only with admin-scoped secrets.”`
+**Example:**  
+_This Provider handles all core CRM object endpoints for our marketing automation workflows. Use only with admin-scoped secrets._
 
 ***
 
 ### 5. **Global ID**
 
-**_Purpose:_**  
-`A unique machine-readable identifier for this Provider.
-Used by connectors and code—usually lowercase, no spaces.`
+**Purpose:**  
+A unique machine-readable identifier for this Provider. Used by connectors and code—usually lowercase, no spaces.
 
-**_Example:_**  
-`hubspot.crm, mycompany.privateapi`
+**Example:**  
+`hubspot.crm`, `mycompany.privateapi`
 
 ***
 
 ### 6. **Version**
 
-**_Purpose:_**  
-`String to track API/provider versioning for upgrade and compatibility control.`
+**Purpose:**  
+String to track API/provider versioning for upgrade and compatibility control.
 
-**_Example:_**  
-`v1.0, 2023-04, beta`
+**Example:**  
+`v1.0`, `2023-04`, `beta`
 
 ***
 
 ### 7. **Servers (Add Server)**
 
-**_Purpose:_**  
-`Add one or more base URLs ("servers") that your API uses.`
+**Purpose:**  
+Add one or more base URLs ("servers") that your API uses.
 
-**_How To:_**  
-`Click “Add Server” and enter each base URL (e.g., https://api.hubapi.com).
-If the API is available in multiple regions or for different environments (test/prod), add all needed.`
+**How To:**  
+Click **Add Server** and enter each base URL, for example `https://api.hubapi.com`.
+
+If the API is available in multiple regions or for different environments (test/prod), add all needed.
 
 ***
 
 ### 8. **Secrets (Add Secret)**
 
-**_Purpose:_**  
-`Add one or more base URLs ("servers") that your API uses.`
+**Purpose:**  
+Add one or more base URLs ("servers") that your API uses.
 
-**_How To:_**  
-`Click “Add Server” and enter each base URL (e.g., https://api.hubapi.com).
-If the API is available in multiple regions or for different environments (test/prod), add all needed.`
+**How To:**  
+Click **Add Server** and enter each base URL, for example `https://api.hubapi.com`.
+
+If the API is available in multiple regions or for different environments (test/prod), add all needed.
 
 ***
 
@@ -105,11 +108,11 @@ Controls how your Provider will add credentials to each API call, selecting how 
 
 The following options are available:
 
-* **Header** - custom header. Example: `x-api-key: <value>`
-* **Bearer** - Most OAuth2, some API tokens, e.g. `Authorization: Bearer <value>`
-* **Basic** - Base64-encoded username:password, e.g. `Authorization: Basic <base64>`
-* **Query** - As a query param in URL, e.g. `?api_key=value`
-* **Special** - Customer/integrated schemes, e.g. HMAC, JWT or other custom scripts.
+* **Header** — custom header. Example: `x-api-key: <value>`
+* **Bearer** — Most OAuth2, some API tokens, e.g. `Authorization: Bearer <value>`
+* **Basic** — Base64-encoded username:password, e.g. `Authorization: Basic <base64>`
+* **Query** — As a query param in URL, e.g. `?api_key=value`
+* **Special** — Customer/integrated schemes, e.g. HMAC, JWT or other custom scripts.
 
 ***
 
@@ -138,7 +141,7 @@ If you select OAuth-based authentication, you’ll configure these specific fiel
 
 ***
 
-_If using OAuth: Fill out all above, and be sure your secrets include client_id and client_secret as appropriate._
+_If using OAuth: Fill out all above, and be sure your secrets include `client_id` and `client_secret` as appropriate._
 
 ***
 
