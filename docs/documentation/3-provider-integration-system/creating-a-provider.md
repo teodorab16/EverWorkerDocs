@@ -93,12 +93,20 @@ If the API is available in multiple regions or for different environments (test/
 ### 8. **Secrets (Add Secret)**
 
 **Purpose:**  
-Add one or more base URLs ("servers") that your API uses.
+Add one or more secrets that need to be passed along with the request, to authorize it.
 
 **How To:**  
-Click **Add Server** and enter each base URL, for example `https://api.hubapi.com`.
+Click **Add Secret** and enter its name.
 
-If the API is available in multiple regions or for different environments (test/prod), add all needed.
+_Example for Microsoft API using application secrets_
+
+![](https://files.readme.io/8d3432d5116501ec10c247401723c6bd96b13ccd4b19ba9d0254691d24e570da-image.png)
+
+_Example for Hubspot API using bearer token_
+
+![](https://files.readme.io/4402ea2c40eb70a6e5bd2c78a32eaea912e9c5075e4f4f206c41d79443d133bd-image.png)
+
+<br />
 
 ***
 
