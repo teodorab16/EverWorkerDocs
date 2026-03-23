@@ -106,7 +106,7 @@ _Example for Hubspot API using bearer token_
 
 ![](https://files.readme.io/4402ea2c40eb70a6e5bd2c78a32eaea912e9c5075e4f4f206c41d79443d133bd-image.png)
 
-<br />
+*Do not enter secret values here: the secret values will be added to the connector created from this provider (See [Creating a Connector](https://help.everworker.ai/docs/creating-a-connector) article).*
 
 ***
 
@@ -146,12 +146,6 @@ If you select OAuth-based authentication, you’ll configure these specific fiel
 #### **Custom Token URL (Optional)**
 
 * If exchanging a code/token is done via a non-standard endpoint.
-
-***
-
-_If using OAuth: Fill out all above, and be sure your secrets include all secrets expected by the endpoint._
-
-Do not enter secret values here: the secret values will be added to the connector created from this provider (See [Creating a Connector](https://help.everworker.ai/docs/creating-a-connector) article).
 
 ***
 
