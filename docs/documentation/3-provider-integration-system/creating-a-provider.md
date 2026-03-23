@@ -24,11 +24,13 @@ This guide describes parameters and fields you’ll find in the Provider creatio
 
    _Example:_
    `Salesforce Prod, HubSpot Demo, Custom Private API`
-3. **Summary**
-   Purpose:
-   A one-line summary or tag-line for the Provider’s function.
-   Example:
-   “Main integration with HubSpot for contacts and deals.”
+3. **Summary**  
+
+   *Purpose:*
+   ``A one-line summary or tag-line for the Provider’s function.``
+
+   *Example:*
+   ``“Main integration with HubSpot for contacts and deals.”``
 4. **Description**
    Purpose:
    Longer-form detail on the Provider, use it to explain usage, scope, or internal notes.
@@ -60,7 +62,11 @@ This guide describes parameters and fields you’ll find in the Provider creatio
 9. **Authentication**
    Controls how your Provider will add credentials to each API call, selecting how Everworker inserts the relevant secret.
    The following options are available:  
-   Header - custom header. Example: x-api-key: \<value\>
+   * Header - custom header. Example: x-api-key: \<value\>
+   * Bearer - Most OAuth2, some API tokens, e.g. Authorization: Bearer \<value\>
+   * Basic - Base64-encoded username:password, e.g. Authorization: Basic \<base64\>
+   * Query - As a query param in URL, e.g. ?api_key=value
+   * Special - Customer/integrated schemes, e.g. HMAC, JWT or other custom scripts.
 10. **OAuth Configuration**
     If you select OAuth-based authentication, you’ll configure these specific fields:
 
