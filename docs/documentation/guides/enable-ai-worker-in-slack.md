@@ -258,7 +258,7 @@ Below is an example Slack App manifest that pre-configures the required settings
         },
         "interactivity": {
             "is_enabled": true,
-            "request_url": "https://demo.everworker.ai/slack/interactive"
+            "request_url": "https://cloud.everworker.ai/slack/interactive"
         },
         "org_deploy_enabled": false,
         "socket_mode_enabled": true,
