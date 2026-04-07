@@ -106,6 +106,7 @@ Before you begin, make sure you have:
 | `im:read`              | View basic information about direct messages that "AI Worker" has been added to             |
 | `im:write`             | Start direct messages with people                                                           |
 | `im:write.topic`       | Set the description in direct messages                                                      |
+| `incoming-webhook`     | Post messages to specific channels in Slack                                                 |
 | `links:read`           | View URLs in messages                                                                       |
 | `links:write`          | Show previews of URLs in messages                                                           |
 | `mpim:history`         | View messages and other content in group direct messages that "AI Worker" has been added to |
