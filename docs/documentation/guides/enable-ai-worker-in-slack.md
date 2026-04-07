@@ -5,6 +5,7 @@ excerpt: >-
   Worker
 deprecated: false
 hidden: false
+icon: fab fa-slack
 metadata:
   robots: index
 ---
