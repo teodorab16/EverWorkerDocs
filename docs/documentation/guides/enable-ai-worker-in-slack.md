@@ -36,7 +36,7 @@ Before you begin, make sure you have:
 
 <Image align="center" src="https://files.readme.io/f879171afa040f21561b388769a3f2c1065563b9c8d647e1591978c7b446fa3f-Screenshot_2026-04-07_at_12.53.11.png" />
 
-> **Tip:** If you choose **From an app manifest**, you can paste a pre-configured manifest to skip several manual configuration steps. See the [Example App Manifest](#example-app-manifest) section at the end of this guide. You should replace the "https://cloud.everworker.ai/" with your URL. 
+> **Tip:** If you choose **From an app manifest**, you can paste a pre-configured manifest to skip several manual configuration steps. See the [Example App Manifest](#example-app-manifest) section at the end of this guide. You should replace the "[https://cloud.everworker.ai/](https://cloud.everworker.ai/)" with your URL.
 
 ***
 
@@ -166,12 +166,12 @@ This step ensures that users can send direct messages to your app from its App H
 ### Step 9 — Enable Slack on Your AI Worker
 
 1. Open your AI Worker (new ones, under Labs) in the EverWorker builder.
-2. In the **Knowledge** section, assign the Slack connector you just created to the AI Worker.
-3. Enable the **Slack** integration toggle inside of the AI Worker configuration.
+2. In the **Knowledge** section enable the **Slack** integration toggle inside of the AI Worker configuration and assign the Slack connector you just created to the AI Worker.
+3. In the **Skills** section toggle the Slack Api.
 
 <Image align="center" src="https://files.readme.io/9b5c0c1c68e7ca37cdb87c767e06f6b30e439dddbcd883287f48f8f357c34a4f-Screenshot_2026-04-07_at_12.48.43.png" />
 
-<br />
+<Image align="center" src="https://files.readme.io/dde4d8a9874b59f16f796831dc6d4dc66278895ce5bea400d2bdc396a71b4814-Screenshot_2026-04-07_at_13.00.29.png" />
 
 Your AI Worker is now connected to Slack. Users in your workspace can interact with it by:
 
