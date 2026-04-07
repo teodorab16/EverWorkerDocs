@@ -1,6 +1,8 @@
 ---
 title: Enable an AI Worker in Slack
-excerpt: How to create a Slack App, configure it, and connect it to an EverWorker AI Worker
+excerpt: >-
+  How to create a Slack App, configure it, and connect it to an EverWorker AI
+  Worker
 deprecated: false
 hidden: false
 metadata:
@@ -31,7 +33,7 @@ Before you begin, make sure you have:
 3. Select the workspace where the app will be installed.
 4. Give your app a name (e.g., the name of your AI Worker).
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the Slack "Create New App" page showing the app creation options -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the Slack "Create New App" page showing the app creation options */}
 
 > **Tip:** If you choose **From an app manifest**, you can paste a pre-configured manifest to skip several manual configuration steps. See the [Example App Manifest](#example-app-manifest) section at the end of this guide.
 
@@ -48,7 +50,7 @@ Before you begin, make sure you have:
 5. Click **Generate**.
 6. **Copy and save the token** — you will need it later when configuring the EverWorker connector.
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the "Generate Token and Scopes" dialog showing the required scopes (connections:write, authorizations:read) -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the "Generate Token and Scopes" dialog showing the required scopes (connections:write, authorizations:read) */}
 
 > **Important:** Also note the **Signing Secret** on this same Basic Information page — you will need it for the EverWorker connector configuration.
 
@@ -59,7 +61,7 @@ Before you begin, make sure you have:
 1. In the left sidebar, go to **Socket Mode**.
 2. Toggle **Enable Socket Mode** to **On**.
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the Socket Mode settings page with the toggle enabled -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the Socket Mode settings page with the toggle enabled */}
 
 ***
 
@@ -72,9 +74,9 @@ Before you begin, make sure you have:
    - `app_mention` — triggers when someone @mentions your app in a channel
    - `message.im` — triggers when someone sends a direct message to your app
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the Event Subscriptions page with "Enable Events" toggled on -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the Event Subscriptions page with "Enable Events" toggled on */}
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the "Subscribe to bot events" section showing the required events (app_mention, message.im) -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the "Subscribe to bot events" section showing the required events (app_mention, message.im) */}
 
 > **Important:** Do **NOT** set a Request URL. It is not needed because EverWorker uses **Socket Mode** (WebSocket connections) instead of HTTP callbacks.
 
@@ -98,7 +100,7 @@ Before you begin, make sure you have:
 | `mpim:history` | Allows the bot to read group DM history |
 | `users:read` | Allows the bot to view basic user info |
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the OAuth & Permissions page showing the Bot Token Scopes section with the required scopes listed above -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the OAuth & Permissions page showing the Bot Token Scopes section with the required scopes listed above */}
 
 > **Note:** Depending on your use case, you may need to add additional scopes. The list above covers the most common scenarios for an AI Worker interacting in channels and direct messages.
 
@@ -110,7 +112,7 @@ Before you begin, make sure you have:
 2. Enable the **Messages Tab** (also called Chat Tab).
 3. Check the box **Allow users to send Slash commands and messages from the messages tab**.
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the App Home settings page showing the Messages Tab enabled and the "Allow users to send..." checkbox checked -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the App Home settings page showing the Messages Tab enabled and the "Allow users to send..." checkbox checked */}
 
 This step ensures that users can send direct messages to your app from its App Home in Slack.
 
@@ -123,7 +125,7 @@ This step ensures that users can send direct messages to your app from its App H
 3. Review the permissions and click **Allow**.
 4. After installation, copy the **Bot User OAuth Token** (starts with `xoxb-`) — you will need it for the EverWorker connector.
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the Install App page showing the "Bot User OAuth Token" after successful installation -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the Install App page showing the "Bot User OAuth Token" after successful installation */}
 
 > **Important:** Every time you make a significant change to your app's configuration (adding scopes, changing events, etc.), you need to **reinstall the app** to your workspace for the changes to take effect.
 
@@ -143,7 +145,7 @@ This step ensures that users can send direct messages to your app from its App H
 | **App Token** | App-Level Token (`xapp-...`) — from Step 2 |
 | **Signing Secret** | Signing Secret — from the Basic Information page |
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the EverWorker Slack Connector configuration form showing the three fields (API Key, App Token, Signing Secret) -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the EverWorker Slack Connector configuration form showing the three fields (API Key, App Token, Signing Secret) */}
 
 ***
 
@@ -153,7 +155,7 @@ This step ensures that users can send direct messages to your app from its App H
 2. In the **Skills** section, assign the Slack connector you just created to the AI Worker.
 3. Enable the **Slack** integration toggle.
 
-<!-- SCREENSHOT_PLACEHOLDER: Screenshot of the AI Worker builder showing the Slack integration toggle enabled under Skills -->
+{/* SCREENSHOT_PLACEHOLDER: Screenshot of the AI Worker builder showing the Slack integration toggle enabled under Skills */}
 
 Your AI Worker is now connected to Slack. Users in your workspace can interact with it by:
 
@@ -178,7 +180,7 @@ Your AI Worker is now connected to Slack. Users in your workspace can interact w
 
 Below is an example Slack App manifest that pre-configures the required settings. You can use it when creating your app via **From an app manifest** to skip manual configuration.
 
-<!-- MANIFEST_PLACEHOLDER: Paste your Slack App manifest JSON/YAML here. This should include the socket mode, event subscriptions, bot scopes, and app home configuration as described in the steps above. -->
+{/* MANIFEST_PLACEHOLDER: Paste your Slack App manifest JSON/YAML here. This should include the socket mode, event subscriptions, bot scopes, and app home configuration as described in the steps above. */}
 
 ```yaml
 # Paste your app manifest here
