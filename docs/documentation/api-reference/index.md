@@ -261,7 +261,7 @@ All API endpoints return standard HTTP status codes:
 | `403` | Forbidden - Token lacks required scope/permissions |
 | `404` | Not Found - Execution ID does not exist |
 | `405` | Method Not Allowed - Wrong HTTP method used |
-| `429` | Too Many Requests - Rate limit exceeded |
+| `429` | Too Many Requests - Rate limit exceeded. See [KB003: Rate limit exceeded](/page/rate-limit-exceeded) |
 | `500` | Internal Server Error - Server-side error |
 
 ### Error Response Format
