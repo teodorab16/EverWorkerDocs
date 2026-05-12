@@ -4,7 +4,7 @@ excerpt: >-
   Configure webhooks to trigger AI Workers and AI Workflows from external
   systems
 deprecated: false
-hidden: true
+hidden: false
 icon: 🪝
 metadata:
   robots: index
