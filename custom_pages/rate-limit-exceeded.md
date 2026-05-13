@@ -3,7 +3,7 @@ title: >-
   KB003: Rate limit exceeded (429) — causes, limits, and how to request an
   increase
 fullscreen: false
-hidden: true
+hidden: false
 ---
 This article explains what causes `429 Rate limit exceeded` errors, the current platform limits, how to design workflows that stay within them, and how to request a limit increase.
 
