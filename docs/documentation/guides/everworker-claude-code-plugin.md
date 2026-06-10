@@ -76,9 +76,9 @@ You don't need to be technical to use the plugin, but a few design choices are w
 
 ## How to install it
 
-Installation is a **one-time setup in your terminal**. After that, the plugin works in **any** Claude Code environment - the Claude Code terminal, the Claude Code desktop app, the Visual Studio Code extension, and so on.
+Installation is a **one-time setup in your terminal**. After that, the plugin works in **other environments also** Claude such as Visual Studio Code extension, and so on.
 
-> **Why the terminal first?** Due to a current Anthropic limitation around third-party marketplace plugins, the initial install must be done from the terminal. Once installed, no terminal is required to _use_ it - it's available everywhere Claude Code runs.
+> **Why the terminal first?** Due to a current Anthropic limitation around third-party marketplace plugins, the initial install must be done from the terminal. Once installed, terminal is not required to _use_ it - it's available in other IDEs. The only current exception (due to the same Anthropic limitation) is Claude Code Desktop.
 
 ### Prerequisites
 
