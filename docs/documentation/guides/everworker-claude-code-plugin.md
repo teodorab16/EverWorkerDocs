@@ -98,12 +98,12 @@ Installation is a **one-time setup in your terminal**. After that, the plugin wo
 3. Click **Connect Claude Code**.
 4. Follow the instructions shown in the panel - the steps below mirror them.
 
-<!-- SCREENSHOT PLACEHOLDER: EverWorker Profile menu → API tokens → "Connect Claude Code" button -->
+{/* SCREENSHOT PLACEHOLDER: EverWorker Profile menu → API tokens → "Connect Claude Code" button */}
 <Image align="center" src="PLACEHOLDER_connect_claude_code_menu" />
 
 The panel gives you everything you need: the install commands, your **EverWorker URL**, and a **one-time API token**.
 
-<!-- SCREENSHOT PLACEHOLDER: The "Connect Claude Code" modal showing the 5 steps, URL, and API token (provided by user) -->
+{/* SCREENSHOT PLACEHOLDER: The "Connect Claude Code" modal showing the 5 steps, URL, and API token (provided by user) */}
 <Image align="center" src="PLACEHOLDER_connect_claude_code_modal" />
 
 > **Important:** The API token is shown **only once**. Copy it immediately. If you lose it, just click **Connect Claude Code** again to generate a new one.
@@ -122,7 +122,7 @@ claude plugin marketplace add Integrail/everworker-plugins
 claude plugin install ai-builder@everworker
 ```
 
-<!-- SCREENSHOT PLACEHOLDER: Terminal after running the two install commands successfully -->
+{/* SCREENSHOT PLACEHOLDER: Terminal after running the two install commands successfully */}
 <Image align="center" src="PLACEHOLDER_terminal_install" />
 
 ***
