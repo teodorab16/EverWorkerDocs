@@ -94,19 +94,13 @@ Installation is a **one-time setup in your terminal**. After that, the plugin wo
 3. Click **Connect Claude Code**.
 4. Follow the instructions shown in the panel - the steps below mirror them.
 
-{/* SCREENSHOT PLACEHOLDER: EverWorker Profile menu → API tokens → "Connect Claude Code" button */}
+![](https://files.readme.io/5e5329eca333b09f22eaba26b5dd95247d85a387081d12c64fdc7c896df8951e-Screenshot_2026-06-10_at_16.48.51.png)
 
-
-<Image src="PLACEHOLDER_connect_claude_code_menu" align="center" />
-
+<br />
 
 The panel gives you everything you need: the install commands, your **EverWorker URL**, and a **one-time API token**.
 
-{/* SCREENSHOT PLACEHOLDER: The "Connect Claude Code" modal showing the 5 steps, URL, and API token (provided by user) */}
-
-
-<Image src="PLACEHOLDER_connect_claude_code_modal" align="center" />
-
+![](https://files.readme.io/571e7057f05f4eb1ff69cc173e1a3a28543149f4e25f42a91b892305313a79e4-Screenshot_2026-06-10_at_16.49.35.png)
 
 > **Important:** The API token is shown **only once**. Copy it immediately. If you lose it, just click **Connect Claude Code** again to generate a new one.
 
@@ -124,12 +118,6 @@ claude plugin marketplace add Integrail/everworker-plugins
 claude plugin install ai-builder@everworker
 ```
 
-{/* SCREENSHOT PLACEHOLDER: Terminal after running the two install commands successfully */}
-
-
-<Image src="PLACEHOLDER_terminal_install" align="center" />
-
-
 ***
 
 ### Step 3 - Configure the plugin inside Claude Code
@@ -144,13 +132,9 @@ Installing alone doesn't activate the plugin - you need to give it your URL and 
 
 2. Open the **Installed** tab, select **ai-builder**, then choose **Configure options** from its submenu.
 
-3. Claude Code will ask you for the **EverWorker URL** and the **API token**.
+3. ![](https://files.readme.io/3e59c3fadc9d55a2a58b2798cd4771305827983c06c874e7ff4e8a6a707b96b4-Screenshot_2026-06-10_at_16.52.05.png)
 
-{/* SCREENSHOT PLACEHOLDER: Claude Code /plugin manager, Installed tab, ai-builder → Configure options */}
-
-
-<Image src="PLACEHOLDER_plugin_configure" align="center" />
-
+   Claude Code will ask you for the **EverWorker URL** and the **API token**.
 
 ***
 
