@@ -16,6 +16,7 @@ The **Builder Tools** section of the EverWorker platform provides everything a B
 * **AI Worker Builder**: A structured, multi-tab interface for configuring and deploying AI Workers
 * **Canvas**: A visual, node-based interface for building AI Workflows through drag-and-drop logic blocks, connectors, and custom flows.
 * **Worker Creator (Chat)**: An AI-powered assistant that helps Builders generate workflows using natural language prompts—ideal for quick prototyping and non-technical creators.
+* **Claude Code Plugin (AI Builder)**: Build, edit, test, and run AI Workers and Workflows from Claude Code, connected live to your instance. See the [full guide](doc:everworker-claude-code-plugin).
 * **Node Types, Connections, and Workflow Logic**: Details on available nodes (API, conditional logic, vector memory, etc.), how they connect, and how workflows execute step-by-step.
 
 ***
@@ -93,6 +94,23 @@ This AI-driven assistant helps Builders **create workflows through natural langu
 
 ***
 
+# Claude Code Plugin (AI Builder)
+
+The **EverWorker Claude Code Plugin** brings the Builder experience into Claude Code. Once connected to your instance, you can build, edit, test, and run AI Workers and AI Workflows just by describing what you want in plain language - no clicking through screens.
+
+### What makes it powerful:
+
+* **Connected live to your instance**: It is aware of your existing AI Workers, AI Workflows, Connectors, Knowledge sources, and Code Nodes - so it builds on top of what you already have.
+* **Create from scratch or edit what exists**: Describe an outcome and it assembles the whole thing, or point it at something you already have and ask for changes in place.
+* **Runs and debugs**: It executes what it builds, watches the results, and fixes failures step by step.
+* **Respects your role**: It enforces the same permissions as the web interface - your token can only do what your role can do.
+
+_`Best for: Builders who want to go from idea to a working, tested Worker or Workflow in a single conversation`_
+
+> **Get started:** Follow the [EverWorker Claude Code Plugin (AI Builder) guide](doc:everworker-claude-code-plugin) for capabilities and step-by-step install.
+
+***
+
 # Workflow Logic and Node Connections
 
 * Nodes are linked via **input/output ports** to create directed execution chains
@@ -116,4 +134,4 @@ Builders can accelerate development using templated instructions, logic blocks, 
 
 # Summary
 
-The Builder Tools in EverWorker are designed to make **complex AI workflows accessible and customizable**, whether through code, visuals, or natural language. Canvas offers power and structure for building specialized logic, while Worker Creator provides speed and ease. Combined with rich node types and reusable templates, these tools enable Builders to create flexible, intelligent automation tailored to any business use case.
+The Builder Tools in EverWorker are designed to make **complex AI workflows accessible and customizable**, whether through code, visuals, or natural language. Canvas offers power and structure for building specialized logic, while Worker Creator and the [Claude Code Plugin](doc:everworker-claude-code-plugin) provide speed and ease - the latter letting Builders create, edit, and test directly from Claude Code. Combined with rich node types and reusable templates, these tools enable Builders to create flexible, intelligent automation tailored to any business use case.

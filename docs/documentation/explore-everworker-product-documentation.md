@@ -11,12 +11,16 @@ Welcome to EverWorker, the enterprise platform for creating, deploying, and mana
 
 ***
 
+> **New: Build EverWorker from Claude Code.** The [EverWorker Claude Code Plugin (AI Builder)](doc:everworker-claude-code-plugin) connects Claude Code to your instance so you can build, edit, test, and run AI Workers and Workflows just by describing what you want. See the [setup guide](doc:everworker-claude-code-plugin).
+
+***
+
 # Quick Start by Role
 
 | Role | Start Here | Key Sections |
 |------|------------|--------------|
 | **Users** | [Business User Experience](doc:6-business-user-experience-interfaces) | Chat interface, sessions, file uploads |
-| **Builders** | [Builder Tools](doc:2-builder-tools) | AI Worker Builder, Canvas, Skills |
+| **Builders** | [Builder Tools](doc:2-builder-tools) | AI Worker Builder, Canvas, Skills, [Claude Code Plugin](doc:everworker-claude-code-plugin) |
 | **Admins** | [Admin & Management](doc:7-admin-management) | User management, security, analytics |
 
 ***
@@ -41,6 +45,7 @@ Before exploring the platform, review the **[Terminology](doc:terminology)** pag
 | [Workers Architecture](doc:1-workers-architecture) | AI Workers vs AI Workflows, how they work |
 | [Builder Tools](doc:2-builder-tools) | AI Worker Builder, Canvas visual designer |
 | [Canvas Nodes](doc:nodes) | Complete reference for all workflow nodes |
+| [Claude Code Plugin (AI Builder)](doc:everworker-claude-code-plugin) | Build, edit, test, and run Workers and Workflows from Claude Code |
 
 ### Integrations & Capabilities
 | Section | Description |
